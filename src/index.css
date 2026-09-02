@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface: #F5F6FB;
+  --surface-alt: #FFFFFF;
+  --ink: #1A1D29;
+  --ink-soft: #6B7280;
+  --border: #E7E8F2;
+  --btn-shadow: #46A302;
+  --header-bg: rgba(255,255,255,0.75);
+}
+
+[data-theme="dark"] {
+  --surface: #0B1220;
+  --surface-alt: #131B2E;
+  --ink: #EEF1FA;
+  --ink-soft: #8B93AB;
+  --border: #232C42;
+  --btn-shadow: #3D9100;
+  --header-bg: rgba(11,18,32,0.75);
+}
+
+[data-theme="sunset"] {
+  --surface: #FFF6EE;
+  --surface-alt: #FFFFFF;
+  --ink: #4A2E0A;
+  --ink-soft: #8B6A3E;
+  --border: #FFE0BE;
+  --btn-shadow: #E08600;
+  --header-bg: rgba(255,246,238,0.75);
+}
+
+[data-theme="ocean"] {
+  --surface: #EEF7FC;
+  --surface-alt: #FFFFFF;
+  --ink: #0B3550;
+  --ink-soft: #4C7C93;
+  --border: #CDEBF7;
+  --btn-shadow: #0F8FCB;
+  --header-bg: rgba(238,247,252,0.75);
+}
+
+[data-theme="candy"] {
+  --surface: #FFF2F8;
+  --surface-alt: #FFFFFF;
+  --ink: #4A0E2C;
+  --ink-soft: #A15C82;
+  --border: #FFD3E7;
+  --btn-shadow: #E63E7B;
+  --header-bg: rgba(255,242,248,0.75);
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: var(--surface);
+  color: var(--ink);
+  font-family: "Nunito", "Baloo 2", system-ui, sans-serif;
+  transition: background-color .25s ease, color .25s ease;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: "Baloo 2", "Nunito", system-ui, sans-serif;
+}
+
+/* ===== Duolingo-style "3D" pressable button ===== */
+.btn-pop {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 700;
+  letter-spacing: .02em;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  transition: transform .08s ease, box-shadow .08s ease, filter .15s ease;
+  transform: translateY(0);
+}
+.btn-pop:active {
+  transform: translateY(4px);
+  box-shadow: none !important;
+}
+.btn-pop:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+  filter: grayscale(.3);
+}
+
+.card-pop {
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+}
+
+/* Gradient brand text */
+.text-gradient {
+  background-image: linear-gradient(100deg, #818CF8 0%, #6366F1 40%, #38BDF8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Glass panel for hero mockups / dark surfaces */
+.glass-panel {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(16px);
+}
+
+/* Soft decorative blur blob */
+.blob {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(60px);
+  opacity: .55;
+  pointer-events: none;
+}
+
+/* Shimmer skeleton (used sparingly for "loading" flavor on mockups) */
+.shimmer-bg {
+  background: linear-gradient(90deg, rgba(255,255,255,0.06) 25%, rgba(255,255,255,0.14) 50%, rgba(255,255,255,0.06) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2.5s linear infinite;
+}
+
+/* Confetti canvas sits above everything */
+.confetti-canvas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Segmented lesson-style progress bar */
+.segment-track {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.segment {
+  flex: 1;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--border);
+  position: relative;
+  overflow: hidden;
+}
+.segment.is-current {
+  background: linear-gradient(90deg, #6366F1, #38BDF8);
+}
+.segment.is-correct {
+  background: #58CC02;
+}
+.segment.is-wrong {
+  background: #FF4B4B;
+}
+
+/* ===== Mobile / PWA safety nets ===== */
+/* iOS Safari zooms the viewport if a focused input's font-size is under
+   16px — force a safe minimum regardless of any utility classes applied. */
+input, select, textarea {
+  font-size: max(16px, 1rem);
+}
+
+/* Respect the notch / home-indicator area on modern phones */
+@supports (padding: max(0px)) {
+  body {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+}
+
+/* Smooth momentum scrolling on iOS for scrollable containers (modals, etc.) */
+.overflow-y-auto, .overflow-auto {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Disable the blue tap-highlight flash on touch, we handle press states ourselves */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: #6366F1;
+  color: white;
+}
+
+/* Custom scrollbar (subtle, only for horizontally scrolling chip rows) */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
