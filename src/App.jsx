@@ -14,12 +14,14 @@ import BlogPost from "./pages/BlogPost";
 import Glossary from "./pages/Glossary";
 import ExamPreview from "./pages/ExamPreview";
 import Achievements from "./pages/Achievements";
+import Practice from "./pages/Practice";
 import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Landing />} />
+      <Route path="/practice" element={<Practice />} />
       <Route path="/foundation" element={<Dashboard />} />
       <Route path="/foundation/chapter/:chapterId" element={<ChapterLaunch />} />
       <Route path="/test-manager" element={<TestManagerDashboard />} />

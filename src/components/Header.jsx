@@ -4,6 +4,7 @@ import { useAuth } from "../context/AuthContext";
 import { useTheme } from "../context/ThemeContext";
 
 const STATIC_NAV_LINKS = [
+  { to: "/practice", label: "Practice" },
   { to: "/blog", label: "Blog" },
   { to: "/glossary", label: "Glossary" },
   { to: "/achievements", label: "Achievements" },
@@ -25,9 +26,7 @@ export default function Header({ forceDark = false, homePath = "/foundation" }) 
     ? "bg-white/5 border-white/10"
     : "bg-[var(--header-bg)] border-border";
 
-  // "Practice" always points at whichever program's dashboard is contextually
-  // relevant (Foundation vs. Test Manager) rather than assuming Foundation.
-  const NAV_LINKS = [{ to: homePath, label: "Practice" }, ...STATIC_NAV_LINKS];
+  const NAV_LINKS = STATIC_NAV_LINKS;
 
   return (
     <header

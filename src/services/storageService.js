@@ -10,6 +10,7 @@ const KEYS = {
   PLAN: "istqb_plan",
   BADGES_SEEN: "istqb_badges_seen",
   PERSONAL_BESTS: "istqb_personal_bests",
+  LAST_EXAM: "istqb_last_exam",
 };
 
 function read(key, fallback) {
@@ -65,4 +66,7 @@ export const StorageService = {
 
   loadPersonalBests: () => read(KEYS.PERSONAL_BESTS, { bestScore: 0, mostQuestionsInSession: 0 }),
   savePersonalBests: (pb) => write(KEYS.PERSONAL_BESTS, pb),
+
+  loadLastExam: () => read(KEYS.LAST_EXAM, null),
+  saveLastExam: (examId) => write(KEYS.LAST_EXAM, examId),
 };

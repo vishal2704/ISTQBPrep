@@ -47,8 +47,24 @@ function shuffleCombinationQuestion(q) {
   return q;
 }
 
+// Optional `questionVariations` field: an array of 1-2 alternate wordings
+// for the same question stem. At runtime we pick one wording at random from
+// [original question, ...variations] — the options/correct answer/explanation
+// are untouched, since a variation is purely a rephrasing of the same
+// underlying question, not a different question.
+function applyQuestionVariation(q) {
+  if (!Array.isArray(q.questionVariations) || q.questionVariations.length === 0) {
+    return q;
+  }
+  const candidates = [q.question, ...q.questionVariations];
+  const pick = candidates[Math.floor(Math.random() * candidates.length)];
+  q.question = pick;
+  return q;
+}
+
 export function buildExamQuestion(question) {
   const q = structuredClone(question);
+  applyQuestionVariation(q);
   const type = getQuestionType(q);
 
   if (type === "matching") return q;
@@ -58,6 +74,10 @@ export function buildExamQuestion(question) {
 
   if (q.options.length <= 4) return shuffleStandardQuestion(q);
 
+  // Dynamic answer options: questions may define up to 10 options/distractors.
+  // At runtime we always keep the correct answer, then randomly select 3
+  // unique distractors from the rest, and shuffle the final 4 — remapping
+  // `correct` to match its new shuffled position.
   const correctAnswer = q.options[q.correct];
   const distractors = q.options.filter((_, index) => index !== q.correct);
   shuffleArray(distractors);
