@@ -12,8 +12,8 @@ createRoot(document.getElementById("root")).render(
     <ThemeProvider>
       <AuthProvider>
         <ExamProvider>
-          <BrowserRouter>
-            <App />
+          <BrowserRouter basename="/ISTQBPrep">
+              <App />
           </BrowserRouter>
         </ExamProvider>
       </AuthProvider>
@@ -25,6 +25,6 @@ createRoot(document.getElementById("root")).render(
 // interfering with Vite's dev server hot reload).
 if ("serviceWorker" in navigator && import.meta.env.PROD) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("/sw.js").catch(() => {});
+    navigator.serviceWorker.register("/ISTQBPrep/sw.js").catch(() => {});
   });
 }
