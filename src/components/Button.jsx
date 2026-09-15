@@ -1,5 +1,5 @@
 const VARIANTS = {
-  primary: "bg-feather text-white shadow-pop",
+  primary: "bg-successSolid text-white shadow-pop",
   brand: "bg-brand-gradient text-white shadow-glowSm",
   sky: "bg-sky text-white shadow-[0_4px_0_0_#0F8FCB]",
   plum: "bg-plum text-white shadow-[0_4px_0_0_#6D28D9]",

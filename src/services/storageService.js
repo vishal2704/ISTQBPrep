@@ -11,6 +11,7 @@ const KEYS = {
   BADGES_SEEN: "istqb_badges_seen",
   PERSONAL_BESTS: "istqb_personal_bests",
   LAST_EXAM: "istqb_last_exam",
+  LIFETIME_STATS: "istqb_lifetime_stats",
 };
 
 function read(key, fallback) {
@@ -69,4 +70,21 @@ export const StorageService = {
 
   loadLastExam: () => read(KEYS.LAST_EXAM, null),
   saveLastExam: (examId) => write(KEYS.LAST_EXAM, examId),
+
+  // Lifetime stats are intentionally separate from RESULTS (history) — see
+  // LifetimeStatsService. "Clear Results"/"Clear History" only ever touches
+  // RESULTS, never this key, so badges/best score/average score survive.
+  loadLifetimeStats: () =>
+    read(KEYS.LIFETIME_STATS, {
+      totalQuestionsAnswered: 0,
+      sumScores: 0,
+      countScores: 0,
+      bestScore: 0,
+      mockExamsCompleted: 0,
+      retriesCompleted: 0,
+      perfectRetries: 0,
+      programsAttempted: [],
+      initialized: false,
+    }),
+  saveLifetimeStats: (stats) => write(KEYS.LIFETIME_STATS, stats),
 };

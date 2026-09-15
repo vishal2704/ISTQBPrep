@@ -6,6 +6,7 @@ import Button from "../components/Button";
 import Badge from "../components/Badge";
 import { StandardOptions, CombinationOptions, MatchingOptions, TypeBadge } from "../components/QuestionOptions";
 import SegmentedProgress from "../components/SegmentedProgress";
+import QuestionNavigator from "../components/QuestionNavigator";
 import HintBox from "../components/HintBox";
 import ConceptBadge from "../components/ConceptBadge";
 import AppTour from "../components/AppTour";
@@ -26,7 +27,7 @@ const EXAM_TOUR_STEPS = [
 ];
 
 export default function Exam() {
-  const { examData, currentIndex, setCurrentIndex, setAnswer, toggleBookmark, setLocked, finishExam } = useExam();
+  const { examData, currentIndex, setCurrentIndex, setAnswer, toggleBookmark, setLocked, finishExam, clearExam } = useExam();
   const navigate = useNavigate();
   const [secondsLeft, setSecondsLeft] = useState(EXAM_SECONDS);
   const [tourActive, setTourActive] = useState(false);
@@ -102,8 +103,7 @@ export default function Exam() {
       }
       if (e.key === "ArrowLeft") {
         e.preventDefault();
-        setLocked(false);
-        setCurrentIndex((i) => Math.max(0, i - 1));
+        goPrev();
       }
     }
 
@@ -132,6 +132,18 @@ export default function Exam() {
   }
 
   function goPrev() {
+    if (currentIndex === 0) {
+      const untouched = examData.answers.every((a) => isAnswerEmpty(a));
+      if (untouched) {
+        // Exiting before answering anything: leave no trace — no result
+        // saved (finishExam was never called), and no resumable draft
+        // left behind either, since there's nothing worth resuming.
+        clearExam();
+        navigate(examData.chapter?.startsWith("tm") ? "/test-manager" : "/foundation");
+        return;
+      }
+      return; // already answered something elsewhere — no-op, same as before
+    }
     setLocked(false);
     setCurrentIndex((i) => Math.max(0, i - 1));
   }
@@ -249,39 +261,33 @@ export default function Exam() {
       </Card>
 
       <div className="flex items-center justify-between mt-5">
-        <Button variant="outline" onClick={goPrev} disabled={currentIndex === 0}>
-          ← Back
-        </Button>
+        {(() => {
+          const untouchedAtStart = currentIndex === 0 && examData.answers.every((a) => isAnswerEmpty(a));
+          return (
+            <Button
+              variant="outline"
+              onClick={goPrev}
+              disabled={currentIndex === 0 && !untouchedAtStart}
+            >
+              {untouchedAtStart ? "← Exit" : "← Back"}
+            </Button>
+          );
+        })()}
         <Button onClick={goNext}>
           {isLast ? (examData.timed ? "Finish Exam 🏁" : "Review Answers 📝") : "Next →"}
         </Button>
       </div>
 
-      <div data-tour="exam-dots" className="flex flex-wrap gap-2 mt-6 justify-center">
-        {examData.questions.map((qq, i) => {
-          const a = examData.answers[i];
-          const isAnswered = !isAnswerEmpty(a);
-          return (
-            <button
-              key={qq.id}
-              onClick={() => {
-                setLocked(false);
-                setCurrentIndex(i);
-              }}
-              aria-label={`Go to question ${i + 1}${isAnswered ? " (answered)" : " (not answered)"}${i === currentIndex ? ", current question" : ""}`}
-              aria-current={i === currentIndex ? "true" : undefined}
-              className={`w-9 h-9 rounded-xl text-sm font-extrabold border-2 transition-all ${
-                i === currentIndex
-                  ? "border-brand-500 bg-brand-gradient text-white"
-                  : isAnswered
-                  ? "border-feather bg-feather/15 text-featherDark"
-                  : "border-border bg-surfaceAlt text-inkSoft"
-              }`}
-            >
-              {i + 1}
-            </button>
-          );
-        })}
+      <div className="mt-6">
+        <QuestionNavigator
+          questions={examData.questions}
+          answers={examData.answers}
+          currentIndex={currentIndex}
+          onJump={(i) => {
+            setLocked(false);
+            setCurrentIndex(i);
+          }}
+        />
       </div>
 
       <p className="text-center text-inkSoft text-xs mt-3 hidden sm:block">

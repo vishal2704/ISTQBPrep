@@ -1,6 +1,5 @@
-// Question bank — chapter5
-// 102 questions (LO-tagged expansion — see
-// src/data/loReference.js for the official ISTQB v4.0.1 Learning Objectives)
+// Question bank — foundation/chapter5
+// 119 questions
 export const chapter5Questions = [
   {
     "id": "ch5_q1",
@@ -16,7 +15,11 @@ export const chapter5Questions = [
       "Prepare release notes"
     ],
     "correct": 1,
-    "explanation": "Test planning defines scope, objectives, resources, schedule and approach."
+    "explanation": "Test planning defines scope, objectives, resources, schedule and approach.",
+    "questionVariations": [
+      "What is the primary aim of test planning?",
+      "What is test planning mainly intended to achieve?"
+    ]
   },
   {
     "id": "ch5_q2",
@@ -32,7 +35,10 @@ export const chapter5Questions = [
       "Source Code"
     ],
     "correct": 1,
-    "explanation": "The test plan documents objectives, scope and strategy."
+    "explanation": "The test plan documents objectives, scope and strategy.",
+    "questionVariations": [
+      "Of the options listed, which document typically describes the testing approach?"
+    ]
   },
   {
     "id": "ch5_q3",
@@ -48,7 +54,10 @@ export const chapter5Questions = [
       "Release schedule"
     ],
     "correct": 1,
-    "explanation": "A test strategy defines the overall testing approach."
+    "explanation": "A test strategy defines the overall testing approach.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a test strategy?"
+    ]
   },
   {
     "id": "ch5_q4",
@@ -64,7 +73,10 @@ export const chapter5Questions = [
       "Review code"
     ],
     "correct": 0,
-    "explanation": "Monitoring compares actual progress against planned progress."
+    "explanation": "Monitoring compares actual progress against planned progress.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the purpose of test monitoring?"
+    ]
   },
   {
     "id": "ch5_q5",
@@ -80,7 +92,10 @@ export const chapter5Questions = [
       "Test Closure"
     ],
     "correct": 2,
-    "explanation": "Test control responds to information gathered through monitoring."
+    "explanation": "Test control responds to information gathered through monitoring.",
+    "questionVariations": [
+      "Of the options listed, which activity takes corrective actions when deviations occur?"
+    ]
   },
   {
     "id": "ch5_q6",
@@ -96,7 +111,10 @@ export const chapter5Questions = [
       "Risk Exposure"
     ],
     "correct": 0,
-    "explanation": "Execution progress indicates how much testing has been completed."
+    "explanation": "Execution progress indicates how much testing has been completed.",
+    "questionVariations": [
+      "Of the options listed, which metric measures completed test cases?"
+    ]
   },
   {
     "id": "ch5_q7",
@@ -112,7 +130,10 @@ export const chapter5Questions = [
       "Testing without planning"
     ],
     "correct": 1,
-    "explanation": "Risk-based testing allocates effort according to identified risks."
+    "explanation": "Risk-based testing allocates effort according to identified risks.",
+    "questionVariations": [
+      "In ISTQB terminology, what is risk-based testing?"
+    ]
   },
   {
     "id": "ch5_q8",
@@ -143,22 +164,10 @@ export const chapter5Questions = [
       "High probability, high impact"
     ],
     "correct": 3,
-    "explanation": "High probability and high impact risks are prioritized."
-  },
-  {
-    "id": "ch5_q10",
-    "chapter": "chapter5",
-    "difficulty": "easy",
-    "marks": 1,
-    "question": "Which of the following is a product risk?",
-    "options": [
-      "Tester unavailable",
-      "Payment processing failure",
-      "Budget reduction",
-      "Schedule delay"
-    ],
-    "correct": 1,
-    "explanation": "Product risks affect software quality and operation."
+    "explanation": "High probability and high impact risks are prioritized.",
+    "questionVariations": [
+      "Of the options listed, which risk has the highest priority?"
+    ]
   },
   {
     "id": "ch5_q11",
@@ -173,7 +182,10 @@ export const chapter5Questions = [
       "Security vulnerability"
     ],
     "correct": 2,
-    "explanation": "Project risks affect project success rather than product quality."
+    "explanation": "Project risks affect project success rather than product quality.",
+    "questionVariations": [
+      "Of the options listed, which is an example of a project risk?"
+    ]
   },
   {
     "id": "ch5_q12",
@@ -188,7 +200,10 @@ export const chapter5Questions = [
       "Risk metric"
     ],
     "correct": 0,
-    "explanation": "Entry criteria determine readiness to begin an activity."
+    "explanation": "Entry criteria determine readiness to begin an activity.",
+    "questionVariations": [
+      "In ISTQB terminology, what is an entry criterion?"
+    ]
   },
   {
     "id": "ch5_q13",
@@ -203,7 +218,10 @@ export const chapter5Questions = [
       "Defect priority"
     ],
     "correct": 1,
-    "explanation": "Exit criteria determine when testing can be completed."
+    "explanation": "Exit criteria determine when testing can be completed.",
+    "questionVariations": [
+      "In ISTQB terminology, what is an exit criterion?"
+    ]
   },
   {
     "id": "ch5_q14",
@@ -218,7 +236,10 @@ export const chapter5Questions = [
       "Team size"
     ],
     "correct": 0,
-    "explanation": "Defect metrics help assess testing effectiveness."
+    "explanation": "Defect metrics help assess testing effectiveness.",
+    "questionVariations": [
+      "Of the options listed, which metric helps evaluate test effectiveness?"
+    ]
   },
   {
     "id": "ch5_q15",
@@ -248,7 +269,10 @@ export const chapter5Questions = [
       "Review Checklist"
     ],
     "correct": 1,
-    "explanation": "Defect reports document observed failures and related information."
+    "explanation": "Defect reports document observed failures and related information.",
+    "questionVariations": [
+      "Of the options listed, which document records details of a defect?"
+    ]
   },
   {
     "id": "ch5_q17",
@@ -278,7 +302,10 @@ export const chapter5Questions = [
       "Reviewing code"
     ],
     "correct": 1,
-    "explanation": "Defect triage determines severity, priority and ownership."
+    "explanation": "Defect triage determines severity, priority and ownership.",
+    "questionVariations": [
+      "In ISTQB terminology, what is defect triage?"
+    ]
   },
   {
     "id": "ch5_q19",
@@ -308,7 +335,10 @@ export const chapter5Questions = [
       "A requirement only"
     ],
     "correct": 0,
-    "explanation": "Configuration items include code, documents, testware and environments."
+    "explanation": "Configuration items include code, documents, testware and environments.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a configuration item?"
+    ]
   },
   {
     "id": "ch5_q21",
@@ -323,7 +353,10 @@ export const chapter5Questions = [
       "All of the above"
     ],
     "correct": 3,
-    "explanation": "Many factors influence estimation accuracy."
+    "explanation": "Many factors influence estimation accuracy.",
+    "questionVariations": [
+      "Of the options listed, which factor influences test effort estimation?"
+    ]
   },
   {
     "id": "ch5_q22",
@@ -338,7 +371,10 @@ export const chapter5Questions = [
       "Planning tests"
     ],
     "correct": 1,
-    "explanation": "Completion activities close testing and capture lessons learned."
+    "explanation": "Completion activities close testing and capture lessons learned.",
+    "questionVariations": [
+      "In ISTQB terminology, what is test completion?"
+    ]
   },
   {
     "id": "ch5_q23",
@@ -353,7 +389,10 @@ export const chapter5Questions = [
       "Deploying software"
     ],
     "correct": 0,
-    "explanation": "Testware is archived for future reuse."
+    "explanation": "Testware is archived for future reuse.",
+    "questionVariations": [
+      "Of the options listed, which activity occurs during test closure?"
+    ]
   },
   {
     "id": "ch5_q24",
@@ -368,7 +407,10 @@ export const chapter5Questions = [
       "Measure coverage"
     ],
     "correct": 0,
-    "explanation": "Lessons learned help improve future projects."
+    "explanation": "Lessons learned help improve future projects.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the purpose of lessons learned sessions?"
+    ]
   },
   {
     "id": "ch5_q25",
@@ -383,7 +425,10 @@ export const chapter5Questions = [
       "Requirements Document"
     ],
     "correct": 0,
-    "explanation": "Test summary reports communicate testing outcomes."
+    "explanation": "Test summary reports communicate testing outcomes.",
+    "questionVariations": [
+      "Of the options listed, which report summarizes testing activities and results?"
+    ]
   },
   {
     "id": "ch5_q26",
@@ -398,7 +443,10 @@ export const chapter5Questions = [
       "All of the above"
     ],
     "correct": 3,
-    "explanation": "Many stakeholders rely on testing information."
+    "explanation": "Many stakeholders rely on testing information.",
+    "questionVariations": [
+      "Of the options listed, which stakeholder is most interested in test status?"
+    ]
   },
   {
     "id": "ch5_q27",
@@ -458,7 +506,10 @@ export const chapter5Questions = [
       "Meeting Count"
     ],
     "correct": 0,
-    "explanation": "Defect trends help assess product quality and readiness."
+    "explanation": "Defect trends help assess product quality and readiness.",
+    "questionVariations": [
+      "Of the options listed, which metric can help identify defect trends?"
+    ]
   },
   {
     "id": "ch5_q31",
@@ -473,7 +524,10 @@ export const chapter5Questions = [
       "All of the above"
     ],
     "correct": 3,
-    "explanation": "Multiple factors contribute to prioritization."
+    "explanation": "Multiple factors contribute to prioritization.",
+    "questionVariations": [
+      "Of the options listed, which factor should influence testing priority?"
+    ]
   },
   {
     "id": "ch5_q32",
@@ -488,7 +542,10 @@ export const chapter5Questions = [
       "All of the above"
     ],
     "correct": 3,
-    "explanation": "Control activities respond to project realities."
+    "explanation": "Control activities respond to project realities.",
+    "questionVariations": [
+      "In ISTQB terminology, what is test control most likely to do?"
+    ]
   },
   {
     "id": "ch5_q33",
@@ -503,7 +560,10 @@ export const chapter5Questions = [
       "Eliminates risk"
     ],
     "correct": 0,
-    "explanation": "Traceability supports impact analysis and coverage assessment."
+    "explanation": "Traceability supports impact analysis and coverage assessment.",
+    "questionVariations": [
+      "In ISTQB terms, why is traceability important?"
+    ]
   },
   {
     "id": "ch5_q34",
@@ -518,7 +578,10 @@ export const chapter5Questions = [
       "All risks eliminated"
     ],
     "correct": 0,
-    "explanation": "Coverage targets are common exit criteria."
+    "explanation": "Coverage targets are common exit criteria.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a common test completion criterion?"
+    ]
   },
   {
     "id": "ch5_q35",
@@ -533,7 +596,10 @@ export const chapter5Questions = [
       "Error Guessing"
     ],
     "correct": 0,
-    "explanation": "Traceability helps identify affected items."
+    "explanation": "Traceability helps identify affected items.",
+    "questionVariations": [
+      "Of the options listed, which activity supports impact analysis?"
+    ]
   },
   {
     "id": "ch5_q36",
@@ -548,7 +614,10 @@ export const chapter5Questions = [
       "Manage environments"
     ],
     "correct": 0,
-    "explanation": "Risk registers document and monitor project/product risks."
+    "explanation": "Risk registers document and monitor project/product risks.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the purpose of a risk register?"
+    ]
   },
   {
     "id": "ch5_q37",
@@ -563,7 +632,10 @@ export const chapter5Questions = [
       "Debugging"
     ],
     "correct": 0,
-    "explanation": "Past project data improves estimation accuracy."
+    "explanation": "Past project data improves estimation accuracy.",
+    "questionVariations": [
+      "Of the options listed, which testing activity benefits most from historical data?"
+    ]
   },
   {
     "id": "ch5_q38",
@@ -578,7 +650,10 @@ export const chapter5Questions = [
       "Training Plan"
     ],
     "correct": 0,
-    "explanation": "Test summary reports provide quality information for decisions."
+    "explanation": "Test summary reports provide quality information for decisions.",
+    "questionVariations": [
+      "Of the options listed, which report helps stakeholders make release decisions?"
+    ]
   },
   {
     "id": "ch5_q39",
@@ -593,7 +668,11 @@ export const chapter5Questions = [
       "Guarantee quality"
     ],
     "correct": 0,
-    "explanation": "Metrics support informed decision-making."
+    "explanation": "Metrics support informed decision-making.",
+    "questionVariations": [
+      "What is the primary aim of quality metrics?",
+      "What is quality metrics mainly intended to achieve?"
+    ]
   },
   {
     "id": "ch5_q40",
@@ -608,7 +687,10 @@ export const chapter5Questions = [
       "Risk cannot change during projects"
     ],
     "correct": 1,
-    "explanation": "Risk-based testing prioritizes effort according to risk exposure."
+    "explanation": "Risk-based testing prioritizes effort according to risk exposure.",
+    "questionVariations": [
+      "Of the options listed, which statement about risk-based testing is TRUE?"
+    ]
   },
   {
     "id": "ch5_q41",
@@ -623,7 +705,10 @@ export const chapter5Questions = [
       "Defect Triage"
     ],
     "correct": 1,
-    "explanation": "Monitoring tracks project status."
+    "explanation": "Monitoring tracks project status.",
+    "questionVariations": [
+      "Of the options listed, which activity compares actual progress against planned progress?"
+    ]
   },
   {
     "id": "ch5_q42",
@@ -638,7 +723,10 @@ export const chapter5Questions = [
       "Deploy software"
     ],
     "correct": 1,
-    "explanation": "The test plan defines scope and strategy."
+    "explanation": "The test plan defines scope and strategy.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a major purpose of a test plan?"
+    ]
   },
   {
     "id": "ch5_q43",
@@ -653,7 +741,10 @@ export const chapter5Questions = [
       "Code Coverage Only"
     ],
     "correct": 1,
-    "explanation": "Execution progress is a key testing metric."
+    "explanation": "Execution progress is a key testing metric.",
+    "questionVariations": [
+      "Of the options listed, which metric indicates testing progress?"
+    ]
   },
   {
     "id": "ch5_q44",
@@ -668,7 +759,10 @@ export const chapter5Questions = [
       "Broken payment gateway"
     ],
     "correct": 2,
-    "explanation": "Resource issues are project risks."
+    "explanation": "Resource issues are project risks.",
+    "questionVariations": [
+      "Of the options listed, which risk is a project risk?"
+    ]
   },
   {
     "id": "ch5_q45",
@@ -683,7 +777,10 @@ export const chapter5Questions = [
       "Review code"
     ],
     "correct": 1,
-    "explanation": "Triage determines priority and ownership."
+    "explanation": "Triage determines priority and ownership.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the primary goal of defect triage?"
+    ]
   },
   {
     "id": "ch5_q46",
@@ -698,7 +795,10 @@ export const chapter5Questions = [
       "Release Note"
     ],
     "correct": 1,
-    "explanation": "The risk register stores project and product risks."
+    "explanation": "The risk register stores project and product risks.",
+    "questionVariations": [
+      "Of the options listed, which document tracks identified risks?"
+    ]
   },
   {
     "id": "ch5_q47",
@@ -713,7 +813,10 @@ export const chapter5Questions = [
       "Coverage"
     ],
     "correct": 2,
-    "explanation": "Risk exposure is Probability × Impact."
+    "explanation": "Risk exposure is Probability × Impact.",
+    "questionVariations": [
+      "Of the options listed, which factor is used in risk exposure calculation?"
+    ]
   },
   {
     "id": "ch5_q48",
@@ -728,7 +831,10 @@ export const chapter5Questions = [
       "Fix defects"
     ],
     "correct": 1,
-    "explanation": "Configuration management ensures version control and traceability."
+    "explanation": "Configuration management ensures version control and traceability.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the purpose of configuration management?"
+    ]
   },
   {
     "id": "ch5_q49",
@@ -743,7 +849,10 @@ export const chapter5Questions = [
       "User Guide"
     ],
     "correct": 2,
-    "explanation": "Test summary reports support release decisions."
+    "explanation": "Test summary reports support release decisions.",
+    "questionVariations": [
+      "Of the options listed, which report helps stakeholders decide whether to release software?"
+    ]
   },
   {
     "id": "ch5_q50",
@@ -758,7 +867,10 @@ export const chapter5Questions = [
       "Test Execution"
     ],
     "correct": 2,
-    "explanation": "Closure finalizes testing activities."
+    "explanation": "Closure finalizes testing activities.",
+    "questionVariations": [
+      "Of the options listed, which activity archives testware and captures lessons learned?"
+    ]
   },
   {
     "id": "chapter5_lo_511",
@@ -775,7 +887,10 @@ export const chapter5Questions = [
       "Only the source code structure"
     ],
     "correct": 0,
-    "explanation": "A test plan documents the scope, approach, resources, and schedule for the testing to be performed."
+    "explanation": "A test plan documents the scope, approach, resources, and schedule for the testing to be performed.",
+    "questionVariations": [
+      "In ISTQB terminology, what does a test plan typically describe?"
+    ]
   },
   {
     "id": "chapter5_lo_512",
@@ -809,7 +924,10 @@ export const chapter5Questions = [
       "Entry criteria apply only to acceptance testing"
     ],
     "correct": 0,
-    "explanation": "Entry criteria gate the start of a test activity or level; exit criteria gate when it can be considered finished."
+    "explanation": "Entry criteria gate the start of a test activity or level; exit criteria gate when it can be considered finished.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the difference between entry criteria and exit criteria?"
+    ]
   },
   {
     "id": "chapter5_lo_514",
@@ -862,7 +980,10 @@ export const chapter5Questions = [
       "No automated tests at any level"
     ],
     "correct": 0,
-    "explanation": "The test pyramid favors many fast, cheap low-level tests at the base, with fewer slow, expensive high-level tests near the top."
+    "explanation": "The test pyramid favors many fast, cheap low-level tests at the base, with fewer slow, expensive high-level tests near the top.",
+    "questionVariations": [
+      "In ISTQB terminology, what does the test pyramid recommend regarding the proportion of test types?"
+    ]
   },
   {
     "id": "chapter5_lo_517",
@@ -949,7 +1070,11 @@ export const chapter5Questions = [
       "Deferring the risk analysis until after release"
     ],
     "correct": 0,
-    "explanation": "In response to high product risk, teams typically apply more rigorous techniques or increase coverage in that area to reduce the risk."
+    "explanation": "In response to high product risk, teams typically apply more rigorous techniques or increase coverage in that area to reduce the risk.",
+    "questionVariations": [
+      "Which option is a typical response to a high product risk?",
+      "From the choices below, which is a typical response to a high product risk?"
+    ]
   },
   {
     "id": "chapter5_lo_531",
@@ -966,7 +1091,11 @@ export const chapter5Questions = [
       "Company's annual revenue"
     ],
     "correct": 0,
-    "explanation": "Common test metrics include percentage of test cases executed/passed, defect density, and test coverage — measurements tied directly to testing progress and quality."
+    "explanation": "Common test metrics include percentage of test cases executed/passed, defect density, and test coverage — measurements tied directly to testing progress and quality.",
+    "questionVariations": [
+      "Which option is a commonly used test metric?",
+      "From the choices below, which is a commonly used test metric?"
+    ]
   },
   {
     "id": "chapter5_lo_532",
@@ -1000,7 +1129,10 @@ export const chapter5Questions = [
       "Communicating status verbally with no documentation at all"
     ],
     "correct": 0,
-    "explanation": "Effective status communication is regular, concise, and focused on what stakeholders need — progress, risks, and blockers — not raw data dumps."
+    "explanation": "Effective status communication is regular, concise, and focused on what stakeholders need — progress, risks, and blockers — not raw data dumps.",
+    "questionVariations": [
+      "Of the options listed, which is an effective way to communicate ongoing test status to stakeholders?"
+    ]
   },
   {
     "id": "chapter5_lo_541",
@@ -1035,7 +1167,10 @@ export const chapter5Questions = [
       "Only the defect's severity, with no reproduction steps"
     ],
     "correct": 0,
-    "explanation": "A complete defect report lets anyone reproduce and understand the issue: a unique ID, clear summary, environment, precise reproduction steps, expected vs. actual results, and severity/priority for triage."
+    "explanation": "A complete defect report lets anyone reproduce and understand the issue: a unique ID, clear summary, environment, precise reproduction steps, expected vs. actual results, and severity/priority for triage.",
+    "questionVariations": [
+      "Of the options listed, which set of elements should a well-written defect report include?"
+    ]
   },
   {
     "id": "ch5_ex1",
@@ -1052,7 +1187,11 @@ export const chapter5Questions = [
       "The schedule and milestones for test activities"
     ],
     "correct": 0,
-    "explanation": "A test plan documents scope, approach, resources, and schedule — it references the software under test, but never contains the actual source code itself."
+    "explanation": "A test plan documents scope, approach, resources, and schedule — it references the software under test, but never contains the actual source code itself.",
+    "questionVariations": [
+      "Which option would you typically NOT expect to find inside a test plan?",
+      "From the options below, which would you typically NOT expect to find inside a test plan?"
+    ]
   },
   {
     "id": "ch5_ex2",
@@ -1252,7 +1391,10 @@ export const chapter5Questions = [
       "To document the source code architecture"
     ],
     "correct": 0,
-    "explanation": "A test report (or completion report) summarizes what was tested, the results, and outstanding risks, giving stakeholders what they need to decide on release."
+    "explanation": "A test report (or completion report) summarizes what was tested, the results, and outstanding risks, giving stakeholders what they need to decide on release.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a primary purpose of a test completion report?"
+    ]
   },
   {
     "id": "ch5_ex13",
@@ -1496,7 +1638,10 @@ export const chapter5Questions = [
       "User acceptance tests"
     ],
     "correct": 0,
-    "explanation": "The pyramid's wide base is made up of many fast, cheap, low-level tests — typically unit or component tests."
+    "explanation": "The pyramid's wide base is made up of many fast, cheap, low-level tests — typically unit or component tests.",
+    "questionVariations": [
+      "Of the options listed, which test level sits at the base of the test pyramid, typically with the most tests?"
+    ]
   },
   {
     "id": "ch5_ex26",
@@ -1582,7 +1727,11 @@ export const chapter5Questions = [
       "Ignoring the risk if the deadline is tight"
     ],
     "correct": 0,
-    "explanation": "Risk responses can include process changes like assigning more experienced people, not just increasing test effort — both reduce the chance or impact of the risk."
+    "explanation": "Risk responses can include process changes like assigning more experienced people, not just increasing test effort — both reduce the chance or impact of the risk.",
+    "questionVariations": [
+      "Which option is a valid risk response for a high-risk area, besides testing more?",
+      "From the choices below, which is a valid risk response for a high-risk area, besides testing more?"
+    ]
   },
   {
     "id": "ch5_ex31",
@@ -1599,7 +1748,10 @@ export const chapter5Questions = [
       "Configuration item — a percentage of test coverage"
     ],
     "correct": 0,
-    "explanation": "Defect density measures how many defects were found relative to a unit of code size (e.g. per KLOC), a genuine test metric."
+    "explanation": "Defect density measures how many defects were found relative to a unit of code size (e.g. per KLOC), a genuine test metric.",
+    "questionVariations": [
+      "Of the options listed, which pairing correctly matches a metric with what it measures?"
+    ]
   },
   {
     "id": "ch5_ex32",
@@ -1616,7 +1768,10 @@ export const chapter5Questions = [
       "The personal opinions of unrelated team members"
     ],
     "correct": 0,
-    "explanation": "A test summary report focuses on what stakeholders need: scope tested, results achieved, and risks remaining — concise, decision-relevant information."
+    "explanation": "A test summary report focuses on what stakeholders need: scope tested, results achieved, and risks remaining — concise, decision-relevant information.",
+    "questionVariations": [
+      "Of the options listed, which of these would you expect a good test summary report to include?"
+    ]
   },
   {
     "id": "ch5_ex33",
@@ -1690,5 +1845,340 @@ export const chapter5Questions = [
       1
     ],
     "explanation": "Risk level is a function of likelihood and impact (risk level = likelihood × impact) — team size and programming language aren't part of the standard formula."
+  },
+  {
+    "id": "chapter5_v2_1",
+    "chapter": "chapter5",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What is the primary purpose of defining exit criteria before testing begins?",
+    "options": [
+      "To establish objectively in advance what 'done' means, avoiding pressure-driven decisions later",
+      "To make the test plan longer",
+      "To assign blame for defects",
+      "To choose test tools"
+    ],
+    "correct": 0,
+    "explanation": "Agreeing exit criteria up front prevents the definition of 'done' from shifting under schedule pressure.",
+    "questionVariations": [
+      "What is the primary aim of defining exit criteria before testing begins?",
+      "What is defining exit criteria before testing begins mainly intended to achieve?"
+    ]
+  },
+  {
+    "id": "chapter5_v2_2",
+    "chapter": "chapter5",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "In risk-based testing, what happens to areas assessed as low risk?",
+    "options": [
+      "They receive lighter coverage, freeing effort for higher-risk areas",
+      "They receive no testing whatsoever",
+      "They receive the same effort as high-risk areas",
+      "They are removed from the product"
+    ],
+    "correct": 0,
+    "explanation": "Low risk justifies proportionately lighter — not zero — coverage, allowing effort to concentrate where risk is greatest."
+  },
+  {
+    "id": "chapter5_v2_3",
+    "chapter": "chapter5",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "Which is a project risk rather than a product risk?",
+    "options": [
+      "The test environment may not be delivered on schedule",
+      "The payment calculation may produce wrong totals",
+      "The interface may be unusable for novice users",
+      "The system may fail under peak load"
+    ],
+    "correct": 0,
+    "explanation": "Environment delivery is a project management concern; the others describe potential quality failures in the deliverable.",
+    "questionVariations": [
+      "Of the options listed, which is a project risk rather than a product risk?"
+    ]
+  },
+  {
+    "id": "chapter5_v2_4",
+    "chapter": "chapter5",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What information does a test progress report primarily provide to stakeholders?",
+    "options": [
+      "The current status of testing, including progress, risks and blockers",
+      "The complete source code",
+      "Individual tester performance rankings",
+      "The marketing launch plan"
+    ],
+    "correct": 0,
+    "explanation": "Progress reports communicate status, residual risk and impediments so stakeholders can make informed decisions.",
+    "questionVariations": [
+      "In ISTQB terminology, what information does a test progress report primarily provide to stakeholders?"
+    ]
+  },
+  {
+    "id": "chapter5_v2_5",
+    "chapter": "chapter5",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "Why is configuration management important for reproducing a reported defect?",
+    "options": [
+      "It identifies exactly which version of the software and testware produced the result",
+      "It automatically fixes the defect",
+      "It assigns the defect's severity",
+      "It replaces the defect report"
+    ],
+    "correct": 0,
+    "explanation": "Knowing the precise versions involved is often essential to reproducing and diagnosing a defect reliably.",
+    "questionVariations": [
+      "In ISTQB terms, why is configuration management important for reproducing a reported defect?"
+    ]
+  },
+  {
+    "id": "chapter5_v2_6",
+    "chapter": "chapter5",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "Which estimation technique relies on measured relationships such as effort per requirement?",
+    "options": [
+      "Parametric estimation",
+      "Expert-based estimation",
+      "Analogy-based estimation",
+      "Arbitrary assignment"
+    ],
+    "correct": 0,
+    "explanation": "Parametric estimation applies a formula derived from measurable characteristics and historical ratios.",
+    "questionVariations": [
+      "Of the options listed, which estimation technique relies on measured relationships such as effort per requirement?"
+    ]
+  },
+  {
+    "id": "chapter5_v2_7",
+    "chapter": "chapter5",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What is the main purpose of the test pyramid as a guideline?",
+    "options": [
+      "To favor many fast low-level tests over few slow high-level ones, keeping feedback rapid",
+      "To ensure equal numbers of tests at every level",
+      "To eliminate unit testing",
+      "To require only end-to-end tests"
+    ],
+    "correct": 0,
+    "explanation": "The pyramid shape optimizes for fast, reliable feedback by concentrating test volume at the cheapest level.",
+    "questionVariations": [
+      "What is the main aim of the test pyramid as a guideline?",
+      "What is the test pyramid as a guideline mainly intended to achieve?"
+    ]
+  },
+  {
+    "id": "chapter5_v2_8",
+    "chapter": "chapter5",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "A defect report states expected and actual results but omits steps to reproduce. What is the likely consequence?",
+    "options": [
+      "The developer may be unable to trigger the defect and could close it as irreproducible",
+      "The defect will be fixed faster",
+      "Severity becomes easier to judge",
+      "No consequence arises"
+    ],
+    "correct": 0,
+    "explanation": "Without reproduction steps, developers often cannot trigger the behavior, leading to wasted cycles or incorrect closure."
+  },
+  {
+    "id": "chapter5_v2_9",
+    "chapter": "chapter5",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "Why should test metrics be interpreted together rather than individually?",
+    "options": [
+      "Single metrics can be misleading without context from related measures",
+      "Individual metrics are always wrong",
+      "Only one metric may be tracked at a time",
+      "Metrics have no interpretive value"
+    ],
+    "correct": 0,
+    "explanation": "High execution counts mean little without pass rates and risk coverage — metrics need each other for context.",
+    "questionVariations": [
+      "In ISTQB terms, why should test metrics be interpreted together rather than individually?"
+    ]
+  },
+  {
+    "id": "chapter5_v2_10",
+    "chapter": "chapter5",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What does 'residual risk' mean at the point of release?",
+    "options": [
+      "The risk remaining in areas that were not tested or not fully covered",
+      "Risk that has been completely eliminated",
+      "Risk affecting only the development team",
+      "A synonym for defect density"
+    ],
+    "correct": 0,
+    "explanation": "Residual risk is the exposure knowingly carried into release, which stakeholders must understand to decide responsibly.",
+    "questionVariations": [
+      "In ISTQB terminology, what does 'residual risk' mean at the point of release?"
+    ]
+  },
+  {
+    "id": "chapter5_v3_1",
+    "chapter": "chapter5",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What should a Test Manager do first when the schedule is cut in half mid-project?",
+    "options": [
+      "Re-prioritize test coverage by risk and communicate the resulting residual risk",
+      "Silently reduce testing and say nothing",
+      "Refuse to adjust the plan",
+      "Delete the lower-priority test cases from all records"
+    ],
+    "correct": 0,
+    "explanation": "Risk-based re-prioritization plus transparent communication keeps stakeholders able to decide responsibly.",
+    "questionVariations": [
+      "In ISTQB terminology, what should a Test Manager do first when the schedule is cut in half mid-project?"
+    ]
+  },
+  {
+    "id": "chapter5_v3_2",
+    "chapter": "chapter5",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "Which metric would best indicate that the test environment is impeding progress?",
+    "options": [
+      "The proportion of test cases currently blocked",
+      "The total number of test cases written",
+      "The size of the test team",
+      "The number of requirements"
+    ],
+    "correct": 0,
+    "explanation": "A rising blocked-test count is a direct signal of environmental or dependency impediments.",
+    "questionVariations": [
+      "Of the options listed, which metric would best indicate that the test environment is impeding progress?"
+    ]
+  },
+  {
+    "id": "chapter5_v3_3",
+    "chapter": "chapter5",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "Why is it important that entry criteria be objective rather than subjective?",
+    "options": [
+      "Objective criteria can be verified consistently, preventing disputes about readiness",
+      "Subjective criteria are faster to evaluate",
+      "Objectivity is only needed in regulated industries",
+      "Entry criteria are never verified"
+    ],
+    "correct": 0,
+    "explanation": "Objective, verifiable criteria remove ambiguity about whether testing can legitimately begin.",
+    "questionVariations": [
+      "In ISTQB terms, why is it important that entry criteria be objective rather than subjective?"
+    ]
+  },
+  {
+    "id": "chapter5_v3_4",
+    "chapter": "chapter5",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What does a test summary report most importantly convey beyond raw results?",
+    "options": [
+      "An assessment of quality and the residual risk of releasing",
+      "The complete list of every test step executed",
+      "Each tester's individual productivity",
+      "The project's marketing strategy"
+    ],
+    "correct": 0,
+    "explanation": "The interpretive assessment — what the results mean for release risk — is the report's core value.",
+    "questionVariations": [
+      "In ISTQB terminology, what does a test summary report most importantly convey beyond raw results?"
+    ]
+  },
+  {
+    "id": "chapter5_v3_5",
+    "chapter": "chapter5",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "Which is the clearest example of a product risk being mitigated by testing?",
+    "options": [
+      "Running extensive load tests on a checkout service expected to face peak traffic",
+      "Hiring an additional project manager",
+      "Extending the project deadline",
+      "Purchasing a new build server"
+    ],
+    "correct": 0,
+    "explanation": "Load-testing a high-traffic service directly addresses a potential quality failure in the deliverable.",
+    "questionVariations": [
+      "Of the options listed, which is the clearest example of a product risk being mitigated by testing?"
+    ]
+  },
+  {
+    "id": "chapter5_v3_6",
+    "chapter": "chapter5",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "Why should estimates include an explicit statement of assumptions?",
+    "options": [
+      "Assumptions define the conditions under which the estimate holds, making deviations visible",
+      "Assumptions make estimates appear less confident",
+      "It is purely a formality",
+      "Estimates should never include assumptions"
+    ],
+    "correct": 0,
+    "explanation": "Stated assumptions let everyone see when reality has diverged, prompting timely re-estimation.",
+    "questionVariations": [
+      "In ISTQB terms, why should estimates include an explicit statement of assumptions?"
+    ]
+  },
+  {
+    "id": "chapter5_v3_7",
+    "chapter": "chapter5",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What is the purpose of tracking defect density across modules?",
+    "options": [
+      "To identify defect-prone areas that may warrant additional testing attention",
+      "To rank individual developers",
+      "To determine the release date",
+      "To set the test tool budget"
+    ],
+    "correct": 0,
+    "explanation": "Defect density highlights clustering, informing where further testing effort is likely to pay off.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the purpose of tracking defect density across modules?"
+    ]
+  },
+  {
+    "id": "chapter5_v3_8",
+    "chapter": "chapter5",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "In the testing quadrants model, where do automated unit tests generally sit?",
+    "options": [
+      "Technology-facing and supporting the team",
+      "Business-facing and critiquing the product",
+      "Business-facing and supporting the team",
+      "Outside the model entirely"
+    ],
+    "correct": 0,
+    "explanation": "Unit tests are technology-facing and guide development, placing them in the team-supporting quadrant."
   }
 ];

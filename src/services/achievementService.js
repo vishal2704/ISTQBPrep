@@ -1,34 +1,20 @@
 import { StorageService } from "./storageService";
 import { StreakService } from "./streakService";
+import { LifetimeStatsService } from "./lifetimeStatsService";
 import { ACHIEVEMENTS } from "../data/achievements";
 
 function computeStats() {
-  const results = StorageService.loadResults();
+  const lifetime = LifetimeStatsService.get();
   const streak = StreakService.getStatus();
-
-  const totalQuestionsAnswered = results.reduce((sum, r) => sum + (r.total || 0), 0);
-  const bestScore = results.length > 0 ? Math.max(...results.map((r) => r.score)) : 0;
-  const mockExamsCompleted = results.filter((r) => r.chapter?.startsWith("mock-")).length;
-  const retries = results.filter((r) => r.chapter?.startsWith("Retry:") || r.chapter === "Bookmarked Questions");
-  const retriesCompleted = retries.length;
-  const perfectRetries = retries.filter((r) => r.score >= 100).length;
-
-  const programs = new Set(
-    results.map((r) => {
-      if (r.chapter?.startsWith("tm") || r.chapter === "mock-tm") return "tm";
-      if (r.chapter?.startsWith("chapter") || r.chapter === "mock-foundation") return "foundation";
-      return null;
-    }).filter(Boolean)
-  );
 
   return {
     longestStreak: streak.longest,
-    totalQuestionsAnswered,
-    bestScore,
-    mockExamsCompleted,
-    retriesCompleted,
-    perfectRetries,
-    programsAttempted: programs.size,
+    totalQuestionsAnswered: lifetime.totalQuestionsAnswered,
+    bestScore: lifetime.bestScore,
+    mockExamsCompleted: lifetime.mockExamsCompleted,
+    retriesCompleted: lifetime.retriesCompleted,
+    perfectRetries: lifetime.perfectRetries,
+    programsAttempted: lifetime.programsAttempted.length,
   };
 }
 

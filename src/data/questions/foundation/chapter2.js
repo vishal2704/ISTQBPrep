@@ -1,6 +1,5 @@
-// Question bank — chapter2
-// 72 questions (LO-tagged expansion — see
-// src/data/loReference.js for the official ISTQB v4.0.1 Learning Objectives)
+// Question bank — foundation/chapter2
+// 90 questions
 export const chapter2Questions = [
   {
     "id": "ch2_q1",
@@ -16,7 +15,10 @@ export const chapter2Questions = [
       "Acceptance Testing"
     ],
     "correct": 1,
-    "explanation": "Integration testing verifies interfaces and interactions between components or systems."
+    "explanation": "Integration testing verifies interfaces and interactions between components or systems.",
+    "questionVariations": [
+      "Of the options listed, which test level focuses on verifying interactions between integrated components?"
+    ]
   },
   {
     "id": "ch2_q2",
@@ -32,7 +34,10 @@ export const chapter2Questions = [
       "Operational Testing"
     ],
     "correct": 2,
-    "explanation": "Component testing is commonly performed by developers to verify individual units or modules."
+    "explanation": "Component testing is commonly performed by developers to verify individual units or modules.",
+    "questionVariations": [
+      "Of the options listed, which test level is usually performed by developers?"
+    ]
   },
   {
     "id": "ch2_q3",
@@ -48,7 +53,10 @@ export const chapter2Questions = [
       "Verify user acceptance"
     ],
     "correct": 2,
-    "explanation": "System testing evaluates the behavior of the complete integrated system."
+    "explanation": "System testing evaluates the behavior of the complete integrated system.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the primary objective of System Testing?"
+    ]
   },
   {
     "id": "ch2_q4",
@@ -80,7 +88,10 @@ export const chapter2Questions = [
       "Security Testing"
     ],
     "correct": 1,
-    "explanation": "Performance testing evaluates responsiveness, scalability, and stability under load."
+    "explanation": "Performance testing evaluates responsiveness, scalability, and stability under load.",
+    "questionVariations": [
+      "Of the options listed, which test type focuses on system performance under load?"
+    ]
   },
   {
     "id": "ch2_q6",
@@ -96,7 +107,10 @@ export const chapter2Questions = [
       "Compatibility Testing"
     ],
     "correct": 0,
-    "explanation": "Functional testing verifies system functionality against requirements."
+    "explanation": "Functional testing verifies system functionality against requirements.",
+    "questionVariations": [
+      "Of the options listed, which test type verifies what the system does?"
+    ]
   },
   {
     "id": "ch2_q7",
@@ -112,7 +126,10 @@ export const chapter2Questions = [
       "Only developers perform testing"
     ],
     "correct": 1,
-    "explanation": "The V-Model aligns testing activities with corresponding development phases."
+    "explanation": "The V-Model aligns testing activities with corresponding development phases.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a key benefit of the V-Model?"
+    ]
   },
   {
     "id": "ch2_q8",
@@ -128,7 +145,10 @@ export const chapter2Questions = [
       "Big Bang"
     ],
     "correct": 2,
-    "explanation": "Agile promotes iterative development, collaboration, and rapid feedback."
+    "explanation": "Agile promotes iterative development, collaboration, and rapid feedback.",
+    "questionVariations": [
+      "Of the options listed, which SDLC model emphasizes iterative development and continuous feedback?"
+    ]
   },
   {
     "id": "ch2_q9",
@@ -143,7 +163,10 @@ export const chapter2Questions = [
       "Exploratory Testing"
     ],
     "correct": 1,
-    "explanation": "Shift-left testing moves testing activities earlier in the lifecycle."
+    "explanation": "Shift-left testing moves testing activities earlier in the lifecycle.",
+    "questionVariations": [
+      "Of the options listed, which testing practice supports early defect detection?"
+    ]
   },
   {
     "id": "ch2_q10",
@@ -158,7 +181,10 @@ export const chapter2Questions = [
       "Only automation engineers are involved"
     ],
     "correct": 1,
-    "explanation": "DevOps promotes collaboration between development and operations teams."
+    "explanation": "DevOps promotes collaboration between development and operations teams.",
+    "questionVariations": [
+      "Of the options listed, which statement about DevOps is TRUE?"
+    ]
   },
   {
     "id": "ch2_q11",
@@ -173,7 +199,10 @@ export const chapter2Questions = [
       "To verify that a newly developed feature functions correctly according to its specifications."
     ],
     "correct": 1,
-    "explanation": "According to the official ISTQB glossary, regression testing is the testing of a previously tested program following a modification to ensure that defects have not been introduced or uncovered in unchanged areas of the software as a result of the changes made. Option B perfectly captures this core intent."
+    "explanation": "According to the official ISTQB glossary, regression testing is the testing of a previously tested program following a modification to ensure that defects have not been introduced or uncovered in unchanged areas of the software as a result of the changes made. Option B perfectly captures this core intent.",
+    "questionVariations": [
+      "In ISTQB terminology, what is regression testing primarily intended to do?"
+    ]
   },
   {
     "id": "ch2_q12",
@@ -188,7 +217,10 @@ export const chapter2Questions = [
       "All of the above"
     ],
     "correct": 3,
-    "explanation": "All maintenance changes require testing to verify correctness and identify side effects."
+    "explanation": "All maintenance changes require testing to verify correctness and identify side effects.",
+    "questionVariations": [
+      "Of the options listed, which maintenance activity may require testing?"
+    ]
   },
   {
     "id": "ch2_q13",
@@ -203,7 +235,10 @@ export const chapter2Questions = [
       "Unit Testing"
     ],
     "correct": 2,
-    "explanation": "Acceptance testing confirms the system satisfies business requirements."
+    "explanation": "Acceptance testing confirms the system satisfies business requirements.",
+    "questionVariations": [
+      "Of the options listed, which test level validates business processes and user needs?"
+    ]
   },
   {
     "id": "ch2_q14",
@@ -218,7 +253,10 @@ export const chapter2Questions = [
       "Compatibility Testing"
     ],
     "correct": 0,
-    "explanation": "Usability testing evaluates user experience and ease of use."
+    "explanation": "Usability testing evaluates user experience and ease of use.",
+    "questionVariations": [
+      "Of the options listed, which type of testing is most likely to evaluate ease of use?"
+    ]
   },
   {
     "id": "ch2_q15",
@@ -233,7 +271,10 @@ export const chapter2Questions = [
       "Portability Testing"
     ],
     "correct": 2,
-    "explanation": "Security testing evaluates confidentiality, integrity, and access controls."
+    "explanation": "Security testing evaluates confidentiality, integrity, and access controls.",
+    "questionVariations": [
+      "Of the options listed, which test type evaluates protection against unauthorized access?"
+    ]
   },
   {
     "id": "ch2_q16",
@@ -248,7 +289,10 @@ export const chapter2Questions = [
       "Production-like Test Environment"
     ],
     "correct": 3,
-    "explanation": "A production-like environment provides realistic validation of system behavior."
+    "explanation": "A production-like environment provides realistic validation of system behavior.",
+    "questionVariations": [
+      "Of the options listed, which environment most closely resembles production?"
+    ]
   },
   {
     "id": "ch2_q17",
@@ -263,7 +307,11 @@ export const chapter2Questions = [
       "Component testing"
     ],
     "correct": 0,
-    "explanation": "Alpha testing is typically performed internally before external release."
+    "explanation": "Alpha testing is typically performed internally before external release.",
+    "questionVariations": [
+      "What is the main aim of Alpha Testing?",
+      "What is Alpha Testing mainly intended to achieve?"
+    ]
   },
   {
     "id": "ch2_q18",
@@ -278,7 +326,10 @@ export const chapter2Questions = [
       "Integration testing"
     ],
     "correct": 1,
-    "explanation": "Beta testing gathers feedback from real users in real-world conditions."
+    "explanation": "Beta testing gathers feedback from real users in real-world conditions.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the purpose of Beta Testing?"
+    ]
   },
   {
     "id": "ch2_q19",
@@ -293,7 +344,10 @@ export const chapter2Questions = [
       "Contract Reviews"
     ],
     "correct": 1,
-    "explanation": "CI pipelines commonly execute automated build verification and regression tests."
+    "explanation": "CI pipelines commonly execute automated build verification and regression tests.",
+    "questionVariations": [
+      "Of the options listed, which activity is commonly automated in Continuous Integration pipelines?"
+    ]
   },
   {
     "id": "ch2_q20",
@@ -308,7 +362,10 @@ export const chapter2Questions = [
       "Manual testing performed daily"
     ],
     "correct": 2,
-    "explanation": "Continuous testing integrates automated testing into the software delivery process."
+    "explanation": "Continuous testing integrates automated testing into the software delivery process.",
+    "questionVariations": [
+      "Of the options listed, which statement best describes Continuous Testing?"
+    ]
   },
   {
     "id": "ch2_q21",
@@ -323,7 +380,10 @@ export const chapter2Questions = [
       "Maintenance Testing"
     ],
     "correct": 1,
-    "explanation": "Integration testing verifies interactions between components or systems."
+    "explanation": "Integration testing verifies interactions between components or systems.",
+    "questionVariations": [
+      "Of the options listed, which test level focuses on verifying communication between integrated systems?"
+    ]
   },
   {
     "id": "ch2_q22",
@@ -338,7 +398,11 @@ export const chapter2Questions = [
       "State Transition Testing"
     ],
     "correct": 1,
-    "explanation": "Performance testing evaluates non-functional quality characteristics."
+    "explanation": "Performance testing evaluates non-functional quality characteristics.",
+    "questionVariations": [
+      "Which option is a non-functional test type?",
+      "From the choices below, which is a non-functional test type?"
+    ]
   },
   {
     "id": "ch2_q23",
@@ -353,7 +417,10 @@ export const chapter2Questions = [
       "Replace regression testing"
     ],
     "correct": 1,
-    "explanation": "Maintenance testing validates modifications and checks for regressions."
+    "explanation": "Maintenance testing validates modifications and checks for regressions.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the primary objective of maintenance testing?"
+    ]
   },
   {
     "id": "ch2_q24",
@@ -368,7 +435,10 @@ export const chapter2Questions = [
       "Accessibility Testing"
     ],
     "correct": 2,
-    "explanation": "Security testing evaluates confidentiality, integrity and availability."
+    "explanation": "Security testing evaluates confidentiality, integrity and availability.",
+    "questionVariations": [
+      "Of the options listed, which test type focuses on how well the system protects information?"
+    ]
   },
   {
     "id": "ch2_q25",
@@ -383,7 +453,10 @@ export const chapter2Questions = [
       "All of the above"
     ],
     "correct": 3,
-    "explanation": "Any change to software or its environment may require maintenance testing."
+    "explanation": "Any change to software or its environment may require maintenance testing.",
+    "questionVariations": [
+      "In ISTQB terminology, what is often a trigger for maintenance testing?"
+    ]
   },
   {
     "id": "ch2_q26",
@@ -398,7 +471,10 @@ export const chapter2Questions = [
       "Beta Testing"
     ],
     "correct": 1,
-    "explanation": "Shift-left encourages earlier testing to reduce defect costs."
+    "explanation": "Shift-left encourages earlier testing to reduce defect costs.",
+    "questionVariations": [
+      "Of the options listed, which approach aims to move testing activities earlier in development?"
+    ]
   },
   {
     "id": "ch2_q27",
@@ -413,7 +489,10 @@ export const chapter2Questions = [
       "Review-based Testing"
     ],
     "correct": 1,
-    "explanation": "Shift-right focuses on monitoring and testing in production environments."
+    "explanation": "Shift-right focuses on monitoring and testing in production environments.",
+    "questionVariations": [
+      "Of the options listed, which approach emphasizes testing in production-like environments?"
+    ]
   },
   {
     "id": "ch2_q28",
@@ -428,7 +507,10 @@ export const chapter2Questions = [
       "Reduce communication"
     ],
     "correct": 1,
-    "explanation": "Continuous Integration encourages frequent integration and automated verification."
+    "explanation": "Continuous Integration encourages frequent integration and automated verification.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a key objective of Continuous Integration?"
+    ]
   },
   {
     "id": "ch2_q29",
@@ -443,7 +525,10 @@ export const chapter2Questions = [
       "Only manual deployment is allowed"
     ],
     "correct": 1,
-    "explanation": "Continuous Delivery ensures software is always in a releasable state."
+    "explanation": "Continuous Delivery ensures software is always in a releasable state.",
+    "questionVariations": [
+      "Of the options listed, which statement best describes Continuous Delivery?"
+    ]
   },
   {
     "id": "ch2_q30",
@@ -458,7 +543,10 @@ export const chapter2Questions = [
       "All of the above"
     ],
     "correct": 3,
-    "explanation": "Modern CI pipelines typically include builds, tests and quality checks."
+    "explanation": "Modern CI pipelines typically include builds, tests and quality checks.",
+    "questionVariations": [
+      "In ISTQB terminology, what is often included in a CI pipeline?"
+    ]
   },
   {
     "id": "ch2_q31",
@@ -473,7 +561,10 @@ export const chapter2Questions = [
       "Code Review / Static Review"
     ],
     "correct": 2,
-    "explanation": "System testing focuses on the behavior and capabilities of a whole system or product. While Integration Testing looks at interactions between components, full end-to-end business scenarios are typically validated at the System (or System Acceptance) testing level."
+    "explanation": "System testing focuses on the behavior and capabilities of a whole system or product. While Integration Testing looks at interactions between components, full end-to-end business scenarios are typically validated at the System (or System Acceptance) testing level.",
+    "questionVariations": [
+      "Of the options listed, which test level is primarily responsible for validating complete, end-to-end business workflows across the entire integrated system?"
+    ]
   },
   {
     "id": "ch2_q32",
@@ -488,7 +579,10 @@ export const chapter2Questions = [
       "Maintenance Testing triggered by post-release environmental modifications."
     ],
     "correct": 0,
-    "explanation": "In Agile methodologies, testing is not a distinct phase but an ongoing, continuous activity integrated within every sprint. Options B and C describe later, formal acceptance stages. Option D refers to testing performed on already deployed, live software systems."
+    "explanation": "In Agile methodologies, testing is not a distinct phase but an ongoing, continuous activity integrated within every sprint. Options B and C describe later, formal acceptance stages. Option D refers to testing performed on already deployed, live software systems.",
+    "questionVariations": [
+      "Of the options listed, which testing activity or approach is most characteristic of a typical iterative-incremental (Agile) sprint development cycle?"
+    ]
   },
   {
     "id": "ch2_q33",
@@ -503,7 +597,10 @@ export const chapter2Questions = [
       "Portability Testing"
     ],
     "correct": 2,
-    "explanation": "This aligns with ISO/IEC 25010 product quality characteristics used by ISTQB. Usability specifically measures appropriateness recognizability, learnability, and operability."
+    "explanation": "This aligns with ISO/IEC 25010 product quality characteristics used by ISTQB. Usability specifically measures appropriateness recognizability, learnability, and operability.",
+    "questionVariations": [
+      "Of the options listed, which quality characteristic is evaluated when a test team checks how easily a user can learn, operate, and understand a software application?"
+    ]
   },
   {
     "id": "ch2_q34",
@@ -518,7 +615,10 @@ export const chapter2Questions = [
       "To validate that the system adheres to strict organizational security and encryption policies."
     ],
     "correct": 0,
-    "explanation": "Smoke testing (or build verification testing) checks the absolute basics. If it fails, the build is rejected, saving time."
+    "explanation": "Smoke testing (or build verification testing) checks the absolute basics. If it fails, the build is rejected, saving time.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the primary objective of performing a smoke test on a new build?"
+    ]
   },
   {
     "id": "ch2_q35",
@@ -533,7 +633,10 @@ export const chapter2Questions = [
       "It provides rapid feedback on software quality while reducing manual execution effort and increasing consistency."
     ],
     "correct": 3,
-    "explanation": "Automation improves speed, consistency and efficiency."
+    "explanation": "Automation improves speed, consistency and efficiency.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a key benefit of integrating automated test suites into a Continuous Integration / Continuous Deployment (CI/CD) pipeline?"
+    ]
   },
   {
     "id": "ch2_q36",
@@ -548,7 +651,10 @@ export const chapter2Questions = [
       "Walkthrough"
     ],
     "correct": 1,
-    "explanation": "Regression testing ensures existing functionality still works."
+    "explanation": "Regression testing ensures existing functionality still works.",
+    "questionVariations": [
+      "Of the options listed, which activity helps identify regressions after a software update?"
+    ]
   },
   {
     "id": "ch2_q37",
@@ -563,7 +669,10 @@ export const chapter2Questions = [
       "Test execution for a user story can only begin once the developer has fully completed the coding for that story."
     ],
     "correct": 1,
-    "explanation": "Agile teams perform testing continuously throughout development."
+    "explanation": "Agile teams perform testing continuously throughout development.",
+    "questionVariations": [
+      "Of the options listed, which statement is TRUE about Agile testing?"
+    ]
   },
   {
     "id": "ch2_q38",
@@ -578,7 +687,10 @@ export const chapter2Questions = [
       "Measuring code quality metrics such as cyclomatic complexity and statement coverage."
     ],
     "correct": 1,
-    "explanation": "OAT focuses on non-functional requirements like backup/restore, disaster recovery, and maintenance tasks. Option A describes User Acceptance Testing (UAT). Options C and D are component/static testing concepts."
+    "explanation": "OAT focuses on non-functional requirements like backup/restore, disaster recovery, and maintenance tasks. Option A describes User Acceptance Testing (UAT). Options C and D are component/static testing concepts.",
+    "questionVariations": [
+      "In ISTQB terminology, what is Operational Acceptance Testing (OAT) primarily concerned with?"
+    ]
   },
   {
     "id": "ch2_q39",
@@ -593,7 +705,11 @@ export const chapter2Questions = [
       "Build Verification Testing, Regression Testing, and Smoke Testing."
     ],
     "correct": 3,
-    "explanation": "Organizations commonly execute all of these activities before release."
+    "explanation": "Organizations commonly execute all of these activities before release.",
+    "questionVariations": [
+      "Which option test activities are commonly performed as automated gates in a continuous delivery pipeline before a build is deployed to production?",
+      "From the options below, which test activities are commonly performed as automated gates in a continuous delivery pipeline before a build is deployed to production?"
+    ]
   },
   {
     "id": "ch2_q40",
@@ -608,7 +724,10 @@ export const chapter2Questions = [
       "Testing relies predominantly on manual exploratory sessions to maximize defect detection."
     ],
     "correct": 1,
-    "explanation": "DevOps emphasizes Continuous Testing where testing is deeply woven into the CI/CD pipeline."
+    "explanation": "DevOps emphasizes Continuous Testing where testing is deeply woven into the CI/CD pipeline.",
+    "questionVariations": [
+      "Of the options listed, which statement best describes the approach to testing within a DevOps framework?"
+    ]
   },
   {
     "id": "ch2_q41",
@@ -623,7 +742,10 @@ export const chapter2Questions = [
       "Regression Testing"
     ],
     "correct": 2,
-    "explanation": "Component testing is usually the first test level."
+    "explanation": "Component testing is usually the first test level.",
+    "questionVariations": [
+      "Of the options listed, which testing activity is typically performed first?"
+    ]
   },
   {
     "id": "ch2_q42",
@@ -638,7 +760,10 @@ export const chapter2Questions = [
       "Beta Testing"
     ],
     "correct": 1,
-    "explanation": "Integration testing focuses on interfaces and interactions."
+    "explanation": "Integration testing focuses on interfaces and interactions.",
+    "questionVariations": [
+      "Of the options listed, which test level verifies interfaces between modules?"
+    ]
   },
   {
     "id": "ch2_q43",
@@ -653,7 +778,10 @@ export const chapter2Questions = [
       "Sequential Code Reviews"
     ],
     "correct": 1,
-    "explanation": "Continuous Integration (CI) involves frequent code merges followed by automated builds and tests."
+    "explanation": "Continuous Integration (CI) involves frequent code merges followed by automated builds and tests.",
+    "questionVariations": [
+      "Of the options listed, which Agile practice is most essential for supporting continuous quality by frequently merging code changes into a shared repository for automated testing?"
+    ]
   },
   {
     "id": "ch2_q44",
@@ -668,7 +796,10 @@ export const chapter2Questions = [
       "Preventive"
     ],
     "correct": 1,
-    "explanation": "Adaptive maintenance handles environmental changes."
+    "explanation": "Adaptive maintenance handles environmental changes.",
+    "questionVariations": [
+      "Of the options listed, which maintenance type adapts software to a new operating system?"
+    ]
   },
   {
     "id": "ch2_q45",
@@ -683,7 +814,10 @@ export const chapter2Questions = [
       "Technical walkthroughs"
     ],
     "correct": 1,
-    "explanation": "Shift-right testing extends testing into production (e.g., A/B testing, canary deployments, production monitoring). Shift-left happens early in the lifecycle. Static testing done before code execution."
+    "explanation": "Shift-right testing extends testing into production (e.g., A/B testing, canary deployments, production monitoring). Shift-left happens early in the lifecycle. Static testing done before code execution.",
+    "questionVariations": [
+      "Of the options listed, which testing approach or paradigm involves activities commonly performed after a build has been deployed to the production environment?"
+    ]
   },
   {
     "id": "ch2_combo1",
@@ -737,7 +871,10 @@ export const chapter2Questions = [
       "Only developers may execute tests"
     ],
     "correct": 0,
-    "explanation": "Across all SDLC models, good practice pairs each development activity with a corresponding test activity, and each test level has specific objectives."
+    "explanation": "Across all SDLC models, good practice pairs each development activity with a corresponding test activity, and each test level has specific objectives.",
+    "questionVariations": [
+      "Of the options listed, which good testing practice applies regardless of which SDLC model is used?"
+    ]
   },
   {
     "id": "chapter2_lo_213",
@@ -754,7 +891,11 @@ export const chapter2Questions = [
       "Ad hoc testing after release"
     ],
     "correct": 0,
-    "explanation": "TDD, along with ATDD and BDD, are test-first approaches where tests are defined before or alongside the code that implements them."
+    "explanation": "TDD, along with ATDD and BDD, are test-first approaches where tests are defined before or alongside the code that implements them.",
+    "questionVariations": [
+      "Which option is an example of a test-first approach to development?",
+      "From the choices below, which is an example of a test-first approach to development?"
+    ]
   },
   {
     "id": "chapter2_lo_214",
@@ -788,7 +929,10 @@ export const chapter2Questions = [
       "Reducing the number of test levels"
     ],
     "correct": 0,
-    "explanation": "Shift left means moving testing activities as early as possible in the lifecycle, catching defects when they're cheapest to fix."
+    "explanation": "Shift left means moving testing activities as early as possible in the lifecycle, catching defects when they're cheapest to fix.",
+    "questionVariations": [
+      "In ISTQB terminology, what does 'shift left' mean in testing?"
+    ]
   },
   {
     "id": "chapter2_lo_216",
@@ -822,7 +966,10 @@ export const chapter2Questions = [
       "Maintenance testing"
     ],
     "correct": 0,
-    "explanation": "Integration testing checks the interfaces and interactions between integrated components or systems, distinct from testing a single component in isolation."
+    "explanation": "Integration testing checks the interfaces and interactions between integrated components or systems, distinct from testing a single component in isolation.",
+    "questionVariations": [
+      "Of the options listed, which test level focuses on interactions between two or more integrated components?"
+    ]
   },
   {
     "id": "chapter2_lo_222",
@@ -873,7 +1020,11 @@ export const chapter2Questions = [
       "Sprint planning at the start of a new project"
     ],
     "correct": 0,
-    "explanation": "Maintenance testing is triggered by modifications, migrations, or retirements of a system already in production — not by initial development activities."
+    "explanation": "Maintenance testing is triggered by modifications, migrations, or retirements of a system already in production — not by initial development activities.",
+    "questionVariations": [
+      "Which option is a typical trigger for maintenance testing?",
+      "From the choices below, which is a typical trigger for maintenance testing?"
+    ]
   },
   {
     "id": "ch2_ex1",
@@ -907,7 +1058,10 @@ export const chapter2Questions = [
       "Letting only end users find defects"
     ],
     "correct": 0,
-    "explanation": "Regardless of SDLC model, good practice pairs each development activity with a test activity and gives each test level clear objectives."
+    "explanation": "Regardless of SDLC model, good practice pairs each development activity with a test activity and gives each test level clear objectives.",
+    "questionVariations": [
+      "Of the options listed, which practice is considered good testing practice across ALL software development lifecycle models?"
+    ]
   },
   {
     "id": "ch2_ex3",
@@ -1082,7 +1236,10 @@ export const chapter2Questions = [
       "Requirements frozen permanently at project kickoff"
     ],
     "correct": 0,
-    "explanation": "Agile models are defined by short iterative cycles, continuous customer collaboration, and the flexibility to adapt as feedback comes in."
+    "explanation": "Agile models are defined by short iterative cycles, continuous customer collaboration, and the flexibility to adapt as feedback comes in.",
+    "questionVariations": [
+      "Of the options listed, which SDLC characteristic is most associated with the Agile family of models?"
+    ]
   },
   {
     "id": "ch2_ex12",
@@ -1099,7 +1256,11 @@ export const chapter2Questions = [
       "Whether the code compiles without errors"
     ],
     "correct": 0,
-    "explanation": "Acceptance testing sits at the end of the test-level sequence, validating the system against real business and user needs rather than technical correctness alone."
+    "explanation": "Acceptance testing sits at the end of the test-level sequence, validating the system against real business and user needs rather than technical correctness alone.",
+    "questionVariations": [
+      "Which option is typically validated during acceptance testing?",
+      "From the choices below, which is typically validated during acceptance testing?"
+    ]
   },
   {
     "id": "ch2_ex13",
@@ -1133,7 +1294,10 @@ export const chapter2Questions = [
       "Disabling all automated tests to speed up builds"
     ],
     "correct": 0,
-    "explanation": "CI/CD pipelines with automated test gates let teams release frequently while catching regressions before they reach users."
+    "explanation": "CI/CD pipelines with automated test gates let teams release frequently while catching regressions before they reach users.",
+    "questionVariations": [
+      "Of the options listed, which of these is a typical DevOps practice that supports faster, safer releases?"
+    ]
   },
   {
     "id": "ch2_ex15",
@@ -1167,6 +1331,340 @@ export const chapter2Questions = [
       "It replaces the need for confirmation testing"
     ],
     "correct": 0,
-    "explanation": "Regression testing casts a wider net than confirmation testing — checking that a change hasn't broken anything else that used to work."
+    "explanation": "Regression testing casts a wider net than confirmation testing — checking that a change hasn't broken anything else that used to work.",
+    "questionVariations": [
+      "Of the options listed, which statement about regression testing is correct?"
+    ]
+  },
+  {
+    "id": "chapter2_v2_1",
+    "chapter": "chapter2",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "In a V-model, which test level is typically aligned with the requirements specification?",
+    "options": [
+      "Acceptance testing",
+      "Component testing",
+      "Component integration testing",
+      "Static analysis"
+    ],
+    "correct": 0,
+    "explanation": "The V-model pairs acceptance testing with requirements, since both address whether the system meets stated business needs."
+  },
+  {
+    "id": "chapter2_v2_2",
+    "chapter": "chapter2",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "What is the main testing implication of very short iterations?",
+    "options": [
+      "Regression testing must be efficient and largely automated to keep pace",
+      "Testing can be skipped in most iterations",
+      "Only manual testing is feasible",
+      "Test levels become unnecessary"
+    ],
+    "correct": 0,
+    "explanation": "Frequent releases make repeated regression unavoidable, so efficiency and automation become essential to sustain pace.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the main testing implication of very short iterations?"
+    ]
+  },
+  {
+    "id": "chapter2_v2_3",
+    "chapter": "chapter2",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "Which of these is a defining characteristic of component integration testing?",
+    "options": [
+      "It focuses on interfaces and interactions between components of the same system",
+      "It validates business requirements with end users",
+      "It tests a single unit in complete isolation",
+      "It exclusively measures performance"
+    ],
+    "correct": 0,
+    "explanation": "Component integration testing targets the interfaces and data exchange between components within one system.",
+    "questionVariations": [
+      "Of the options listed, which of these is a defining characteristic of component integration testing?"
+    ]
+  },
+  {
+    "id": "chapter2_v2_4",
+    "chapter": "chapter2",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "A change is made to a shared utility library used across many modules. What testing is most clearly indicated?",
+    "options": [
+      "Regression testing of the areas that depend on that library",
+      "Only testing the library's own unit tests",
+      "No testing, since the change was small",
+      "Acceptance testing only"
+    ],
+    "correct": 0,
+    "explanation": "Shared dependencies mean a change can affect many consumers, so regression across dependent areas is warranted."
+  },
+  {
+    "id": "chapter2_v2_5",
+    "chapter": "chapter2",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "What does impact analysis support in maintenance testing?",
+    "options": [
+      "Determining which parts of the system a change may affect, to scope regression testing",
+      "Writing the original requirements",
+      "Selecting the programming language",
+      "Choosing team members"
+    ],
+    "correct": 0,
+    "explanation": "Impact analysis identifies the blast radius of a change so regression testing can be scoped proportionately.",
+    "questionVariations": [
+      "In ISTQB terminology, what does impact analysis support in maintenance testing?"
+    ]
+  },
+  {
+    "id": "chapter2_v2_6",
+    "chapter": "chapter2",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "Which is a non-functional quality characteristic rather than a functional one?",
+    "options": [
+      "Reliability under sustained load",
+      "Whether a discount is calculated correctly",
+      "Whether a login accepts valid credentials",
+      "Whether a report includes the right columns"
+    ],
+    "correct": 0,
+    "explanation": "Reliability describes how well the system behaves; the others describe what the system does.",
+    "questionVariations": [
+      "Of the options listed, which is a non-functional quality characteristic rather than a functional one?"
+    ]
+  },
+  {
+    "id": "chapter2_v2_7",
+    "chapter": "chapter2",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Why is acceptance testing typically performed by or for users rather than developers?",
+    "options": [
+      "It validates fitness for real business use, which users are best positioned to judge",
+      "Developers are not permitted to test",
+      "It is purely a formality",
+      "Users write better automated scripts"
+    ],
+    "correct": 0,
+    "explanation": "Acceptance testing asks whether the system genuinely meets business needs — a judgment users are best placed to make.",
+    "questionVariations": [
+      "In ISTQB terms, why is acceptance testing typically performed by or for users rather than developers?"
+    ]
+  },
+  {
+    "id": "chapter2_v2_8",
+    "chapter": "chapter2",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "What triggers maintenance testing in a system that has been stable in production for a year?",
+    "options": [
+      "Any modification, migration or planned retirement of that system",
+      "The passage of time alone",
+      "The initial development of a new unrelated product",
+      "Writing new user stories for a different system"
+    ],
+    "correct": 0,
+    "explanation": "Maintenance testing responds to changes to a system already in production — modification, migration or retirement.",
+    "questionVariations": [
+      "In ISTQB terminology, what triggers maintenance testing in a system that has been stable in production for a year?"
+    ]
+  },
+  {
+    "id": "chapter2_v2_9",
+    "chapter": "chapter2",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "In a DevOps pipeline, what is the consequence of slow or flaky automated tests?",
+    "options": [
+      "They undermine trust and become a bottleneck to frequent delivery",
+      "They improve deployment safety",
+      "They have no effect on delivery speed",
+      "They replace the need for monitoring"
+    ],
+    "correct": 0,
+    "explanation": "Slow or unreliable tests erode confidence in the pipeline and directly obstruct the fast feedback DevOps depends on."
+  },
+  {
+    "id": "chapter2_v2_10",
+    "chapter": "chapter2",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What is a key benefit of shift-left testing for requirements quality?",
+    "options": [
+      "Ambiguities and contradictions are found before they are implemented in code",
+      "Requirements become unnecessary",
+      "Code is written faster",
+      "Testing effort is eliminated"
+    ],
+    "correct": 0,
+    "explanation": "Reviewing requirements early catches ambiguity while it is still cheap to resolve — before it becomes defective code.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a key benefit of shift-left testing for requirements quality?"
+    ]
+  },
+  {
+    "id": "chapter2_v3_1",
+    "chapter": "chapter2",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Which test level would most likely detect a defect in how two separately-developed systems exchange data?",
+    "options": [
+      "System integration testing",
+      "Component testing",
+      "Unit testing",
+      "Static analysis"
+    ],
+    "correct": 0,
+    "explanation": "System integration testing focuses on interfaces between distinct systems and their external interactions.",
+    "questionVariations": [
+      "Of the options listed, which test level would most likely detect a defect in how two separately-developed systems exchange data?"
+    ]
+  },
+  {
+    "id": "chapter2_v3_2",
+    "chapter": "chapter2",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "What is the main purpose of a smoke test in a CI pipeline?",
+    "options": [
+      "To quickly confirm the build is stable enough to justify deeper testing",
+      "To exhaustively test every feature",
+      "To measure performance under load",
+      "To replace acceptance testing"
+    ],
+    "correct": 0,
+    "explanation": "Smoke tests give a fast stability signal, preventing wasted effort on fundamentally broken builds.",
+    "questionVariations": [
+      "What is the main aim of a smoke test in a CI pipeline?",
+      "What is a smoke test in a CI pipeline mainly intended to achieve?"
+    ]
+  },
+  {
+    "id": "chapter2_v3_3",
+    "chapter": "chapter2",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "Why does test-first development tend to improve testability of the code?",
+    "options": [
+      "Code is designed from the outset to be invoked and verified in isolation",
+      "It makes code run faster",
+      "It removes the need for interfaces",
+      "Tests are written after deployment"
+    ],
+    "correct": 0,
+    "explanation": "Writing the test first forces design decisions that make the unit callable and observable, improving testability.",
+    "questionVariations": [
+      "In ISTQB terms, why does test-first development tend to improve testability of the code?"
+    ]
+  },
+  {
+    "id": "chapter2_v3_4",
+    "chapter": "chapter2",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Which is an example of a functional test at system level?",
+    "options": [
+      "Verifying an end-to-end order placement produces the correct confirmation",
+      "Measuring memory consumption over 24 hours",
+      "Assessing colour contrast for accessibility",
+      "Checking response time under peak load"
+    ],
+    "correct": 0,
+    "explanation": "Functional testing evaluates what the system does; the other options evaluate quality characteristics.",
+    "questionVariations": [
+      "Of the options listed, which is an example of a functional test at system level?"
+    ]
+  },
+  {
+    "id": "chapter2_v3_5",
+    "chapter": "chapter2",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "What is the testing consequence of a monolithic 'big bang' integration approach?",
+    "options": [
+      "Defects are harder to localize because many components are combined at once",
+      "Defects are easier to isolate",
+      "Integration testing becomes unnecessary",
+      "Component testing is skipped safely"
+    ],
+    "correct": 0,
+    "explanation": "Combining everything simultaneously makes it difficult to attribute a failure to any specific interface.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the testing consequence of a monolithic 'big bang' integration approach?"
+    ]
+  },
+  {
+    "id": "chapter2_v3_6",
+    "chapter": "chapter2",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "In which SDLC context is continuous regression testing most critical?",
+    "options": [
+      "Frequent incremental releases where each change can affect existing behaviour",
+      "A one-time delivery never subsequently modified",
+      "Projects with no requirements",
+      "Systems that are never deployed"
+    ],
+    "correct": 0,
+    "explanation": "High release frequency multiplies the chances of regression, making automated regression essential."
+  },
+  {
+    "id": "chapter2_v3_7",
+    "chapter": "chapter2",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What distinguishes alpha testing from beta testing?",
+    "options": [
+      "Alpha occurs at the developing organization's site; beta occurs at the customer's site",
+      "Alpha is automated; beta is manual",
+      "Beta always precedes alpha",
+      "They are identical activities"
+    ],
+    "correct": 0,
+    "explanation": "The distinction is location and audience — internal environment versus real users in their own environment.",
+    "questionVariations": [
+      "In ISTQB terminology, what distinguishes alpha testing from beta testing?"
+    ]
+  },
+  {
+    "id": "chapter2_v3_8",
+    "chapter": "chapter2",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "Why should maintenance testing consider parts of the system that were not modified?",
+    "options": [
+      "Changes can have unintended side effects on untouched areas",
+      "Unmodified areas always contain the most defects",
+      "It is a regulatory requirement",
+      "Modified areas never need retesting"
+    ],
+    "correct": 0,
+    "explanation": "Regression risk means untouched functionality can break as a side effect of a change elsewhere.",
+    "questionVariations": [
+      "In ISTQB terms, why should maintenance testing consider parts of the system that were not modified?"
+    ]
   }
 ];

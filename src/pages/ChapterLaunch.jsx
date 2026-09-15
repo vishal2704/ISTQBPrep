@@ -54,7 +54,7 @@ export default function ChapterLaunch() {
   ].filter((o) => o.id === "standard" || o.id === "all" || Number(o.id) < poolSize);
 
   function launch() {
-    startExam(chapterId, mode, countChoice);
+    startExam(chapterId, mode, mode === "timed" ? undefined : countChoice);
     navigate("/exam");
   }
 
@@ -99,34 +99,44 @@ export default function ChapterLaunch() {
           </button>
         </div>
 
-        <div className="text-left mb-7 relative">
-          <div className="font-heading font-extrabold text-sm mb-3 text-center">
-            How many questions?
+        {mode === "practice" ? (
+          <div className="text-left mb-7 relative">
+            <div className="font-heading font-extrabold text-sm mb-3 text-center">
+              How many questions?
+            </div>
+            <div className="flex flex-wrap gap-2 justify-center">
+              {countOptions.map((o) => (
+                <button
+                  key={o.id}
+                  onClick={() => setCountChoice(o.id)}
+                  title={o.detail}
+                  className={`px-4 py-2.5 rounded-2xl border-2 text-sm font-extrabold transition-all ${
+                    countChoice === o.id
+                      ? "border-transparent bg-brand-gradient text-white shadow-glowSm"
+                      : "border-border bg-surfaceAlt text-ink hover:border-brand-400"
+                  }`}
+                >
+                  {o.label}
+                </button>
+              ))}
+            </div>
+            <p className="text-inkSoft text-xs text-center mt-3">
+              {countOptions.find((o) => o.id === countChoice)?.detail}
+            </p>
+            <p className="text-inkSoft text-xs text-center mt-2 flex items-center justify-center gap-1.5">
+              <span>💡</span>
+              Every set mixes in combination, matching &amp; scenario questions when available
+            </p>
           </div>
-          <div className="flex flex-wrap gap-2 justify-center">
-            {countOptions.map((o) => (
-              <button
-                key={o.id}
-                onClick={() => setCountChoice(o.id)}
-                title={o.detail}
-                className={`px-4 py-2.5 rounded-2xl border-2 text-sm font-extrabold transition-all ${
-                  countChoice === o.id
-                    ? "border-transparent bg-brand-gradient text-white shadow-glowSm"
-                    : "border-border bg-surfaceAlt text-ink hover:border-brand-400"
-                }`}
-              >
-                {o.label}
-              </button>
-            ))}
+        ) : (
+          <div className="text-center mb-7 relative">
+            <p className="text-inkSoft text-sm">
+              ⏱️ Timed Exam Mode always uses{" "}
+              <span className="font-bold text-ink">{Math.min(45, poolSize)} questions</span>
+              {poolSize < 45 ? " (this chapter's entire pool — fewer than 45 available)." : ", just like the real exam."}
+            </p>
           </div>
-          <p className="text-inkSoft text-xs text-center mt-3">
-            {countOptions.find((o) => o.id === countChoice)?.detail}
-          </p>
-          <p className="text-inkSoft text-xs text-center mt-2 flex items-center justify-center gap-1.5">
-            <span>💡</span>
-            Every set mixes in combination, matching &amp; scenario questions when available
-          </p>
-        </div>
+        )}
 
         <Button variant="brand" className="w-full relative" onClick={launch}>
           Start {mode === "timed" ? "Timed Exam" : "Practice"} →

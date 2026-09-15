@@ -81,7 +81,7 @@ export default function OnboardingChecklist({ onTakeTour, onOpenSettings }) {
           <div key={item.id} className="flex items-center gap-3">
             <span
               className={`w-6 h-6 rounded-full grid place-items-center text-xs shrink-0 ${
-                item.done ? "bg-feather text-white" : "border-2 border-border text-transparent"
+                item.done ? "bg-successSolid text-white" : "border-2 border-border text-transparent"
               }`}
             >
               ✓

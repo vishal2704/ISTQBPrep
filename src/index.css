@@ -12,6 +12,10 @@
   --border: #E7E8F2;
   --btn-shadow: #46A302;
   --header-bg: rgba(255,255,255,0.75);
+  /* Accent used for links/emphasis text; dark mode overrides with a lighter
+     tone for contrast. Success-solid is the fill behind white text. */
+  --accent-text: #4F46E5;
+  --success-solid: #58CC02;
 }
 
 [data-theme="dark"] {
@@ -19,9 +23,19 @@
   --surface-alt: #131B2E;
   --ink: #EEF1FA;
   --ink-soft: #8B93AB;
-  --border: #232C42;
+  /* Lightened from #232C42 (1.23:1 against --surface-alt — effectively
+     invisible). #5C6A9C clears the WCAG 3:1 threshold for UI component
+     boundaries against both the card (3.27:1) and page (3.56:1) surfaces. */
+  --border: #5C6A9C;
   --btn-shadow: #3D9100;
   --header-bg: rgba(11,18,32,0.75);
+  /* Dark mode needs a lighter accent than the light-mode brand-600 (#4F46E5),
+     which only reaches 2.98:1 on the dark surface and fails WCAG AA. This
+     lighter indigo hits ~6.3:1 while staying on-brand. */
+  --accent-text: #818CF8;
+  /* Vivid green at full saturation is harsh on a dark background and gives
+     poor contrast with white text (2.09:1). Darker green for solid fills. */
+  --success-solid: #2E8A00;
 }
 
 [data-theme="sunset"] {
@@ -196,3 +210,23 @@ button, a {
 /* Custom scrollbar (subtle, only for horizontally scrolling chip rows) */
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ===== Dark-mode comfort adjustments =====
+   Large saturated glows read as harsh/neon against a dark backdrop, so
+   soften them rather than removing the effect entirely (keeps the same
+   design language, just at a comfortable intensity). */
+[data-theme="dark"] .shadow-glow {
+  box-shadow: 0 0 0 1px rgba(129, 140, 248, 0.12), 0 20px 60px -24px rgba(79, 70, 229, 0.28);
+}
+[data-theme="dark"] .shadow-glowSm {
+  box-shadow: 0 8px 24px -12px rgba(79, 70, 229, 0.3);
+}
+/* Decorative blurred blobs are pure ambience — dial them back so they don't
+   wash out text sitting above them. */
+[data-theme="dark"] .blob {
+  opacity: 0.3;
+}
+/* Emoji/icon drop shadows in the hero glow noticeably on dark backgrounds. */
+[data-theme="dark"] .drop-shadow-\[0_0_18px_rgba\(99\,102\,241\,0\.5\)\] {
+  filter: drop-shadow(0 0 14px rgba(99, 102, 241, 0.28));
+}

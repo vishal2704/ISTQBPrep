@@ -31,7 +31,7 @@ const CHAPTERS = [
 
 export default function Dashboard() {
   const navigate = useNavigate();
-  const { startExam, startRetry } = useExam();
+  const { startExam } = useExam();
   const { openSettings } = useTheme();
   const [revisionCount, setRevisionCount] = useState(0);
   const [bookmarkCount, setBookmarkCount] = useState(0);
@@ -67,10 +67,7 @@ export default function Dashboard() {
   }
 
   function handleBookmarkReview() {
-    const ids = StorageService.loadBookmarks();
-    if (ids.length === 0) return;
-    startRetry(ids, "Bookmarked Questions");
-    navigate("/exam");
+    navigate("/bookmarks");
   }
 
   const tourSteps = [
@@ -144,7 +141,7 @@ export default function Dashboard() {
               icon="🎯"
               iconBg="bg-plum/15"
               title="Full ISTQB Mock Exam"
-              subtitle="40 questions · 60 minutes · timed"
+              subtitle="45 questions · 60 minutes · timed"
               onClick={() => handleStart("mock-foundation", "timed")}
             />
 
@@ -169,11 +166,10 @@ export default function Dashboard() {
               title="Bookmarked Questions"
               subtitle={
                 bookmarkCount > 0
-                  ? `${bookmarkCount} saved for later`
+                  ? `${bookmarkCount} saved — view, practice, or remove`
                   : "Tap ☆ next to any question while practicing to save it here"
               }
               badge={bookmarkCount > 0 && <Badge color="blue">{bookmarkCount}</Badge>}
-              disabled={bookmarkCount === 0}
               onClick={handleBookmarkReview}
             />
 

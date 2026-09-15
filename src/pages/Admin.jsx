@@ -40,7 +40,7 @@ export default function Admin() {
             {Object.entries(stats.chapters).map(([ch, count]) => (
               <div key={ch} className="flex justify-between items-center">
                 <span className="text-inkSoft">{ch}</span>
-                <span className="font-bold px-2 py-0.5 rounded-lg bg-brand-500/15 text-brand-600">{count}</span>
+                <span className="font-bold px-2 py-0.5 rounded-lg bg-brand-500/15 text-accentText">{count}</span>
               </div>
             ))}
             <hr className="my-2 border-border" />

@@ -15,6 +15,7 @@ import Glossary from "./pages/Glossary";
 import ExamPreview from "./pages/ExamPreview";
 import Achievements from "./pages/Achievements";
 import Practice from "./pages/Practice";
+import Bookmarks from "./pages/Bookmarks";
 import NotFound from "./pages/NotFound";
 
 export default function App() {
@@ -39,6 +40,7 @@ export default function App() {
       <Route path="/glossary" element={<Glossary />} />
       <Route path="/preview/:examId" element={<ExamPreview />} />
       <Route path="/achievements" element={<Achievements />} />
+      <Route path="/bookmarks" element={<Bookmarks />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

@@ -54,6 +54,8 @@ export default {
         ink: "var(--ink)",
         inkSoft: "var(--ink-soft)",
         border: "var(--border)",
+        accentText: "var(--accent-text)",
+        successSolid: "var(--success-solid)",
       },
       borderRadius: {
         xl2: "1.25rem",

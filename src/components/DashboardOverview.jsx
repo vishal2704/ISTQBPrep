@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { questionBank } from "../data/questionBank";
 import { StorageService } from "../services/storageService";
+import { LifetimeStatsService } from "../services/lifetimeStatsService";
 
 const CHAPTER_LABELS = {
   chapter1: "Fundamentals of Testing",
@@ -32,10 +33,10 @@ export default function DashboardOverview({ results, program = "foundation" }) {
   );
 
   const stats = useMemo(() => {
+    const lifetime = LifetimeStatsService.get();
     const mockCount = results.filter((r) => r.chapter === `mock-${program}`).length;
-    const avg =
-      results.length > 0 ? Math.round(results.reduce((s, r) => s + r.score, 0) / results.length) : null;
-    const best = results.length > 0 ? Math.max(...results.map((r) => r.score)) : null;
+    const avg = LifetimeStatsService.averageScore();
+    const best = lifetime.countScores > 0 ? lifetime.bestScore : null;
 
     const exposure = StorageService.loadQuestionExposure();
     const programIds = new Set(programQuestions.map((q) => q.id));
@@ -60,7 +61,7 @@ export default function DashboardOverview({ results, program = "foundation" }) {
     const recent = [...results].slice(0, 4);
 
     let nextGoal;
-    if (results.length === 0) {
+    if (lifetime.countScores === 0) {
       nextGoal = { text: "Finish your first practice set", progress: 0 };
     } else if (best !== null && best < 90) {
       nextGoal = { text: "Score 90%+ on a mock exam", progress: Math.min(100, Math.round((best / 90) * 100)) };
@@ -68,7 +69,17 @@ export default function DashboardOverview({ results, program = "foundation" }) {
       nextGoal = { text: "Keep your streak alive today", progress: 100 };
     }
 
-    return { mockCount, avg, best, coverage, weakAreas, recent, nextGoal, totalAttempts: results.length };
+    return {
+      mockCount,
+      avg,
+      best,
+      coverage,
+      weakAreas,
+      recent,
+      nextGoal,
+      totalAttempts: lifetime.countScores,
+      hasHistory: results.length > 0,
+    };
   }, [results, program, programQuestions]);
 
   const hasData = stats.totalAttempts > 0;
@@ -82,7 +93,7 @@ export default function DashboardOverview({ results, program = "foundation" }) {
         {hasData && (
           <button
             onClick={() => navigate("/results")}
-            className="text-xs font-extrabold text-brand-600 hover:underline"
+            className="text-xs font-extrabold text-accentText hover:underline"
           >
             View all results →
           </button>
@@ -92,7 +103,7 @@ export default function DashboardOverview({ results, program = "foundation" }) {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5 relative">
         {[
           { label: "Practice Sessions", value: stats.totalAttempts, accent: "text-ink" },
-          { label: "Average Score", value: stats.avg !== null ? `${stats.avg}%` : "—", accent: "text-brand-600" },
+          { label: "Average Score", value: stats.avg !== null ? `${stats.avg}%` : "—", accent: "text-accentText" },
           { label: "Best Score", value: stats.best !== null ? `${stats.best}%` : "—", accent: "text-featherDark" },
           { label: "Total Questions", value: programQuestions.length, accent: "text-plumDark" },
         ].map((s) => (

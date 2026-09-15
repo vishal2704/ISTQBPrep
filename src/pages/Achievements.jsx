@@ -29,7 +29,7 @@ export default function Achievements() {
       <Card className="mb-8 shadow-elevated">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
           <div>
-            <div className="font-heading text-2xl font-extrabold text-brand-600">{stats.totalQuestionsAnswered}</div>
+            <div className="font-heading text-2xl font-extrabold text-accentText">{stats.totalQuestionsAnswered}</div>
             <div className="text-inkSoft text-xs font-semibold">Questions answered</div>
           </div>
           <div>

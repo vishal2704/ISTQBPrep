@@ -1,6 +1,5 @@
-// Question bank — chapter1
-// 121 questions (14 tagged to official ISTQB v4.0.1
-// Learning Objectives — see src/data/loReference.js)
+// Question bank — foundation/chapter1
+// 143 questions
 export const chapter1Questions = [
   {
     "id": "ch1_q1",
@@ -16,7 +15,11 @@ export const chapter1Questions = [
       "To replace code reviews"
     ],
     "correct": 1,
-    "explanation": "Testing aims to uncover defects, reduce the level of risk, and provide information about software quality. It cannot prove that software is entirely defect-free or eliminate all risk."
+    "explanation": "Testing aims to uncover defects, reduce the level of risk, and provide information about software quality. It cannot prove that software is entirely defect-free or eliminate all risk.",
+    "questionVariations": [
+      "Which option is a primary objective of testing?",
+      "From the choices below, which is a primary objective of testing?"
+    ]
   },
   {
     "id": "ch1_q2",
@@ -32,7 +35,10 @@ export const chapter1Questions = [
       "Pesticide paradox"
     ],
     "correct": 2,
-    "explanation": "Testing all combinations of inputs and preconditions is mathematically and temporally impossible except for trivial cases. Risk analysis and optimization are used to guide test effort instead."
+    "explanation": "Testing all combinations of inputs and preconditions is mathematically and temporally impossible except for trivial cases. Risk analysis and optimization are used to guide test effort instead.",
+    "questionVariations": [
+      "Of the options listed, which testing principle states that exhaustive testing is not feasible?"
+    ]
   },
   {
     "id": "ch1_q3",
@@ -48,7 +54,10 @@ export const chapter1Questions = [
       "Developers made mistakes"
     ],
     "correct": 2,
-    "explanation": "According to testing principles, testing shows the presence of defects but cannot prove their absence. Finding no defects does not mean none exist."
+    "explanation": "According to testing principles, testing shows the presence of defects but cannot prove their absence. Finding no defects does not mean none exist.",
+    "questionVariations": [
+      "In ISTQB terminology, what does testing primarily demonstrate?"
+    ]
   },
   {
     "id": "ch1_q4",
@@ -64,7 +73,10 @@ export const chapter1Questions = [
       "Absence-of-errors fallacy"
     ],
     "correct": 0,
-    "explanation": "Defect clustering states that a small number of modules or areas usually contain the majority of the defects discovered during testing, mirroring the Pareto principle (80/20 rule)."
+    "explanation": "Defect clustering states that a small number of modules or areas usually contain the majority of the defects discovered during testing, mirroring the Pareto principle (80/20 rule).",
+    "questionVariations": [
+      "Of the options listed, which principle suggests that defects tend to be concentrated in a few areas?"
+    ]
   },
   {
     "id": "ch1_q5",
@@ -80,7 +92,10 @@ export const chapter1Questions = [
       "Check user acceptance"
     ],
     "correct": 1,
-    "explanation": "Confirmation testing (or re-testing) specifically executes test cases that previously failed to verify whether the underlying defect has been successfully fixed."
+    "explanation": "Confirmation testing (or re-testing) specifically executes test cases that previously failed to verify whether the underlying defect has been successfully fixed.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the purpose of confirmation testing?"
+    ]
   },
   {
     "id": "ch1_q6",
@@ -96,7 +111,10 @@ export const chapter1Questions = [
       "Test usability"
     ],
     "correct": 2,
-    "explanation": "Regression testing involves executing tests on unchanged areas of the software to ensure that recent modifications, fixes, or enhancements have not inadvertently broken existing functional components."
+    "explanation": "Regression testing involves executing tests on unchanged areas of the software to ensure that recent modifications, fixes, or enhancements have not inadvertently broken existing functional components.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the purpose of regression testing?"
+    ]
   },
   {
     "id": "ch1_q7",
@@ -112,7 +130,10 @@ export const chapter1Questions = [
       "It eliminates regression testing"
     ],
     "correct": 1,
-    "explanation": "The earlier an issue is detected in the software development lifecycle (SDLC), the easier and significantly cheaper it is to fix before it propagates into subsequent phases."
+    "explanation": "The earlier an issue is detected in the software development lifecycle (SDLC), the easier and significantly cheaper it is to fix before it propagates into subsequent phases.",
+    "questionVariations": [
+      "In ISTQB terms, why is early testing beneficial?"
+    ]
   },
   {
     "id": "ch1_q8",
@@ -128,7 +149,10 @@ export const chapter1Questions = [
       "A bug tracking tool"
     ],
     "correct": 1,
-    "explanation": "The test basis consists of any documentation or source of information from which the requirements of a component or system can be inferred, such as specifications, user stories, architecture designs, or code."
+    "explanation": "The test basis consists of any documentation or source of information from which the requirements of a component or system can be inferred, such as specifications, user stories, architecture designs, or code.",
+    "questionVariations": [
+      "Of the options listed, which statement best describes a test basis?"
+    ]
   },
   {
     "id": "ch1_q9",
@@ -143,7 +167,10 @@ export const chapter1Questions = [
       "Test monitoring"
     ],
     "correct": 2,
-    "explanation": "During test execution, actual outputs from the running system are observed and directly compared against the predetermined expected results to log passes or failures."
+    "explanation": "During test execution, actual outputs from the running system are observed and directly compared against the predetermined expected results to log passes or failures.",
+    "questionVariations": [
+      "Of the options listed, which activity involves comparing actual and expected results?"
+    ]
   },
   {
     "id": "ch1_q10",
@@ -158,7 +185,10 @@ export const chapter1Questions = [
       "A test script"
     ],
     "correct": 2,
-    "explanation": "A test condition is an aspect of the test basis that can be verified, such as a business rule, a functional requirement, or a structural component."
+    "explanation": "A test condition is an aspect of the test basis that can be verified, such as a business rule, a functional requirement, or a structural component.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a test condition?"
+    ]
   },
   {
     "id": "ch1_q11",
@@ -173,7 +203,10 @@ export const chapter1Questions = [
       "Product owner"
     ],
     "correct": 2,
-    "explanation": "While testers detect and log failures, developers are responsible for isolating the root cause via debugging and introducing the code change necessary to resolve the defect."
+    "explanation": "While testers detect and log failures, developers are responsible for isolating the root cause via debugging and introducing the code change necessary to resolve the defect.",
+    "questionVariations": [
+      "Of the options listed, which role is most commonly responsible for fixing defects?"
+    ]
   },
   {
     "id": "ch1_q12",
@@ -188,7 +221,11 @@ export const chapter1Questions = [
       "Insufficient budget"
     ],
     "correct": 2,
-    "explanation": "Product risks relate directly to the quality characteristics of the software asset itself (e.g., failure, instability, performance). Schedule delays, budget problems, and resource unavailability are *project* risks."
+    "explanation": "Product risks relate directly to the quality characteristics of the software asset itself (e.g., failure, instability, performance). Schedule delays, budget problems, and resource unavailability are *project* risks.",
+    "questionVariations": [
+      "Which option is a product risk?",
+      "From the choices below, which is a product risk?"
+    ]
   },
   {
     "id": "ch1_q13",
@@ -203,7 +240,10 @@ export const chapter1Questions = [
       "Testing fixes defects"
     ],
     "correct": 1,
-    "explanation": "Testing exposes dynamic failures without modifying code. Debugging is a developmental activity that investigates the system state to find the fault cause, isolate it, and fix it."
+    "explanation": "Testing exposes dynamic failures without modifying code. Debugging is a developmental activity that investigates the system state to find the fault cause, isolate it, and fix it.",
+    "questionVariations": [
+      "Of the options listed, which statement is true about testing and debugging?"
+    ]
   },
   {
     "id": "ch1_q14",
@@ -218,7 +258,10 @@ export const chapter1Questions = [
       "Testing is context dependent"
     ],
     "correct": 1,
-    "explanation": "The pesticide paradox states that if the same tests are repeated over and over, eventually those tests will no longer find new defects. Test cases must be regularly reviewed, updated, or rewritten to target new areas."
+    "explanation": "The pesticide paradox states that if the same tests are repeated over and over, eventually those tests will no longer find new defects. Test cases must be regularly reviewed, updated, or rewritten to target new areas.",
+    "questionVariations": [
+      "Of the options listed, which principle warns that repeating the same tests may become ineffective over time?"
+    ]
   },
   {
     "id": "ch1_q15",
@@ -233,7 +276,10 @@ export const chapter1Questions = [
       "Believing developers make no mistakes"
     ],
     "correct": 1,
-    "explanation": "Finding and fixing a high percentage of defects does not guarantee a successful system. If the system is built against incorrect requirements, or fails to satisfy operational business needs, it remains unusable."
+    "explanation": "Finding and fixing a high percentage of defects does not guarantee a successful system. If the system is built against incorrect requirements, or fails to satisfy operational business needs, it remains unusable.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the absence-of-errors fallacy?"
+    ]
   },
   {
     "id": "ch1_q16",
@@ -248,7 +294,10 @@ export const chapter1Questions = [
       "Test completion"
     ],
     "correct": 2,
-    "explanation": "Test analysis defines *what* to test (test conditions). Test design takes those conditions and defines *how* to test them by creating concrete test cases and specifying test data."
+    "explanation": "Test analysis defines *what* to test (test conditions). Test design takes those conditions and defines *how* to test them by creating concrete test cases and specifying test data.",
+    "questionVariations": [
+      "Of the options listed, which test activity produces test cases?"
+    ]
   },
   {
     "id": "ch1_q17",
@@ -263,7 +312,10 @@ export const chapter1Questions = [
       "Source code"
     ],
     "correct": 0,
-    "explanation": "Expected outcomes should ideally be derived from an authoritative oracle or test basis document—most commonly the requirements or user story specification—prior to test execution."
+    "explanation": "Expected outcomes should ideally be derived from an authoritative oracle or test basis document—most commonly the requirements or user story specification—prior to test execution.",
+    "questionVariations": [
+      "Of the options listed, which document often contains expected results?"
+    ]
   },
   {
     "id": "ch1_q18",
@@ -278,7 +330,10 @@ export const chapter1Questions = [
       "A missing requirement"
     ],
     "correct": 1,
-    "explanation": "A failure is an event where the running system behaves incorrectly or departs from its required performance. It is caused by an underlying defect activated during execution."
+    "explanation": "A failure is an event where the running system behaves incorrectly or departs from its required performance. It is caused by an underlying defect activated during execution.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a failure?"
+    ]
   },
   {
     "id": "ch1_q19",
@@ -293,7 +348,10 @@ export const chapter1Questions = [
       "A test execution issue"
     ],
     "correct": 1,
-    "explanation": "An error (or mistake) is a human action or mental slip that produces an incorrect result—such as typing a wrong conditional block or missing an edge case during requirement writing."
+    "explanation": "An error (or mistake) is a human action or mental slip that produces an incorrect result—such as typing a wrong conditional block or missing an edge case during requirement writing.",
+    "questionVariations": [
+      "In ISTQB terminology, what is an error?"
+    ]
   },
   {
     "id": "ch1_q20",
@@ -308,7 +366,11 @@ export const chapter1Questions = [
       "Fixing defects"
     ],
     "correct": 1,
-    "explanation": "Quality Assurance (QA) focuses on procedural correctness and process improvements across the entire lifecycle to guarantee confidence that quality standards will be reached. It is distinct from Quality Control (QC), which tests the actual product."
+    "explanation": "Quality Assurance (QA) focuses on procedural correctness and process improvements across the entire lifecycle to guarantee confidence that quality standards will be reached. It is distinct from Quality Control (QC), which tests the actual product.",
+    "questionVariations": [
+      "Which option best describes quality assurance?",
+      "From the options below, which best describes quality assurance?"
+    ]
   },
   {
     "id": "ch1_q21",
@@ -323,7 +385,11 @@ export const chapter1Questions = [
       "All of the above"
     ],
     "correct": 3,
-    "explanation": "Different stakeholders use test data for unique reasons: project managers look at release readiness, developers seek defect paths to fix code, and customers require validation that business objectives are satisfied."
+    "explanation": "Different stakeholders use test data for unique reasons: project managers look at release readiness, developers seek defect paths to fix code, and customers require validation that business objectives are satisfied.",
+    "questionVariations": [
+      "Which option is most likely to be a stakeholder interested in test results?",
+      "From the choices below, which is most likely to be a stakeholder interested in test results?"
+    ]
   },
   {
     "id": "ch1_q22",
@@ -338,7 +404,10 @@ export const chapter1Questions = [
       "Test completion"
     ],
     "correct": 2,
-    "explanation": "Test analysis answers the question 'what to test' by reviewing the test basis to establish measurable test conditions."
+    "explanation": "Test analysis answers the question 'what to test' by reviewing the test basis to establish measurable test conditions.",
+    "questionVariations": [
+      "Of the options listed, which test activity involves determining what to test?"
+    ]
   },
   {
     "id": "ch1_q23",
@@ -353,7 +422,10 @@ export const chapter1Questions = [
       "Generate test data"
     ],
     "correct": 2,
-    "explanation": "A test oracle acts as a source to determine expected results to compare against the actual result of the software under test (e.g., an existing system, manual, user documentation)."
+    "explanation": "A test oracle acts as a source to determine expected results to compare against the actual result of the software under test (e.g., an existing system, manual, user documentation).",
+    "questionVariations": [
+      "In ISTQB terminology, what is the purpose of a test oracle?"
+    ]
   },
   {
     "id": "ch1_q24",
@@ -368,7 +440,11 @@ export const chapter1Questions = [
       "Performing regression testing"
     ],
     "correct": 2,
-    "explanation": "Static testing involves checking work products without running code. This is accomplished via manual reviews (e.g., requirement walkthroughs) or automated static analysis tools."
+    "explanation": "Static testing involves checking work products without running code. This is accomplished via manual reviews (e.g., requirement walkthroughs) or automated static analysis tools.",
+    "questionVariations": [
+      "Which option is an example of static testing?",
+      "From the choices below, which is an example of static testing?"
+    ]
   },
   {
     "id": "ch1_q25",
@@ -383,7 +459,11 @@ export const chapter1Questions = [
       "Fix defects"
     ],
     "correct": 1,
-    "explanation": "Test monitoring collects metrics and checks actual progress against the original milestones outlined within the test plan, enabling transparent reporting and corrective actions."
+    "explanation": "Test monitoring collects metrics and checks actual progress against the original milestones outlined within the test plan, enabling transparent reporting and corrective actions.",
+    "questionVariations": [
+      "What is the main aim of test monitoring?",
+      "What is test monitoring mainly intended to achieve?"
+    ]
   },
   {
     "id": "ch1_q26",
@@ -398,7 +478,10 @@ export const chapter1Questions = [
       "Early testing"
     ],
     "correct": 0,
-    "explanation": "Testing is context dependent because safety-critical embedded systems (like automotive software) require fundamentally different approaches, techniques, and intensities compared to an e-commerce mobile application."
+    "explanation": "Testing is context dependent because safety-critical embedded systems (like automotive software) require fundamentally different approaches, techniques, and intensities compared to an e-commerce mobile application.",
+    "questionVariations": [
+      "Of the options listed, which principle states that testing depends on context?"
+    ]
   },
   {
     "id": "ch1_q27",
@@ -413,7 +496,11 @@ export const chapter1Questions = [
       "Testing without planning"
     ],
     "correct": 1,
-    "explanation": "Risk-based testing uses the identified level of product risk to focus testing activities during planning, design, and execution phases, ensuring highest-risk elements are covered first."
+    "explanation": "Risk-based testing uses the identified level of product risk to focus testing activities during planning, design, and execution phases, ensuring highest-risk elements are covered first.",
+    "questionVariations": [
+      "Which option best describes risk-based testing?",
+      "From the options below, which best describes risk-based testing?"
+    ]
   },
   {
     "id": "ch1_q28",
@@ -428,7 +515,10 @@ export const chapter1Questions = [
       "Test strategy"
     ],
     "correct": 0,
-    "explanation": "When actual outcomes differ from expected parameters during execution, discrepancies are captured and logged as formal defect or incident reports."
+    "explanation": "When actual outcomes differ from expected parameters during execution, discrepancies are captured and logged as formal defect or incident reports.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a common outcome of test execution?"
+    ]
   },
   {
     "id": "ch1_q29",
@@ -443,7 +533,10 @@ export const chapter1Questions = [
       "It eliminates risk"
     ],
     "correct": 1,
-    "explanation": "Quality Control (QC) represents a product-oriented approach aimed at testing and evaluating the actual work products to uncover flaws and measure current quality."
+    "explanation": "Quality Control (QC) represents a product-oriented approach aimed at testing and evaluating the actual work products to uncover flaws and measure current quality.",
+    "questionVariations": [
+      "Of the options listed, which statement about quality control is correct?"
+    ]
   },
   {
     "id": "ch1_q30",
@@ -458,7 +551,10 @@ export const chapter1Questions = [
       "Acceptance testing"
     ],
     "correct": 0,
-    "explanation": "Reviews (a form of static testing) evaluate requirements or design artifacts *before* software implementation. Catching ambiguities at this stage prevents developers from programming defects into the code."
+    "explanation": "Reviews (a form of static testing) evaluate requirements or design artifacts *before* software implementation. Catching ambiguities at this stage prevents developers from programming defects into the code.",
+    "questionVariations": [
+      "Of the options listed, which activity can help prevent defects?"
+    ]
   },
   {
     "id": "ch1_q31",
@@ -473,7 +569,10 @@ export const chapter1Questions = [
       "Defects prevent errors"
     ],
     "correct": 1,
-    "explanation": "A human error or mistake made during documentation or coding introduces a physical flaw into the asset, which is formally designated as a defect or bug."
+    "explanation": "A human error or mistake made during documentation or coding introduces a physical flaw into the asset, which is formally designated as a defect or bug.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the relationship between errors and defects?"
+    ]
   },
   {
     "id": "ch1_q32",
@@ -488,7 +587,10 @@ export const chapter1Questions = [
       "It replaces inspections"
     ],
     "correct": 1,
-    "explanation": "Testing provides data and transparency. Running an optimized set of test scenarios helps reduce uncertainty regarding quality levels and systemic risks for deployment stakeholders."
+    "explanation": "Testing provides data and transparency. Running an optimized set of test scenarios helps reduce uncertainty regarding quality levels and systemic risks for deployment stakeholders.",
+    "questionVariations": [
+      "Of the options listed, which statement best describes testing?"
+    ]
   },
   {
     "id": "ch1_q33",
@@ -503,7 +605,10 @@ export const chapter1Questions = [
       "To avoid test planning"
     ],
     "correct": 1,
-    "explanation": "Testers must communicate defect details neutrally and construct objective quality reports so business stakeholders can accurately evaluate operational risks."
+    "explanation": "Testers must communicate defect details neutrally and construct objective quality reports so business stakeholders can accurately evaluate operational risks.",
+    "questionVariations": [
+      "In ISTQB terms, why is communication important in testing?"
+    ]
   },
   {
     "id": "ch1_q34",
@@ -518,7 +623,10 @@ export const chapter1Questions = [
       "All of the above"
     ],
     "correct": 3,
-    "explanation": "Static testing is highly versatile; it is applicable to specifications, high-level architectures, functional documentation, deployment scripts, or raw uncompiled source code."
+    "explanation": "Static testing is highly versatile; it is applicable to specifications, high-level architectures, functional documentation, deployment scripts, or raw uncompiled source code.",
+    "questionVariations": [
+      "Of the options listed, which work product can be reviewed during static testing?"
+    ]
   },
   {
     "id": "ch1_q35",
@@ -533,7 +641,10 @@ export const chapter1Questions = [
       "Execute regression tests"
     ],
     "correct": 2,
-    "explanation": "Test completion activities occur at milestones like releases. This phase involves archiving valuable test scripts, cleaning environments, and gathering process feedback via retrospectives."
+    "explanation": "Test completion activities occur at milestones like releases. This phase involves archiving valuable test scripts, cleaning environments, and gathering process feedback via retrospectives.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the purpose of test completion activities?"
+    ]
   },
   {
     "id": "ch1_q36",
@@ -548,7 +659,11 @@ export const chapter1Questions = [
       "Testing activities inherently increase overall project risk by introducing code changes."
     ],
     "correct": 1,
-    "explanation": "Testing is a risk-mitigation activity that provides awareness of product quality, allowing stakeholders to make informed release decisions. Option A is incorrect because ISTQB Principle 2 states that exhaustive testing is impossible; hence, testing reduces risk but can never remove it entirely. Option B is incorrect because risk analysis and risk management activities guide and prioritize testing efforts rather than replacing the need for dynamic execution. Option D is incorrect because testing activities themselves do not introduce source code modifications (code changes are a development activity during debugging)."
+    "explanation": "Testing is a risk-mitigation activity that provides awareness of product quality, allowing stakeholders to make informed release decisions. Option A is incorrect because ISTQB Principle 2 states that exhaustive testing is impossible; hence, testing reduces risk but can never remove it entirely. Option B is incorrect because risk analysis and risk management activities guide and prioritize testing efforts rather than replacing the need for dynamic execution. Option D is incorrect because testing activities themselves do not introduce source code modifications (code changes are a development activity during debugging).",
+    "questionVariations": [
+      "Which option statements correctly describes the relationship between software testing and quality risk?",
+      "From the options below, which statements correctly describes the relationship between software testing and quality risk?"
+    ]
   },
   {
     "id": "ch1_q37",
@@ -578,7 +693,11 @@ export const chapter1Questions = [
       "Achieving 100% test coverage guarantees absolute customer and user satisfaction."
     ],
     "correct": 1,
-    "explanation": "This directly tests ISTQB Principle 1 ('Testing shows the presence of defects, not their absence'). Even if no defects are found, it is not proof of absolute correctness. Option D ignores the 'Absence-of-errors fallacy' (Principle 7), which states that fixing defects is useless if the system is unusable or fails to meet user needs."
+    "explanation": "This directly tests ISTQB Principle 1 ('Testing shows the presence of defects, not their absence'). Even if no defects are found, it is not proof of absolute correctness. Option D ignores the 'Absence-of-errors fallacy' (Principle 7), which states that fixing defects is useless if the system is unusable or fails to meet user needs.",
+    "questionVariations": [
+      "Which option statements is true based on the fundamental principles of software testing?",
+      "From the options below, which statements is true based on the fundamental principles of software testing?"
+    ]
   },
   {
     "id": "ch1_q39",
@@ -593,7 +712,10 @@ export const chapter1Questions = [
       "It transfers all business risk to the test team, eliminating project delivery failures."
     ],
     "correct": 1,
-    "explanation": "Independent testers look at a system from a different perspective (cognitive bias) than the author, allowing them to spot flaws that developers might overlook due to familiarity. Option A is false because developers must still test their own code. Option D is a trap; testing measures and mitigates risk but can never completely eliminate it."
+    "explanation": "Independent testers look at a system from a different perspective (cognitive bias) than the author, allowing them to spot flaws that developers might overlook due to familiarity. Option A is false because developers must still test their own code. Option D is a trap; testing measures and mitigates risk but can never completely eliminate it.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a primary benefit of utilizing independent testing teams within an organization?"
+    ]
   },
   {
     "id": "ch1_q40",
@@ -623,7 +745,10 @@ export const chapter1Questions = [
       "Testing is context dependent"
     ],
     "correct": 2,
-    "explanation": "This principle underscores that regardless of how extensively a product is tested, running additional scenarios might still reveal undiscovered defects."
+    "explanation": "This principle underscores that regardless of how extensively a product is tested, running additional scenarios might still reveal undiscovered defects.",
+    "questionVariations": [
+      "Of the options listed, which testing principle states that testing can show the presence of defects but not their absence?"
+    ]
   },
   {
     "id": "ch1_q42",
@@ -638,7 +763,11 @@ export const chapter1Questions = [
       "Security vulnerability"
     ],
     "correct": 2,
-    "explanation": "Project risks threaten the project's execution capacity, constraints, and resources (such as staff departures). Functional bugs or security vulnerabilities are product risks."
+    "explanation": "Project risks threaten the project's execution capacity, constraints, and resources (such as staff departures). Functional bugs or security vulnerabilities are product risks.",
+    "questionVariations": [
+      "Which option is most likely a project risk?",
+      "From the choices below, which is most likely a project risk?"
+    ]
   },
   {
     "id": "ch1_q43",
@@ -668,7 +797,10 @@ export const chapter1Questions = [
       "Deployment"
     ],
     "correct": 1,
-    "explanation": "Testing supplies objective data about residual defects, requirements coverage, and verification results, which is used to evaluate whether the application is fit for deployment."
+    "explanation": "Testing supplies objective data about residual defects, requirements coverage, and verification results, which is used to evaluate whether the application is fit for deployment.",
+    "questionVariations": [
+      "Of the options listed, which activity provides information for release decisions?"
+    ]
   },
   {
     "id": "ch1_q45",
@@ -683,7 +815,10 @@ export const chapter1Questions = [
       "Target runtime environments and operating systems."
     ],
     "correct": 0,
-    "explanation": "Business risks affect the viability of the product from a user, commercial, or operational perspective. Therefore, human stakeholders like customers and product owners care deeply about them. Options B, C, and D are technical components or software tools, not stakeholders capable of possessing business interests."
+    "explanation": "Business risks affect the viability of the product from a user, commercial, or operational perspective. Therefore, human stakeholders like customers and product owners care deeply about them. Options B, C, and D are technical components or software tools, not stakeholders capable of possessing business interests.",
+    "questionVariations": [
+      "Of the options listed, which stakeholder group is primarily impacted by and concerned with business (product) risks, such as an application failing to meet critical user needs?"
+    ]
   },
   {
     "id": "ch1_q46",
@@ -697,7 +832,11 @@ export const chapter1Questions = [
       "Testing ensures a system is entirely free of errors, while debugging is used to assess overall product risk."
     ],
     "correct": 1,
-    "explanation": "Dynamic testing shows failures caused by defects. Debugging is the development activity that finds, analyzes, and fixes those defects to prevent the failures from recurring."
+    "explanation": "Dynamic testing shows failures caused by defects. Debugging is the development activity that finds, analyzes, and fixes those defects to prevent the failures from recurring.",
+    "questionVariations": [
+      "Which option statements best describes the difference between testing and debugging?",
+      "From the options below, which statements best describes the difference between testing and debugging?"
+    ]
   },
   {
     "id": "ch1_q47",
@@ -739,7 +878,11 @@ export const chapter1Questions = [
       "To assign blame to the development team for code quality issues."
     ],
     "correct": 1,
-    "explanation": "One of the core objectives of testing is to provide sufficient information to stakeholders, especially regarding the level of quality and the risk of releasing a component or system."
+    "explanation": "One of the core objectives of testing is to provide sufficient information to stakeholders, especially regarding the level of quality and the risk of releasing a component or system.",
+    "questionVariations": [
+      "Which option is a recognized, standard objective of software testing?",
+      "From the choices below, which is a recognized, standard objective of software testing?"
+    ]
   },
   {
     "id": "ch1_q50",
@@ -781,7 +924,11 @@ export const chapter1Questions = [
       "Quality Assurance focuses entirely on executing software, while Quality Control focuses on writing test plans."
     ],
     "correct": 2,
-    "explanation": "Quality Assurance (QA) is process-oriented and covers the entire lifecycle. Quality Control (QC) is product-oriented. Software testing is an essential part of QC, making it nested under the umbrella of QA."
+    "explanation": "Quality Assurance (QA) is process-oriented and covers the entire lifecycle. Quality Control (QC) is product-oriented. Software testing is an essential part of QC, making it nested under the umbrella of QA.",
+    "questionVariations": [
+      "Which option statements regarding the relationship between QA, QC, and testing is correct?",
+      "From the options below, which statements regarding the relationship between QA, QC, and testing is correct?"
+    ]
   },
   {
     "id": "ch1_q53",
@@ -823,7 +970,11 @@ export const chapter1Questions = [
       "Expertise in configuring automated deployment orchestration tools."
     ],
     "correct": 2,
-    "explanation": "Good communication and psychological skills involve presenting findings neutrally, collaborating constructively, and understanding the perspectives of developers and project stakeholders without creating friction."
+    "explanation": "Good communication and psychological skills involve presenting findings neutrally, collaborating constructively, and understanding the perspectives of developers and project stakeholders without creating friction.",
+    "questionVariations": [
+      "Which option is considered a cognitive skill that a software tester must possess to communicate defects constructively?",
+      "From the choices below, which is considered a cognitive skill that a software tester must possess to communicate defects constructively?"
+    ]
   },
   {
     "id": "ch1_q56",
@@ -851,7 +1002,10 @@ export const chapter1Questions = [
       "Test Design occurs before development, while Test Implementation occurs after the product is in production."
     ],
     "correct": 1,
-    "explanation": "During Test Design, test conditions are elaborated into test cases. During Test Implementation, the testing artifacts are prepared and arranged into test procedures, checking that everything is ready for execution."
+    "explanation": "During Test Design, test conditions are elaborated into test cases. During Test Implementation, the testing artifacts are prepared and arranged into test procedures, checking that everything is ready for execution.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the primary distinction between Test Design and Test Implementation within the ISTQB test process?"
+    ]
   },
   {
     "id": "ch1_q58",
@@ -865,7 +1019,10 @@ export const chapter1Questions = [
       "The finalized defect status reports presented during test closure."
     ],
     "correct": 1,
-    "explanation": "The test basis is defined as all information sources from which the requirements of a component or system can be inferred. It is what testers analyze to create tests."
+    "explanation": "The test basis is defined as all information sources from which the requirements of a component or system can be inferred. It is what testers analyze to create tests.",
+    "questionVariations": [
+      "Of the options listed, which document or artifact represents the 'test basis' for an application?"
+    ]
   },
   {
     "id": "ch1_q59",
@@ -893,7 +1050,11 @@ export const chapter1Questions = [
       "Letting developers decide what to test based on which sections of code were easiest to write."
     ],
     "correct": 1,
-    "explanation": "Risk-based testing uses risk analysis to guide the test process, ensuring that test effort is proportional to the probability and impact of potential product quality risks."
+    "explanation": "Risk-based testing uses risk analysis to guide the test process, ensuring that test effort is proportional to the probability and impact of potential product quality risks.",
+    "questionVariations": [
+      "Which option statements best illustrates a risk-based approach to software testing?",
+      "From the options below, which statements best illustrates a risk-based approach to software testing?"
+    ]
   },
   {
     "id": "ch1_q61",
@@ -921,7 +1082,10 @@ export const chapter1Questions = [
       "Pesticide paradox"
     ],
     "correct": 1,
-    "explanation": "Principle 2 (Exhaustive testing is impossible) explicitly states that testing everything is unfeasible except in trivial cases. Testing must use risk analysis and prioritization instead."
+    "explanation": "Principle 2 (Exhaustive testing is impossible) explicitly states that testing everything is unfeasible except in trivial cases. Testing must use risk analysis and prioritization instead.",
+    "questionVariations": [
+      "Of the options listed, which testing principle directly addresses the constraint that testing a system using every possible valid and invalid input sequence is practically impossible?"
+    ]
   },
   {
     "id": "ch1_q63",
@@ -963,7 +1127,11 @@ export const chapter1Questions = [
       "Writing detailed steps to reproduce a newly discovered crash defect."
     ],
     "correct": 1,
-    "explanation": "Test planning is the activity of defining the objectives of testing and the specification of steps for achieving them within the defined constraints."
+    "explanation": "Test planning is the activity of defining the objectives of testing and the specification of steps for achieving them within the defined constraints.",
+    "questionVariations": [
+      "Which option is a key task performed during the 'Test Planning' activity of the fundamental test process?",
+      "From the choices below, which is a key task performed during the 'Test Planning' activity of the fundamental test process?"
+    ]
   },
   {
     "id": "ch1_q66",
@@ -991,7 +1159,10 @@ export const chapter1Questions = [
       "Because automated testing can only be performed on simple, low-risk websites."
     ],
     "correct": 1,
-    "explanation": "Principle 6 (Testing is context dependent) states that testing is done differently in different contexts. For example, safety-critical industrial software is tested differently than a mobile gaming application."
+    "explanation": "Principle 6 (Testing is context dependent) states that testing is done differently in different contexts. For example, safety-critical industrial software is tested differently than a mobile gaming application.",
+    "questionVariations": [
+      "In ISTQB terms, why should software testing be tailored depending on the context of the application under test?"
+    ]
   },
   {
     "id": "ch1_q68",
@@ -1019,7 +1190,11 @@ export const chapter1Questions = [
       "Executing a performance stress test on a database cluster."
     ],
     "correct": 2,
-    "explanation": "Static testing does not involve the execution of the software under test. It relies on manual reviews or automated tool analysis of documents, models, or code."
+    "explanation": "Static testing does not involve the execution of the software under test. It relies on manual reviews or automated tool analysis of documents, models, or code.",
+    "questionVariations": [
+      "Which option scenarios describes an example of static testing?",
+      "From the options below, which scenarios describes an example of static testing?"
+    ]
   },
   {
     "id": "ch1_q70",
@@ -1033,7 +1208,10 @@ export const chapter1Questions = [
       "Testers should stop executing tests as soon as the first defect is detected."
     ],
     "correct": 2,
-    "explanation": "Principle 1 states that testing reduces the probability of undiscovered defects remaining in the software, but even if no defects are found, it is not a proof of absolute correctness."
+    "explanation": "Principle 1 states that testing reduces the probability of undiscovered defects remaining in the software, but even if no defects are found, it is not a proof of absolute correctness.",
+    "questionVariations": [
+      "In ISTQB terminology, what does the ISTQB principle 'Testing shows the presence of defects, not their absence' mean for a test team?"
+    ]
   },
   {
     "id": "ch1_q71",
@@ -1061,7 +1239,11 @@ export const chapter1Questions = [
       "Translating abstract test conditions into explicit concrete data."
     ],
     "correct": 1,
-    "explanation": "Test closure activities occur at project milestones (like releases) and involve archiving assets, checking statuses of logged defects, and summarizing the outcome for stakeholders."
+    "explanation": "Test closure activities occur at project milestones (like releases) and involve archiving assets, checking statuses of logged defects, and summarizing the outcome for stakeholders.",
+    "questionVariations": [
+      "Which option is a task typically performed during the 'Test Closure' phase of the fundamental test process?",
+      "From the choices below, which is a task typically performed during the 'Test Closure' phase of the fundamental test process?"
+    ]
   },
   {
     "id": "ch1_q73",
@@ -1075,7 +1257,11 @@ export const chapter1Questions = [
       "Independent testers completely eliminate the project manager's responsibility for quality."
     ],
     "correct": 2,
-    "explanation": "Independence brings objectivity and a different cognitive bias to the project, making independent testers highly effective at finding assumptions or blind spots left by the original author."
+    "explanation": "Independence brings objectivity and a different cognitive bias to the project, making independent testers highly effective at finding assumptions or blind spots left by the original author.",
+    "questionVariations": [
+      "Which option options represents a true benefit of using independent testers to validate an application?",
+      "From the options below, which options represents a true benefit of using independent testers to validate an application?"
+    ]
   },
   {
     "id": "ch1_q74",
@@ -1089,7 +1275,10 @@ export const chapter1Questions = [
       "Developer testing eliminates the ability to track test case metrics completely."
     ],
     "correct": 1,
-    "explanation": "Authors often have a hard time seeing flaws in their own creations due to cognitive bias. Independent eyes are needed to supplement developer component testing."
+    "explanation": "Authors often have a hard time seeing flaws in their own creations due to cognitive bias. Independent eyes are needed to supplement developer component testing.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a primary risk of relying *exclusively* on developer testing for an entire software project?"
+    ]
   },
   {
     "id": "ch1_q75",
@@ -1131,7 +1320,10 @@ export const chapter1Questions = [
       "An operational requirement"
     ],
     "correct": 2,
-    "explanation": "A defect (also known as a bug or fault) is an imperfection or deficiency in a work product where it does not meet its requirements."
+    "explanation": "A defect (also known as a bug or fault) is an imperfection or deficiency in a work product where it does not meet its requirements.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a flaw or fault in software code that can cause the system to fail to perform its required function called?"
+    ]
   },
   {
     "id": "ch1_q78",
@@ -1159,7 +1351,10 @@ export const chapter1Questions = [
       "Absence-of-errors fallacy"
     ],
     "correct": 1,
-    "explanation": "ISTQB Principle 2 states that testing everything (all combinations of inputs and preconditions) is impossible except in trivial cases."
+    "explanation": "ISTQB Principle 2 states that testing everything (all combinations of inputs and preconditions) is impossible except in trivial cases.",
+    "questionVariations": [
+      "Of the options listed, which testing principle states that it is not possible to test all combinations of inputs and preconditions?"
+    ]
   },
   {
     "id": "ch1_q80",
@@ -1173,7 +1368,10 @@ export const chapter1Questions = [
       "Defect clustering"
     ],
     "correct": 1,
-    "explanation": "Principle 7 (Absence-of-errors fallacy) states that fixing defects does not help if the system is unusable or fails to meet user needs."
+    "explanation": "Principle 7 (Absence-of-errors fallacy) states that fixing defects does not help if the system is unusable or fails to meet user needs.",
+    "questionVariations": [
+      "Of the options listed, which testing principle states that finding and fixing defects is useless if the system built does not satisfy user expectations?"
+    ]
   },
   {
     "id": "ch1_q81",
@@ -1187,7 +1385,10 @@ export const chapter1Questions = [
       "Testing is context dependent"
     ],
     "correct": 0,
-    "explanation": "Principle 3 (Early testing) states that testing activities should start as early as possible in the lifecycle to detect and prevent defects early."
+    "explanation": "Principle 3 (Early testing) states that testing activities should start as early as possible in the lifecycle to detect and prevent defects early.",
+    "questionVariations": [
+      "Of the options listed, which testing principle suggests that software testing should start as soon as possible in the software development lifecycle?"
+    ]
   },
   {
     "id": "ch1_q82",
@@ -1215,7 +1416,10 @@ export const chapter1Questions = [
       "Exhaustive testing is impossible"
     ],
     "correct": 0,
-    "explanation": "Principle 4 (Defect clustering) states that a small number of modules usually contain the majority of defects discovered during testing."
+    "explanation": "Principle 4 (Defect clustering) states that a small number of modules usually contain the majority of defects discovered during testing.",
+    "questionVariations": [
+      "Of the options listed, which testing principle states that a small number of software modules usually contain most of the defects?"
+    ]
   },
   {
     "id": "ch1_q84",
@@ -1229,7 +1433,10 @@ export const chapter1Questions = [
       "Static testing is completely automated, while dynamic testing is strictly manual."
     ],
     "correct": 1,
-    "explanation": "Static testing relies on examining work products without running code (reviews, static analysis), whereas dynamic testing requires software execution."
+    "explanation": "Static testing relies on examining work products without running code (reviews, static analysis), whereas dynamic testing requires software execution.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the primary difference between static testing and dynamic testing?"
+    ]
   },
   {
     "id": "ch1_q85",
@@ -1243,7 +1450,11 @@ export const chapter1Questions = [
       "Writing defect logs into a bug tracking system."
     ],
     "correct": 1,
-    "explanation": "Quality Assurance is process-oriented and focuses on preventing defects by establishing appropriate practices and workflows."
+    "explanation": "Quality Assurance is process-oriented and focuses on preventing defects by establishing appropriate practices and workflows.",
+    "questionVariations": [
+      "Which option is an example of an activity belonging to Quality Assurance (QA)?",
+      "From the choices below, which is an example of an activity belonging to Quality Assurance (QA)?"
+    ]
   },
   {
     "id": "ch1_q86",
@@ -1257,7 +1468,11 @@ export const chapter1Questions = [
       "To fix the source code errors directly in production."
     ],
     "correct": 1,
-    "explanation": "One of the fundamental goals of testing is to evaluate quality and build confidence that the software is ready for use."
+    "explanation": "One of the fundamental goals of testing is to evaluate quality and build confidence that the software is ready for use.",
+    "questionVariations": [
+      "Which option is considered a primary objective of software testing?",
+      "From the choices below, which is considered a primary objective of software testing?"
+    ]
   },
   {
     "id": "ch1_q87",
@@ -1271,7 +1486,10 @@ export const chapter1Questions = [
       "Test schedule"
     ],
     "correct": 1,
-    "explanation": "The test basis refers to all work products (like requirements, user stories, designs) from which the requirements of a system can be inferred."
+    "explanation": "The test basis refers to all work products (like requirements, user stories, designs) from which the requirements of a system can be inferred.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the collective term for any source information used to derive and design test cases?"
+    ]
   },
   {
     "id": "ch1_q88",
@@ -1313,7 +1531,10 @@ export const chapter1Questions = [
       "Test Progress Report"
     ],
     "correct": 2,
-    "explanation": "A test summary report provides an overview of the testing performed, results achieved, and evaluation against exit criteria at test completion."
+    "explanation": "A test summary report provides an overview of the testing performed, results achieved, and evaluation against exit criteria at test completion.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the document called that reports on the testing activities performed and the final quality metrics at the end of a cycle?"
+    ]
   },
   {
     "id": "ch1_q91",
@@ -1327,7 +1548,10 @@ export const chapter1Questions = [
       "Testing fixes the software code, while debugging verifies the test metrics."
     ],
     "correct": 0,
-    "explanation": "Testing displays failures caused by bugs. Debugging is the process of finding, analyzing, and removing the cause of those failures."
+    "explanation": "Testing displays failures caused by bugs. Debugging is the process of finding, analyzing, and removing the cause of those failures.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the relationship between testing and debugging?"
+    ]
   },
   {
     "id": "ch1_q92",
@@ -1341,7 +1565,10 @@ export const chapter1Questions = [
       "Absence-of-errors fallacy"
     ],
     "correct": 0,
-    "explanation": "Principle 6 (Testing is context dependent) states that testing is done differently depending on the nature and environment of the software system."
+    "explanation": "Principle 6 (Testing is context dependent) states that testing is done differently depending on the nature and environment of the software system.",
+    "questionVariations": [
+      "Of the options listed, which testing principle highlights that an e-commerce website should be tested differently than an industrial safety control system?"
+    ]
   },
   {
     "id": "ch1_q93",
@@ -1355,7 +1582,11 @@ export const chapter1Questions = [
       "It automatically corrects compilation errors in the code."
     ],
     "correct": 1,
-    "explanation": "Traceability allows stakeholders to determine which requirements are tested, measure coverage accuracy, and track the impact of changes."
+    "explanation": "Traceability allows stakeholders to determine which requirements are tested, measure coverage accuracy, and track the impact of changes.",
+    "questionVariations": [
+      "What is the most important benefit of achieving bidirectional traceability between requirements and test cases?",
+      "Which benefit of achieving bidirectional traceability between requirements and test cases matters most?"
+    ]
   },
   {
     "id": "ch1_q94",
@@ -1369,7 +1600,11 @@ export const chapter1Questions = [
       "A developer needing additional training on a programming language."
     ],
     "correct": 1,
-    "explanation": "A product or quality risk is a potential failure area that directly impacts the software product's quality (like poor performance or instability)."
+    "explanation": "A product or quality risk is a potential failure area that directly impacts the software product's quality (like poor performance or instability).",
+    "questionVariations": [
+      "Which option describes a key quality risk associated with a software application?",
+      "From the options below, which describes a key quality risk associated with a software application?"
+    ]
   },
   {
     "id": "ch1_q95",
@@ -1383,7 +1618,10 @@ export const chapter1Questions = [
       "To eliminate the need for project managers."
     ],
     "correct": 1,
-    "explanation": "Testing independence helps avoid author confirmation bias and brings an objective perspective to software evaluation."
+    "explanation": "Testing independence helps avoid author confirmation bias and brings an objective perspective to software evaluation.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the primary role of an independent tester on a software project?"
+    ]
   },
   {
     "id": "ch1_q96",
@@ -1397,7 +1635,11 @@ export const chapter1Questions = [
       "It replaces the need for any customer feedback sessions."
     ],
     "correct": 1,
-    "explanation": "Finding and fixing defects early in the lifecycle prevents them from multiplying and reduces the overall cost of rework."
+    "explanation": "Finding and fixing defects early in the lifecycle prevents them from multiplying and reduces the overall cost of rework.",
+    "questionVariations": [
+      "Which option is a direct benefit of testing early in the software development lifecycle?",
+      "From the choices below, which is a direct benefit of testing early in the software development lifecycle?"
+    ]
   },
   {
     "id": "ch1_q97",
@@ -1411,7 +1653,10 @@ export const chapter1Questions = [
       "Test Charter"
     ],
     "correct": 1,
-    "explanation": "A test case consists of preconditions, inputs, actions, expected results, and postconditions developed to verify compliance with a specification."
+    "explanation": "A test case consists of preconditions, inputs, actions, expected results, and postconditions developed to verify compliance with a specification.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the term used to describe a set of conditions or variables under which a tester determines whether a system satisfies requirements?"
+    ]
   },
   {
     "id": "ch1_q98",
@@ -1425,7 +1670,11 @@ export const chapter1Questions = [
       "A successful project is one where testing activities find no defects at all."
     ],
     "correct": 1,
-    "explanation": "Principle 1 states that testing reduces the probability of undiscovered bugs, but it is not absolute proof of correctness."
+    "explanation": "Principle 1 states that testing reduces the probability of undiscovered bugs, but it is not absolute proof of correctness.",
+    "questionVariations": [
+      "Which option statements is true regarding the principle 'Testing shows the presence of defects, not their absence'?",
+      "From the options below, which statements is true regarding the principle 'Testing shows the presence of defects, not their absence'?"
+    ]
   },
   {
     "id": "ch1_q99",
@@ -1453,7 +1702,10 @@ export const chapter1Questions = [
       "Ad-hoc development"
     ],
     "correct": 1,
-    "explanation": "Risk-based testing uses product risk assessment to prioritize when, where, and how deeply to test a system."
+    "explanation": "Risk-based testing uses product risk assessment to prioritize when, where, and how deeply to test a system.",
+    "questionVariations": [
+      "In ISTQB terminology, what approach uses risk analysis to prioritize testing activities and focus effort on high-risk areas?"
+    ]
   },
   {
     "id": "ch1_q101",
@@ -1467,7 +1719,10 @@ export const chapter1Questions = [
       "A mindset focused purely on writing new product source code."
     ],
     "correct": 1,
-    "explanation": "Testers need a mindset that includes curiosity, professional pessimism, critical evaluation, and attention to detail to find defects effectively."
+    "explanation": "Testers need a mindset that includes curiosity, professional pessimism, critical evaluation, and attention to detail to find defects effectively.",
+    "questionVariations": [
+      "Of the options listed, which mindset is most effective for a software tester during dynamic execution testing?"
+    ]
   },
   {
     "id": "ch1_q102",
@@ -1481,7 +1736,11 @@ export const chapter1Questions = [
       "Fixing a broken database configuration file."
     ],
     "correct": 1,
-    "explanation": "Test planning involves determining the high-level objectives, scoping boundaries, and selecting the appropriate strategies for the testing lifecycle."
+    "explanation": "Test planning involves determining the high-level objectives, scoping boundaries, and selecting the appropriate strategies for the testing lifecycle.",
+    "questionVariations": [
+      "Which option activities is performed during the 'Test Planning' phase of the test process?",
+      "From the options below, which activities is performed during the 'Test Planning' phase of the test process?"
+    ]
   },
   {
     "id": "ch1_q103",
@@ -1495,7 +1754,10 @@ export const chapter1Questions = [
       "A deployed web service endpoint."
     ],
     "correct": 2,
-    "explanation": "Static testing involves evaluating work products (like requirements documents, user stories, or code) without executing them."
+    "explanation": "Static testing involves evaluating work products (like requirements documents, user stories, or code) without executing them.",
+    "questionVariations": [
+      "In ISTQB terminology, what is an example of an artifact reviewed during static testing?"
+    ]
   },
   {
     "id": "ch1_q104",
@@ -1509,7 +1771,11 @@ export const chapter1Questions = [
       "It stops any documentation activities from taking place."
     ],
     "correct": 1,
-    "explanation": "Shifting left means performing validation and test activities early in the project timeline, which helps catch defects when they are least expensive to resolve."
+    "explanation": "Shifting left means performing validation and test activities early in the project timeline, which helps catch defects when they are least expensive to resolve.",
+    "questionVariations": [
+      "What is the most important value of shifting testing 'left' in a development cycle?",
+      "Which value of shifting testing 'left' in a development cycle matters most?"
+    ]
   },
   {
     "id": "ch1_q105",
@@ -1523,7 +1789,11 @@ export const chapter1Questions = [
       "Testing acts as a replacement for software design models."
     ],
     "correct": 1,
-    "explanation": "Testing cannot fix human processes or budgets, but it successfully identifies defects, reducing product risk and giving visibility into software health."
+    "explanation": "Testing cannot fix human processes or budgets, but it successfully identifies defects, reducing product risk and giving visibility into software health.",
+    "questionVariations": [
+      "Which option statements about testing outcomes is true?",
+      "From the options below, which statements about testing outcomes is true?"
+    ]
   },
   {
     "id": "ch1_combo1",
@@ -1577,7 +1847,11 @@ export const chapter1Questions = [
       "Providing information for decision-making, particularly regarding quality level"
     ],
     "correct": 2,
-    "explanation": "Testing can find defects, build confidence, prevent defects via early activities, and inform decisions — but it can never guarantee zero defects, since testing shows the presence of defects, not their absence."
+    "explanation": "Testing can find defects, build confidence, prevent defects via early activities, and inform decisions — but it can never guarantee zero defects, since testing shows the presence of defects, not their absence.",
+    "questionVariations": [
+      "Which option is NOT a valid objective of testing?",
+      "From the choices below, which is NOT a valid objective of testing?"
+    ]
   },
   {
     "id": "chapter1_lo_112",
@@ -1611,7 +1885,11 @@ export const chapter1Questions = [
       "It eliminates the need for code reviews"
     ],
     "correct": 0,
-    "explanation": "Beyond finding defects, testing is necessary because it gives stakeholders the information they need to make sound release and business decisions."
+    "explanation": "Beyond finding defects, testing is necessary because it gives stakeholders the information they need to make sound release and business decisions.",
+    "questionVariations": [
+      "Which option best illustrates why testing is necessary at a business level, not just to catch bugs?",
+      "From the options below, which best illustrates why testing is necessary at a business level, not just to catch bugs?"
+    ]
   },
   {
     "id": "chapter1_lo_122",
@@ -1679,7 +1957,10 @@ export const chapter1Questions = [
       "Product backlog grooming"
     ],
     "correct": 0,
-    "explanation": "The fundamental test process includes activities such as test planning, analysis and design, implementation, execution, completion, and monitoring/control."
+    "explanation": "The fundamental test process includes activities such as test planning, analysis and design, implementation, execution, completion, and monitoring/control.",
+    "questionVariations": [
+      "Of the options listed, which of these is a core test activity within the fundamental test process?"
+    ]
   },
   {
     "id": "chapter1_lo_142",
@@ -1696,7 +1977,10 @@ export const chapter1Questions = [
       "Because only Agile teams may customize their process"
     ],
     "correct": 0,
-    "explanation": "Context — including domain, risk, regulations, team maturity, and constraints — shapes how the test process is applied in practice."
+    "explanation": "Context — including domain, risk, regulations, team maturity, and constraints — shapes how the test process is applied in practice.",
+    "questionVariations": [
+      "In ISTQB terms, why might two organizations testing similar applications adopt very different test processes?"
+    ]
   },
   {
     "id": "chapter1_lo_143",
@@ -1713,7 +1997,11 @@ export const chapter1Questions = [
       "The project charter"
     ],
     "correct": 0,
-    "explanation": "Testware refers to artifacts produced during testing: test plans, test cases, test data, and test reports, among others."
+    "explanation": "Testware refers to artifacts produced during testing: test plans, test cases, test data, and test reports, among others.",
+    "questionVariations": [
+      "Which option is an example of testware?",
+      "From the choices below, which is an example of testware?"
+    ]
   },
   {
     "id": "chapter1_lo_144",
@@ -1730,7 +2018,11 @@ export const chapter1Questions = [
       "It eliminates the need for regression testing"
     ],
     "correct": 0,
-    "explanation": "Traceability creates a bidirectional link between the test basis and test cases, supporting coverage verification and impact analysis when requirements change."
+    "explanation": "Traceability creates a bidirectional link between the test basis and test cases, supporting coverage verification and impact analysis when requirements change.",
+    "questionVariations": [
+      "What is the most important value of maintaining traceability between requirements and test cases?",
+      "Which value of maintaining traceability between requirements and test cases matters most?"
+    ]
   },
   {
     "id": "chapter1_lo_145",
@@ -1747,7 +2039,10 @@ export const chapter1Questions = [
       "Only the test manager is allowed to log defects"
     ],
     "correct": 0,
-    "explanation": "ISTQB distinguishes the test manager (planning, leading, monitoring/controlling testing) from the tester (analyzing, designing, implementing, and executing tests)."
+    "explanation": "ISTQB distinguishes the test manager (planning, leading, monitoring/controlling testing) from the tester (analyzing, designing, implementing, and executing tests).",
+    "questionVariations": [
+      "Of the options listed, which statement best compares the test manager and tester roles?"
+    ]
   },
   {
     "id": "chapter1_lo_151",
@@ -1764,7 +2059,11 @@ export const chapter1Questions = [
       "Formal legal training"
     ],
     "correct": 0,
-    "explanation": "Generic skills like communication, analytical thinking, and attention to detail are valuable for testers across any domain."
+    "explanation": "Generic skills like communication, analytical thinking, and attention to detail are valuable for testers across any domain.",
+    "questionVariations": [
+      "Which option is a generic skill valuable for testers, beyond testing-specific knowledge?",
+      "From the choices below, which is a generic skill valuable for testers, beyond testing-specific knowledge?"
+    ]
   },
   {
     "id": "chapter1_lo_152",
@@ -1781,7 +2080,10 @@ export const chapter1Questions = [
       "It removes the need for a dedicated test phase entirely in all contexts"
     ],
     "correct": 0,
-    "explanation": "The whole-team approach spreads responsibility for quality across all roles, embedding testing activities throughout development rather than isolating them."
+    "explanation": "The whole-team approach spreads responsibility for quality across all roles, embedding testing activities throughout development rather than isolating them.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a key advantage of the whole-team approach?"
+    ]
   },
   {
     "id": "chapter1_lo_153",
@@ -1798,6 +2100,414 @@ export const chapter1Questions = [
       "Testers become less able to notice defects the author overlooked"
     ],
     "correct": 0,
-    "explanation": "Independence reduces author bias and often finds different defects, but a real drawback is that isolated testers can become a bottleneck and lack context, slowing feedback."
+    "explanation": "Independence reduces author bias and often finds different defects, but a real drawback is that isolated testers can become a bottleneck and lack context, slowing feedback.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a potential drawback of high test independence (e.g., a fully separate, external test team)?"
+    ]
+  },
+  {
+    "id": "chapter1_v2_1",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "A team finds no defects during a test cycle and concludes the software is ready to ship. Which principle warns against this reasoning?",
+    "options": [
+      "Testing shows the presence of defects, not their absence",
+      "Defects cluster together",
+      "Testing is context dependent",
+      "Early testing saves time and money"
+    ],
+    "correct": 0,
+    "explanation": "Finding no defects only means this testing did not reveal any — it cannot prove none remain."
+  },
+  {
+    "id": "chapter1_v2_2",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "Which activity is part of test analysis rather than test design?",
+    "options": [
+      "Identifying what to test by examining the test basis",
+      "Writing concrete test case steps and data",
+      "Executing tests against the build",
+      "Reporting the final test results"
+    ],
+    "correct": 0,
+    "explanation": "Test analysis identifies test conditions ('what to test'); test design turns those into concrete test cases ('how to test it').",
+    "questionVariations": [
+      "Of the options listed, which activity is part of test analysis rather than test design?"
+    ]
+  },
+  {
+    "id": "chapter1_v2_3",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "A tester's independence is increased when tests are designed by whom?",
+    "options": [
+      "Someone other than the author of the code under test",
+      "The developer who wrote the code",
+      "The person who wrote the requirements alone",
+      "The project sponsor"
+    ],
+    "correct": 0,
+    "explanation": "Independence increases as distance from the author grows, reducing author bias in what gets tested."
+  },
+  {
+    "id": "chapter1_v2_4",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What is the relationship between a test condition and a test case?",
+    "options": [
+      "A test condition identifies something testable; one or more test cases cover it concretely",
+      "They are the same thing",
+      "A test case always precedes a test condition",
+      "Test conditions apply only to automated testing"
+    ],
+    "correct": 0,
+    "explanation": "Conditions describe testable aspects; test cases provide the concrete preconditions, inputs and expected results that exercise them.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the relationship between a test condition and a test case?"
+    ]
+  },
+  {
+    "id": "chapter1_v2_5",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "Why does the cost of fixing a defect generally rise the later it is found?",
+    "options": [
+      "More work has been built on the flawed foundation, so more must be reworked",
+      "Later defects are always more severe",
+      "Testing tools become more expensive over time",
+      "Developers charge more later in a project"
+    ],
+    "correct": 0,
+    "explanation": "A late-found defect often requires unwinding dependent design, code, documentation and tests built on the flaw.",
+    "questionVariations": [
+      "In ISTQB terms, why does the cost of fixing a defect generally rise the later it is found?"
+    ]
+  },
+  {
+    "id": "chapter1_v2_6",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "Which of these best illustrates testing being context dependent?",
+    "options": [
+      "A medical device is tested far more rigorously than an internal prototype",
+      "All projects use identical test plans",
+      "Every system receives exactly 40 test cases",
+      "Test techniques never vary by domain"
+    ],
+    "correct": 0,
+    "explanation": "The appropriate depth, rigor and technique choice varies with risk, domain and constraints — that is context dependence.",
+    "questionVariations": [
+      "Of the options listed, which of these best illustrates testing being context dependent?"
+    ]
+  },
+  {
+    "id": "chapter1_v2_7",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What is traceability most directly used for when a requirement changes?",
+    "options": [
+      "Identifying which test cases are affected and need revisiting",
+      "Calculating the project budget",
+      "Assigning defect severity",
+      "Choosing a programming language"
+    ],
+    "correct": 0,
+    "explanation": "Bidirectional traceability makes impact analysis possible — showing exactly which tests relate to the changed requirement.",
+    "questionVariations": [
+      "In ISTQB terminology, what is traceability most directly used for when a requirement changes?"
+    ]
+  },
+  {
+    "id": "chapter1_v2_8",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "A defect is found in production that testing never covered. What does this most likely indicate?",
+    "options": [
+      "A gap between the test basis coverage and actual usage or risk",
+      "That testers were negligent",
+      "That the software has no other defects",
+      "That test automation is unnecessary"
+    ],
+    "correct": 0,
+    "explanation": "Escapes usually reveal a coverage gap relative to real-world usage or risk, which is a process signal rather than individual fault."
+  },
+  {
+    "id": "chapter1_v2_9",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "Which is an example of testware that must be maintained over time?",
+    "options": [
+      "Automated regression scripts",
+      "The production server hardware",
+      "The company's HR handbook",
+      "The customer's browser choice"
+    ],
+    "correct": 0,
+    "explanation": "Automated scripts are testware and, like other testware, require ongoing maintenance as the product evolves.",
+    "questionVariations": [
+      "Of the options listed, which is an example of testware that must be maintained over time?"
+    ]
+  },
+  {
+    "id": "chapter1_v2_10",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Why does the whole-team approach tend to improve defect prevention?",
+    "options": [
+      "Quality is considered during requirements and design, not just after code exists",
+      "It removes the need for testers",
+      "It eliminates all defects automatically",
+      "It applies only to automated tests"
+    ],
+    "correct": 0,
+    "explanation": "Involving quality thinking from requirements onward prevents defects rather than merely detecting them later.",
+    "questionVariations": [
+      "In ISTQB terms, why does the whole-team approach tend to improve defect prevention?"
+    ]
+  },
+  {
+    "id": "chapter1_v2_11",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "What is the main purpose of test completion activities?",
+    "options": [
+      "Collecting and consolidating experience, testware and data for future use",
+      "Finding as many defects as possible",
+      "Writing the first test cases",
+      "Selecting test tools"
+    ],
+    "correct": 0,
+    "explanation": "Completion activities archive testware, report outcomes and capture lessons that benefit future projects.",
+    "questionVariations": [
+      "What is the main aim of test completion activities?",
+      "What is test completion activities mainly intended to achieve?"
+    ]
+  },
+  {
+    "id": "chapter1_v2_12",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "Which statement about exhaustive testing is correct?",
+    "options": [
+      "It is infeasible for all but the most trivial systems, so prioritization is required",
+      "It is always achievable with enough automation",
+      "It is required for safety-critical systems",
+      "It means testing every requirement once"
+    ],
+    "correct": 0,
+    "explanation": "The combinatorial explosion of inputs, states and paths makes exhaustive testing impractical, necessitating risk-based prioritization.",
+    "questionVariations": [
+      "Of the options listed, which statement about exhaustive testing is correct?"
+    ]
+  },
+  {
+    "id": "chapter1_v3_1",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Which of the following is an example of a failure rather than a defect?",
+    "options": [
+      "A user's payment is declined when the card is actually valid",
+      "An off-by-one error present in the source code",
+      "A missing null check written into a function",
+      "An ambiguous sentence in the requirements"
+    ],
+    "correct": 0,
+    "explanation": "A failure is observed external behaviour deviating from expectation; the others are defects or their causes.",
+    "questionVariations": [
+      "Which option is an example of a failure rather than a defect?",
+      "From the choices below, which is an example of a failure rather than a defect?"
+    ]
+  },
+  {
+    "id": "chapter1_v3_2",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "What primarily distinguishes quality control from quality assurance?",
+    "options": [
+      "Quality control is product-oriented and detects issues; quality assurance is process-oriented and prevents them",
+      "They are identical disciplines",
+      "Quality assurance only occurs after release",
+      "Quality control applies only to hardware"
+    ],
+    "correct": 0,
+    "explanation": "QC checks the product for problems; QA improves the process so fewer problems arise.",
+    "questionVariations": [
+      "In ISTQB terminology, what primarily distinguishes quality control from quality assurance?"
+    ]
+  },
+  {
+    "id": "chapter1_v3_3",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "A test charter for an exploratory session most usefully specifies what?",
+    "options": [
+      "A time-boxed mission describing what area to explore and why",
+      "Every exact click the tester must perform",
+      "The defect severity of issues not yet found",
+      "The precise number of defects to find"
+    ],
+    "correct": 0,
+    "explanation": "Charters give direction and scope without prescribing steps, preserving the adaptive nature of exploratory testing."
+  },
+  {
+    "id": "chapter1_v3_4",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Which situation best demonstrates the defect clustering principle in practice?",
+    "options": [
+      "Most defects are repeatedly found in the same two complex modules",
+      "Defects are spread perfectly evenly across all modules",
+      "No defects are found anywhere",
+      "Defects only appear after release"
+    ],
+    "correct": 0,
+    "explanation": "Clustering describes defects concentrating in a small number of modules, often the most complex or most-changed.",
+    "questionVariations": [
+      "Of the options listed, which situation best demonstrates the defect clustering principle in practice?"
+    ]
+  },
+  {
+    "id": "chapter1_v3_5",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "What is the main risk of a tester having very low independence from the code author?",
+    "options": [
+      "Confirmation bias may lead them to test mainly the paths they expect to work",
+      "Testing takes significantly longer",
+      "Defects become more severe",
+      "Requirements become ambiguous"
+    ],
+    "correct": 0,
+    "explanation": "Authors tend to unconsciously test their own assumptions, missing the cases they never considered while building.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the main risk of a tester having very low independence from the code author?"
+    ]
+  },
+  {
+    "id": "chapter1_v3_6",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "Why are test objectives typically agreed with stakeholders before testing starts?",
+    "options": [
+      "They determine what information testing must provide and therefore what is worth testing",
+      "Stakeholders must approve every test case",
+      "Objectives are a legal requirement",
+      "They determine the programming language"
+    ],
+    "correct": 0,
+    "explanation": "Objectives shape scope and priorities; agreeing them early prevents testing from producing information nobody needed.",
+    "questionVariations": [
+      "In ISTQB terms, why are test objectives typically agreed with stakeholders before testing starts?"
+    ]
+  },
+  {
+    "id": "chapter1_v3_7",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What does the term 'test basis' refer to?",
+    "options": [
+      "The body of knowledge used as the source for deriving test cases",
+      "The hardware the tests run on",
+      "The team executing the tests",
+      "The tool used to log defects"
+    ],
+    "correct": 0,
+    "explanation": "The test basis is the source material — requirements, specifications, designs — from which tests are derived.",
+    "questionVariations": [
+      "In ISTQB terminology, what does the term 'test basis' refer to?"
+    ]
+  },
+  {
+    "id": "chapter1_v3_8",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "Which is the strongest indicator that a test process is producing useful information?",
+    "options": [
+      "Stakeholders are making better-informed release decisions as a result",
+      "The total test case count is rising",
+      "Tests execute faster each sprint",
+      "Fewer defects are being logged"
+    ],
+    "correct": 0,
+    "explanation": "The purpose of testing is to inform decisions; better decision-making is the truest measure of its value.",
+    "questionVariations": [
+      "Of the options listed, which is the strongest indicator that a test process is producing useful information?"
+    ]
+  },
+  {
+    "id": "chapter1_v3_9",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "A requirement says the system should be 'fast'. Why is this problematic for testing?",
+    "options": [
+      "It is not measurable, so no objective pass/fail criterion can be derived",
+      "Speed cannot be tested at all",
+      "It requires white-box techniques",
+      "Only developers may test performance"
+    ],
+    "correct": 0,
+    "explanation": "Unmeasurable requirements cannot yield objective expected results, which is exactly what reviews should catch early."
+  },
+  {
+    "id": "chapter1_v3_10",
+    "chapter": "chapter1",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What is the relationship between debugging and confirmation testing?",
+    "options": [
+      "Debugging locates and fixes the defect; confirmation testing then verifies the fix worked",
+      "They are the same activity",
+      "Confirmation testing always precedes debugging",
+      "Debugging is performed only by testers"
+    ],
+    "correct": 0,
+    "explanation": "Developers debug to remove the cause; testers then confirm the reported failure no longer occurs.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the relationship between debugging and confirmation testing?"
+    ]
   }
 ];

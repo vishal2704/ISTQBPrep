@@ -113,7 +113,7 @@ export default function AppTour({ steps, active, onEnd, page = "dashboard" }) {
               </button>
             )}
             <button
-              className="btn-pop bg-feather text-white shadow-popSm text-sm px-4 py-2 rounded-xl"
+              className="btn-pop bg-successSolid text-white shadow-popSm text-sm px-4 py-2 rounded-xl"
               onClick={next}
             >
               {isLast ? "Finish" : "Next →"}

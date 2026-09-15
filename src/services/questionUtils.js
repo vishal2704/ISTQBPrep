@@ -167,9 +167,15 @@ export function computeStandardCount(chapter, poolSize) {
   return Math.min(STANDARD_COUNT_STEPS[idx], poolSize);
 }
 
+// Timed exams (per-chapter Timed Exam Mode, and full mock exams — which are
+// always timed) always use this fixed length; the user has no count choice.
+// Gracefully capped by pool size when a chapter/program has fewer questions.
+const TIMED_EXAM_QUESTION_COUNT = 45;
+
 export function buildExamSet(chapter, mode, desiredCount) {
   let pool;
   const isMock = chapter?.startsWith("mock");
+  const isTimed = mode === "timed";
 
   if (isMock) {
     const program = chapter === "mock-tm" ? "tm" : "foundation";
@@ -182,8 +188,8 @@ export function buildExamSet(chapter, mode, desiredCount) {
   }
 
   let count;
-  if (isMock) {
-    count = Math.min(40, pool.length);
+  if (isMock || isTimed) {
+    count = Math.min(TIMED_EXAM_QUESTION_COUNT, pool.length);
   } else if (chapter === "wrong") {
     count = pool.length;
   } else if (desiredCount === "all") {

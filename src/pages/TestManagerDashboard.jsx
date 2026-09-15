@@ -25,7 +25,7 @@ const CHAPTERS = [
 
 export default function TestManagerDashboard() {
   const navigate = useNavigate();
-  const { startExam, startRetry } = useExam();
+  const { startExam } = useExam();
   const [revisionCount, setRevisionCount] = useState(0);
   const [bookmarkCount, setBookmarkCount] = useState(0);
   const [hasResumable, setHasResumable] = useState(false);
@@ -59,10 +59,7 @@ export default function TestManagerDashboard() {
   }
 
   function handleBookmarkReview() {
-    const ids = StorageService.loadBookmarks();
-    if (ids.length === 0) return;
-    startRetry(ids, "Bookmarked Questions");
-    navigate("/exam");
+    navigate("/bookmarks");
   }
 
   return (
@@ -155,9 +152,8 @@ export default function TestManagerDashboard() {
               icon="⭐"
               iconBg="bg-mint/15"
               title="Bookmarked Questions"
-              subtitle={bookmarkCount > 0 ? `${bookmarkCount} saved for later` : "Tap ☆ while practicing to save one"}
+              subtitle={bookmarkCount > 0 ? `${bookmarkCount} saved — view, practice, or remove` : "Tap ☆ while practicing to save one"}
               badge={bookmarkCount > 0 && <Badge color="blue">{bookmarkCount}</Badge>}
-              disabled={bookmarkCount === 0}
               onClick={handleBookmarkReview}
             />
 

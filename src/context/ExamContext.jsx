@@ -11,6 +11,7 @@ import {
 } from "../services/answerUtils";
 import { StreakService } from "../services/streakService";
 import { RevisionService } from "../services/revisionService";
+import { LifetimeStatsService } from "../services/lifetimeStatsService";
 
 const ExamContext = createContext(null);
 
@@ -158,6 +159,7 @@ export function ExamProvider({ children }) {
     };
 
     StorageService.saveResult(result);
+    LifetimeStatsService.recordResult(result);
     StreakService.recordPractice();
     StorageService.clearExam();
     setExamData(null);

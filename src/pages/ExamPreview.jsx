@@ -60,7 +60,7 @@ export default function ExamPreview() {
           <div className="space-y-2.5">
             {meta.topics.map((t, i) => (
               <div key={i} className="flex items-start gap-3 p-3 rounded-2xl bg-black/[0.03]">
-                <span className="w-6 h-6 shrink-0 rounded-full bg-brand-500/15 text-brand-600 grid place-items-center text-xs font-extrabold">
+                <span className="w-6 h-6 shrink-0 rounded-full bg-brand-500/15 text-accentText grid place-items-center text-xs font-extrabold">
                   {i + 1}
                 </span>
                 <span className="text-sm">{t}</span>

@@ -59,7 +59,7 @@ export default function Header({ forceDark = false, homePath = "/foundation" }) 
                   active
                     ? isDarkLook
                       ? "bg-white/10 text-white"
-                      : "bg-brand-500/15 text-brand-600"
+                      : "bg-brand-500/15 text-accentText"
                     : `${softTextClass} hover:${isDarkLook ? "text-white" : "text-ink"}`
                 }`}
               >

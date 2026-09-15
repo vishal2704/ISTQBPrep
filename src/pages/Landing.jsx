@@ -52,9 +52,9 @@ const ALL_PROGRAMS = STREAMS.flatMap((s) => s.programs.map((p) => ({ ...p, strea
 const FEATURES = [
   {
     icon: "📝",
-    color: "bg-brand-500/15 text-brand-600",
+    color: "bg-brand-500/15 text-accentText",
     title: "Real Exam Experience",
-    text: "60 minutes, 40 questions, same pattern as the real ISTQB exam with a timer and instant results.",
+    text: "60 minutes, 45 questions, same timed pressure as the real ISTQB exam, with instant results.",
   },
   {
     icon: "📖",
@@ -224,7 +224,7 @@ function ProgramCard({ p, navigate, large = false, compact = false }) {
         {isActive ? <Badge color="green">Available</Badge> : <Badge color="gray">Coming soon</Badge>}
         {p.detail && <span className="text-[11px] text-inkSoft font-semibold">{p.detail}</span>}
       </div>
-      <div className="mt-2 text-xs font-extrabold text-brand-600">
+      <div className="mt-2 text-xs font-extrabold text-accentText">
         {isActive ? "Start practicing →" : "Preview syllabus →"}
       </div>
     </button>
@@ -299,7 +299,7 @@ export default function Landing() {
       {/* ============ PROGRAMS (moved above Features) ============ */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-20">
         <div className="text-center mb-10">
-          <span className="text-brand-600 text-xs font-extrabold uppercase tracking-widest">
+          <span className="text-accentText text-xs font-extrabold uppercase tracking-widest">
             Certification Path
           </span>
           <h2 className="font-heading text-3xl md:text-4xl font-extrabold mt-2">
@@ -373,7 +373,7 @@ export default function Landing() {
       {/* ============ FEATURES ============ */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-16 md:pb-20">
         <div className="text-center mb-12">
-          <span className="text-brand-600 text-xs font-extrabold uppercase tracking-widest">
+          <span className="text-accentText text-xs font-extrabold uppercase tracking-widest">
             Powerful Features
           </span>
           <h2 className="font-heading text-3xl md:text-4xl font-extrabold mt-2">

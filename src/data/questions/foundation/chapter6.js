@@ -1,6 +1,5 @@
-// Question bank — chapter6
-// 62 questions (2 tagged to official ISTQB v4.0.1
-// Learning Objectives — see src/data/loReference.js)
+// Question bank — foundation/chapter6
+// 81 questions
 export const chapter6Questions = [
   {
     "id": "ch6_q1",
@@ -16,7 +15,11 @@ export const chapter6Questions = [
       "Reduce requirements"
     ],
     "correct": 1,
-    "explanation": "Test tools support and improve testing activities but do not replace testers."
+    "explanation": "Test tools support and improve testing activities but do not replace testers.",
+    "questionVariations": [
+      "What is the primary aim of test tools?",
+      "What is test tools mainly intended to achieve?"
+    ]
   },
   {
     "id": "ch6_q2",
@@ -32,7 +35,10 @@ export const chapter6Questions = [
       "Build Tool"
     ],
     "correct": 1,
-    "explanation": "Test management tools help plan, execute and monitor testing activities."
+    "explanation": "Test management tools help plan, execute and monitor testing activities.",
+    "questionVariations": [
+      "Of the options listed, which tool category is used to manage test cases and test execution?"
+    ]
   },
   {
     "id": "ch6_q3",
@@ -48,7 +54,10 @@ export const chapter6Questions = [
       "Git"
     ],
     "correct": 0,
-    "explanation": "Jira is commonly used for defect and issue tracking."
+    "explanation": "Jira is commonly used for defect and issue tracking.",
+    "questionVariations": [
+      "Of the options listed, which tool is primarily used for defect tracking?"
+    ]
   },
   {
     "id": "ch6_q4",
@@ -64,7 +73,10 @@ export const chapter6Questions = [
       "Configuration Tool"
     ],
     "correct": 0,
-    "explanation": "Automation tools execute predefined test scripts."
+    "explanation": "Automation tools execute predefined test scripts.",
+    "questionVariations": [
+      "Of the options listed, which tool category supports automated execution of tests?"
+    ]
   },
   {
     "id": "ch6_q5",
@@ -80,7 +92,10 @@ export const chapter6Questions = [
       "Informal Reviews"
     ],
     "correct": 0,
-    "explanation": "Regression testing is highly repetitive and suitable for automation."
+    "explanation": "Regression testing is highly repetitive and suitable for automation.",
+    "questionVariations": [
+      "Of the options listed, which testing activity benefits most from automation?"
+    ]
   },
   {
     "id": "ch6_q6",
@@ -96,7 +111,10 @@ export const chapter6Questions = [
       "Test Management Tool"
     ],
     "correct": 0,
-    "explanation": "Static analysis tools identify code quality issues without execution."
+    "explanation": "Static analysis tools identify code quality issues without execution.",
+    "questionVariations": [
+      "Of the options listed, which tool category helps identify coding standard violations?"
+    ]
   },
   {
     "id": "ch6_q7",
@@ -112,7 +130,10 @@ export const chapter6Questions = [
       "Postman"
     ],
     "correct": 1,
-    "explanation": "SonarQube performs static code quality analysis."
+    "explanation": "SonarQube performs static code quality analysis.",
+    "questionVariations": [
+      "Of the options listed, which tool is commonly used for static code analysis?"
+    ]
   },
   {
     "id": "ch6_q8",
@@ -128,7 +149,10 @@ export const chapter6Questions = [
       "Review Tool"
     ],
     "correct": 2,
-    "explanation": "Performance tools evaluate speed, scalability and stability."
+    "explanation": "Performance tools evaluate speed, scalability and stability.",
+    "questionVariations": [
+      "Of the options listed, which tool category measures system response times and throughput?"
+    ]
   },
   {
     "id": "ch6_q9",
@@ -143,7 +167,10 @@ export const chapter6Questions = [
       "Jira"
     ],
     "correct": 1,
-    "explanation": "Apache JMeter is a popular performance testing tool."
+    "explanation": "Apache JMeter is a popular performance testing tool.",
+    "questionVariations": [
+      "Of the options listed, which tool is widely used for performance testing?"
+    ]
   },
   {
     "id": "ch6_q10",
@@ -158,7 +185,10 @@ export const chapter6Questions = [
       "All of the above"
     ],
     "correct": 3,
-    "explanation": "Automation improves efficiency, consistency and speed."
+    "explanation": "Automation improves efficiency, consistency and speed.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a common benefit of automation?"
+    ]
   },
   {
     "id": "ch6_q11",
@@ -173,7 +203,10 @@ export const chapter6Questions = [
       "All of the above"
     ],
     "correct": 3,
-    "explanation": "Automation introduces maintenance and reliability challenges."
+    "explanation": "Automation introduces maintenance and reliability challenges.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a potential risk of test automation?"
+    ]
   },
   {
     "id": "ch6_q12",
@@ -188,7 +221,10 @@ export const chapter6Questions = [
       "Code Freeze"
     ],
     "correct": 0,
-    "explanation": "A pilot project helps evaluate tool suitability and risks."
+    "explanation": "A pilot project helps evaluate tool suitability and risks.",
+    "questionVariations": [
+      "Of the options listed, which activity should be performed before adopting a new test tool?"
+    ]
   },
   {
     "id": "ch6_q13",
@@ -203,7 +239,10 @@ export const chapter6Questions = [
       "All of the above"
     ],
     "correct": 3,
-    "explanation": "Successful tool adoption requires planning, support and training."
+    "explanation": "Successful tool adoption requires planning, support and training.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a key success factor for tool adoption?"
+    ]
   },
   {
     "id": "ch6_q14",
@@ -218,7 +257,10 @@ export const chapter6Questions = [
       "Checklist Tools"
     ],
     "correct": 0,
-    "explanation": "CI/CD tools automate build, test and deployment activities."
+    "explanation": "CI/CD tools automate build, test and deployment activities.",
+    "questionVariations": [
+      "Of the options listed, which tool category supports Continuous Integration pipelines?"
+    ]
   },
   {
     "id": "ch6_q15",
@@ -233,7 +275,11 @@ export const chapter6Questions = [
       "Word"
     ],
     "correct": 0,
-    "explanation": "Jenkins is widely used for Continuous Integration and Delivery."
+    "explanation": "Jenkins is widely used for Continuous Integration and Delivery.",
+    "questionVariations": [
+      "Which option is a CI/CD tool?",
+      "From the choices below, which is a CI/CD tool?"
+    ]
   },
   {
     "id": "ch6_q16",
@@ -248,7 +294,10 @@ export const chapter6Questions = [
       "Tools eliminate defects"
     ],
     "correct": 2,
-    "explanation": "Tools assist testing but do not guarantee quality."
+    "explanation": "Tools assist testing but do not guarantee quality.",
+    "questionVariations": [
+      "Of the options listed, which statement about tools is TRUE?"
+    ]
   },
   {
     "id": "ch6_q17",
@@ -263,7 +312,10 @@ export const chapter6Questions = [
       "Measures review effectiveness"
     ],
     "correct": 0,
-    "explanation": "ROI helps justify the cost and benefits of a tool."
+    "explanation": "ROI helps justify the cost and benefits of a tool.",
+    "questionVariations": [
+      "In ISTQB terms, why is Return on Investment (ROI) important for tool adoption?"
+    ]
   },
   {
     "id": "ch6_q18",
@@ -278,7 +330,10 @@ export const chapter6Questions = [
       "Monitoring Tool"
     ],
     "correct": 0,
-    "explanation": "Requirements tools help manage traceability and coverage."
+    "explanation": "Requirements tools help manage traceability and coverage.",
+    "questionVariations": [
+      "Of the options listed, which tool category supports requirement traceability?"
+    ]
   },
   {
     "id": "ch6_q19",
@@ -293,7 +348,10 @@ export const chapter6Questions = [
       "Fewer reports"
     ],
     "correct": 0,
-    "explanation": "Tool integration improves collaboration and visibility."
+    "explanation": "Tool integration improves collaboration and visibility.",
+    "questionVariations": [
+      "In ISTQB terminology, what is one benefit of integrating testing tools?"
+    ]
   },
   {
     "id": "ch6_q20",
@@ -308,7 +366,10 @@ export const chapter6Questions = [
       "Choose a tool with the most features"
     ],
     "correct": 1,
-    "explanation": "Tool selection should align with business and testing objectives."
+    "explanation": "Tool selection should align with business and testing objectives.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the primary objective of test tool selection?"
+    ]
   },
   {
     "id": "ch6_q21",
@@ -323,7 +384,10 @@ export const chapter6Questions = [
       "Defect Management Tool"
     ],
     "correct": 2,
-    "explanation": "Execution tools automate running tests."
+    "explanation": "Execution tools automate running tests.",
+    "questionVariations": [
+      "Of the options listed, which type of tool supports automated execution of test cases?"
+    ]
   },
   {
     "id": "ch6_q22",
@@ -338,22 +402,10 @@ export const chapter6Questions = [
       "Removes defects automatically"
     ],
     "correct": 1,
-    "explanation": "Automation provides faster execution and feedback."
-  },
-  {
-    "id": "ch6_q23",
-    "chapter": "chapter6",
-    "difficulty": "medium",
-    "marks": 1,
-    "question": "Which tool category helps identify coding standard violations?",
-    "options": [
-      "Performance Tool",
-      "Static Analysis Tool",
-      "Defect Management Tool",
-      "CI Tool"
-    ],
-    "correct": 1,
-    "explanation": "Static analysis tools detect coding issues."
+    "explanation": "Automation provides faster execution and feedback.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a key benefit of test automation?"
+    ]
   },
   {
     "id": "ch6_q24",
@@ -368,7 +420,10 @@ export const chapter6Questions = [
       "Postman"
     ],
     "correct": 2,
-    "explanation": "Jenkins is a popular CI/CD tool."
+    "explanation": "Jenkins is a popular CI/CD tool.",
+    "questionVariations": [
+      "Of the options listed, which tool is commonly used for continuous integration?"
+    ]
   },
   {
     "id": "ch6_q25",
@@ -383,7 +438,10 @@ export const chapter6Questions = [
       "Reduced effort"
     ],
     "correct": 0,
-    "explanation": "Poor automation can become expensive to maintain."
+    "explanation": "Poor automation can become expensive to maintain.",
+    "questionVariations": [
+      "Of the options listed, which risk can result from poor automation design?"
+    ]
   },
   {
     "id": "ch6_q26",
@@ -398,7 +456,10 @@ export const chapter6Questions = [
       "Deployment"
     ],
     "correct": 0,
-    "explanation": "Organizations should evaluate tools before adoption."
+    "explanation": "Organizations should evaluate tools before adoption.",
+    "questionVariations": [
+      "Of the options listed, which activity should occur before introducing a new testing tool?"
+    ]
   },
   {
     "id": "ch6_q27",
@@ -413,7 +474,10 @@ export const chapter6Questions = [
       "Defect review"
     ],
     "correct": 1,
-    "explanation": "PoCs validate whether a tool meets needs."
+    "explanation": "PoCs validate whether a tool meets needs.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a proof of concept (PoC)?"
+    ]
   },
   {
     "id": "ch6_q28",
@@ -428,7 +492,10 @@ export const chapter6Questions = [
       "All of the above"
     ],
     "correct": 3,
-    "explanation": "Multiple factors influence tool selection."
+    "explanation": "Multiple factors influence tool selection.",
+    "questionVariations": [
+      "Of the options listed, which factor should be considered when selecting a tool?"
+    ]
   },
   {
     "id": "ch6_q29",
@@ -443,7 +510,10 @@ export const chapter6Questions = [
       "Confluence"
     ],
     "correct": 0,
-    "explanation": "JMeter is widely used for performance testing."
+    "explanation": "JMeter is widely used for performance testing.",
+    "questionVariations": [
+      "Of the options listed, which tool category supports performance testing?"
+    ]
   },
   {
     "id": "ch6_q30",
@@ -458,7 +528,10 @@ export const chapter6Questions = [
       "Eliminate manual testing"
     ],
     "correct": 1,
-    "explanation": "Tools assist testers and improve effectiveness."
+    "explanation": "Tools assist testers and improve effectiveness.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the primary goal of tool support in testing?"
+    ]
   },
   {
     "id": "ch6_q31",
@@ -473,7 +546,11 @@ export const chapter6Questions = [
       "An immediate and permanent reduction in the overall test execution time from day one."
     ],
     "correct": 1,
-    "explanation": "One of the major risks of tool support is unrealistic expectations, including underestimating the effort required to maintain automated test scripts over the long term as the software evolves."
+    "explanation": "One of the major risks of tool support is unrealistic expectations, including underestimating the effort required to maintain automated test scripts over the long term as the software evolves.",
+    "questionVariations": [
+      "Which option is considered a significant risk when introducing a test automation tool into an organization?",
+      "From the choices below, which is considered a significant risk when introducing a test automation tool into an organization?"
+    ]
   },
   {
     "id": "ch6_q32",
@@ -488,7 +565,11 @@ export const chapter6Questions = [
       "To reduce the training budget by avoiding training for the rest of the staff."
     ],
     "correct": 2,
-    "explanation": "A pilot project is a small-scale implementation used to gain deep understanding of the tool, discover how it integrates with the existing lifecycle, and establish guidelines before a broad rollout."
+    "explanation": "A pilot project is a small-scale implementation used to gain deep understanding of the tool, discover how it integrates with the existing lifecycle, and establish guidelines before a broad rollout.",
+    "questionVariations": [
+      "What is the primary aim of conducting a pilot project before deploying a new testing tool across an entire organization?",
+      "What is conducting a pilot project before deploying a new testing tool across an entire organization mainly intended to achieve?"
+    ]
   },
   {
     "id": "ch6_q33",
@@ -503,7 +584,10 @@ export const chapter6Questions = [
       "Defect management tool"
     ],
     "correct": 2,
-    "explanation": "Coverage tools (or static/dynamic analysis tools used for code coverage) analyze which parts of the code structure have been executed by a suite of tests, which is a common task during developer-led component testing."
+    "explanation": "Coverage tools (or static/dynamic analysis tools used for code coverage) analyze which parts of the code structure have been executed by a suite of tests, which is a common task during developer-led component testing.",
+    "questionVariations": [
+      "Of the options listed, which type of test tool is most likely to be used directly by developers during unit and component testing to measure code thoroughness?"
+    ]
   },
   {
     "id": "ch6_q34",
@@ -518,7 +602,11 @@ export const chapter6Questions = [
       "Ensuring that test data is generated completely free of human bias or error."
     ],
     "correct": 1,
-    "explanation": "Test execution tools automate repetitive tasks like running regression tests, which frees up human testers to execute exploratory or creative test scenarios."
+    "explanation": "Test execution tools automate repetitive tasks like running regression tests, which frees up human testers to execute exploratory or creative test scenarios.",
+    "questionVariations": [
+      "Which option is a potential benefit of using test execution tools?",
+      "From the choices below, which is a potential benefit of using test execution tools?"
+    ]
   },
   {
     "id": "ch6_q35",
@@ -548,7 +636,11 @@ export const chapter6Questions = [
       "Data preparation tool"
     ],
     "correct": 1,
-    "explanation": "Security testing tools (such as vulnerability scanners and network sniffers) inspect traffic, encryption protocols, and certificates to ensure data privacy and prevent unauthorized intercept leaks."
+    "explanation": "Security testing tools (such as vulnerability scanners and network sniffers) inspect traffic, encryption protocols, and certificates to ensure data privacy and prevent unauthorized intercept leaks.",
+    "questionVariations": [
+      "Which option tools is most useful for verifying that data transmitted across a network is properly encrypted?",
+      "From the options below, which tools is most useful for verifying that data transmitted across a network is properly encrypted?"
+    ]
   },
   {
     "id": "ch6_q37",
@@ -563,7 +655,10 @@ export const chapter6Questions = [
       "It automatically repairs broken test execution scripts"
     ],
     "correct": 2,
-    "explanation": "Test data preparation tools speed up execution setup by populating databases, files, or message queues with valid or invalid datasets needed for comprehensive test scenarios."
+    "explanation": "Test data preparation tools speed up execution setup by populating databases, files, or message queues with valid or invalid datasets needed for comprehensive test scenarios.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a main benefit of using a test data preparation tool?"
+    ]
   },
   {
     "id": "ch6_q38",
@@ -593,7 +688,10 @@ export const chapter6Questions = [
       "Keyword-driven framework"
     ],
     "correct": 1,
-    "explanation": "Data-driven frameworks read variables from spreadsheets, CSV files, or database arrays, driving a single testing script loop with unique parameter setups per iteration."
+    "explanation": "Data-driven frameworks read variables from spreadsheets, CSV files, or database arrays, driving a single testing script loop with unique parameter setups per iteration.",
+    "questionVariations": [
+      "Of the options listed, which type of framework separates test steps into generic data files, enabling the same execution scripts to run across varying input variations?"
+    ]
   },
   {
     "id": "ch6_q40",
@@ -608,7 +706,10 @@ export const chapter6Questions = [
       "The tool's license validation system demands frequent database maintenance updates to keep working"
     ],
     "correct": 1,
-    "explanation": "Automated scripts execute precise, hardcoded workflows. Once the defects along those targeted paths are cleared, the script will pass indefinitely without ever unearthing alternative bugs hiding outside its scope."
+    "explanation": "Automated scripts execute precise, hardcoded workflows. Once the defects along those targeted paths are cleared, the script will pass indefinitely without ever unearthing alternative bugs hiding outside its scope.",
+    "questionVariations": [
+      "In ISTQB terminology, what is meant by the phrase 'the pesticide paradox' when applied specifically to automated test scripts?"
+    ]
   },
   {
     "id": "ch6_q41",
@@ -623,7 +724,11 @@ export const chapter6Questions = [
       "Analyzing code coverage percentages"
     ],
     "correct": 2,
-    "explanation": "Requirements management tools help track user stories and requirements, allowing teams to establish direct traceability to the respective test cases that validate them."
+    "explanation": "Requirements management tools help track user stories and requirements, allowing teams to establish direct traceability to the respective test cases that validate them.",
+    "questionVariations": [
+      "Which option activities is best supported by a requirements management tool?",
+      "From the options below, which activities is best supported by a requirements management tool?"
+    ]
   },
   {
     "id": "ch6_q42",
@@ -638,7 +743,10 @@ export const chapter6Questions = [
       "A sudden decrease in required server hosting configurations"
     ],
     "correct": 1,
-    "explanation": "Deploying a tool universally without a pilot project increases risk because unique team dynamics, stack compatibility issues, and training gaps aren't identified early."
+    "explanation": "Deploying a tool universally without a pilot project increases risk because unique team dynamics, stack compatibility issues, and training gaps aren't identified early.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a major risk when deploying a test tool across an entire organization without a pilot phase?"
+    ]
   },
   {
     "id": "ch6_q43",
@@ -653,7 +761,10 @@ export const chapter6Questions = [
       "Unit assertion framework"
     ],
     "correct": 1,
-    "explanation": "Accessibility tools evaluate software interfaces against compliance standard frameworks (like WCAG) to ensure readability, contrast, screen-reader compatibility, and overall inclusivity."
+    "explanation": "Accessibility tools evaluate software interfaces against compliance standard frameworks (like WCAG) to ensure readability, contrast, screen-reader compatibility, and overall inclusivity.",
+    "questionVariations": [
+      "Of the options listed, which tool type is designed to monitor and check if a web page complies with visual standard laws for users with visual impairments?"
+    ]
   },
   {
     "id": "ch6_q44",
@@ -668,7 +779,10 @@ export const chapter6Questions = [
       "The complete elimination of the need for configuration management processes"
     ],
     "correct": 1,
-    "explanation": "When an application's GUI changes frequently, automated scripts that reference specific UI elements break. This leads to high maintenance effort, which can cancel out the time-saving benefits of automation."
+    "explanation": "When an application's GUI changes frequently, automated scripts that reference specific UI elements break. This leads to high maintenance effort, which can cancel out the time-saving benefits of automation.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a potential negative consequence of using a test execution tool with a highly volatile graphical user interface (GUI)?"
+    ]
   },
   {
     "id": "ch6_q45",
@@ -683,7 +797,11 @@ export const chapter6Questions = [
       "To find every residual bug remaining in production legacy systems"
     ],
     "correct": 1,
-    "explanation": "A pilot project evaluates a tool on a smaller scale to learn its detailed capabilities, figure out how it fits into workflows, and establish standard usage templates before a full rollout."
+    "explanation": "A pilot project evaluates a tool on a smaller scale to learn its detailed capabilities, figure out how it fits into workflows, and establish standard usage templates before a full rollout.",
+    "questionVariations": [
+      "Which option is typically a goal of a tool pilot project?",
+      "From the choices below, which is typically a goal of a tool pilot project?"
+    ]
   },
   {
     "id": "ch6_q46",
@@ -698,7 +816,10 @@ export const chapter6Questions = [
       "Requirements traceability tool"
     ],
     "correct": 1,
-    "explanation": "Virtualization and containerization tools (like Docker or VMs) let teams simulate, duplicate, and clean various environment configurations rapidly for consistent execution conditions."
+    "explanation": "Virtualization and containerization tools (like Docker or VMs) let teams simulate, duplicate, and clean various environment configurations rapidly for consistent execution conditions.",
+    "questionVariations": [
+      "Of the options listed, which tool type allows testers to configure virtual system attributes and run identical scenarios on multiple operating system configurations?"
+    ]
   },
   {
     "id": "ch6_q47",
@@ -713,7 +834,10 @@ export const chapter6Questions = [
       "It eliminates the necessity of designing expected results for test steps"
     ],
     "correct": 1,
-    "explanation": "Keyword-driven frameworks isolate execution code from the script definitions using action keywords (e.g., 'Click', 'Verify'). This allows business analysts or manual testers to construct scenarios without writing raw code."
+    "explanation": "Keyword-driven frameworks isolate execution code from the script definitions using action keywords (e.g., 'Click', 'Verify'). This allows business analysts or manual testers to construct scenarios without writing raw code.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a core advantage of using a keyword-driven automation framework?"
+    ]
   },
   {
     "id": "ch6_q48",
@@ -743,7 +867,10 @@ export const chapter6Questions = [
       "The absolute number of spelling fixes made within requirement text fields"
     ],
     "correct": 1,
-    "explanation": "Test management tools provide real-time dashboards tracking test metrics, such as pass/fail rates, blockades, and defect severity levels, which help guide release readiness decisions."
+    "explanation": "Test management tools provide real-time dashboards tracking test metrics, such as pass/fail rates, blockades, and defect severity levels, which help guide release readiness decisions.",
+    "questionVariations": [
+      "Of the options listed, which tool metrics are most appropriate for a test manager tracking the overall progress of a live testing cycle?"
+    ]
   },
   {
     "id": "ch6_q50",
@@ -758,7 +885,10 @@ export const chapter6Questions = [
       "To authorize the final code deployment steps into production systems"
     ],
     "correct": 1,
-    "explanation": "The scribe (or recorder) uses the review management tool to log defects, action items, and structural feedback generated by participants during formal meetings."
+    "explanation": "The scribe (or recorder) uses the review management tool to log defects, action items, and structural feedback generated by participants during formal meetings.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the primary role of a tool scribe during a formal review process tool setup?"
+    ]
   },
   {
     "id": "ch6_q51",
@@ -773,7 +903,10 @@ export const chapter6Questions = [
       "Encrypting all the script assets so developers cannot view the assertions"
     ],
     "correct": 1,
-    "explanation": "Coverage tools instrument code by adding hidden counters or log lines to the application build. This tracks exactly which statements, branches, or functions are executed during a test run."
+    "explanation": "Coverage tools instrument code by adding hidden counters or log lines to the application build. This tracks exactly which statements, branches, or functions are executed during a test run.",
+    "questionVariations": [
+      "In ISTQB terminology, what does 'tool-driven instrumentation' mean in the context of code coverage analysis tools?"
+    ]
   },
   {
     "id": "ch6_q52",
@@ -788,7 +921,10 @@ export const chapter6Questions = [
       "To enable the test tool to write human-readable documentation without supervision"
     ],
     "correct": 1,
-    "explanation": "Buying a tool is only part of the process. Without proper training, mentoring, and clear guidelines, team members will use inconsistent styles, resulting in fragile, unmaintainable test suites."
+    "explanation": "Buying a tool is only part of the process. Without proper training, mentoring, and clear guidelines, team members will use inconsistent styles, resulting in fragile, unmaintainable test suites.",
+    "questionVariations": [
+      "In ISTQB terms, why is it important to include training and coaching as part of a new testing tool rollout strategy?"
+    ]
   },
   {
     "id": "ch6_q53",
@@ -803,7 +939,11 @@ export const chapter6Questions = [
       "The layout positioning consistency of buttons on a mobile layout"
     ],
     "correct": 1,
-    "explanation": "Dynamic analysis requires the application to be running. It identifies operational runtime flaws, such as unassigned memory blocks, system thread deadlocks, or memory leaks."
+    "explanation": "Dynamic analysis requires the application to be running. It identifies operational runtime flaws, such as unassigned memory blocks, system thread deadlocks, or memory leaks.",
+    "questionVariations": [
+      "Which option is an example of an aspect evaluated by a dynamic analysis tool?",
+      "From the choices below, which is an example of an aspect evaluated by a dynamic analysis tool?"
+    ]
   },
   {
     "id": "ch6_q54",
@@ -818,7 +958,10 @@ export const chapter6Questions = [
       "Equivalence partition math tables"
     ],
     "correct": 1,
-    "explanation": "CI/CD tools (like Jenkins, GitHub Actions, or GitLab CI) coordinate code updates, run compilation sequences, and trigger automated test suites as part of the deployment pipeline."
+    "explanation": "CI/CD tools (like Jenkins, GitHub Actions, or GitLab CI) coordinate code updates, run compilation sequences, and trigger automated test suites as part of the deployment pipeline.",
+    "questionVariations": [
+      "Of the options listed, which tool group is most useful for automated continuous deployment and delivery pipelines?"
+    ]
   },
   {
     "id": "ch6_q55",
@@ -833,7 +976,10 @@ export const chapter6Questions = [
       "The application under test will become incompatible with database connections"
     ],
     "correct": 0,
-    "explanation": "Relying on vanity metrics can lead to poor testing practices. Teams might write hundreds of superficial assertions to meet targets, creating a false sense of security while missing complex defects."
+    "explanation": "Relying on vanity metrics can lead to poor testing practices. Teams might write hundreds of superficial assertions to meet targets, creating a false sense of security while missing complex defects.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a major risk of evaluating team performance solely based on automated test metrics (e.g., number of tests created)?"
+    ]
   },
   {
     "id": "ch6_q56",
@@ -848,7 +994,10 @@ export const chapter6Questions = [
       "Configuration backup utilities"
     ],
     "correct": 1,
-    "explanation": "Performance and load testing tools simulate heavy multi-user workloads or high transaction volumes to help identify system bottlenecks and database response limits."
+    "explanation": "Performance and load testing tools simulate heavy multi-user workloads or high transaction volumes to help identify system bottlenecks and database response limits.",
+    "questionVariations": [
+      "Of the options listed, which type of tool is designed to mimic system interactions and inject high numbers of database queries to evaluate limits?"
+    ]
   },
   {
     "id": "ch6_q57",
@@ -863,7 +1012,11 @@ export const chapter6Questions = [
       "To replace the need for conducting code reviews completely"
     ],
     "correct": 1,
-    "explanation": "Incident management (bug tracking) systems serve as a central database to document defects, assign ownership, track fix statuses, and maintain a clear audit trail."
+    "explanation": "Incident management (bug tracking) systems serve as a central database to document defects, assign ownership, track fix statuses, and maintain a clear audit trail.",
+    "questionVariations": [
+      "What is the primary aim of an incident management tool?",
+      "What is an incident management tool mainly intended to achieve?"
+    ]
   },
   {
     "id": "ch6_q58",
@@ -878,7 +1031,10 @@ export const chapter6Questions = [
       "Stopping all future inventory adjustments within the production application environment"
     ],
     "correct": 1,
-    "explanation": "Isolating test data from script code ensures that when data parameters change, only the external file needs updates. The core test scripts remain untouched, which lowers maintenance effort."
+    "explanation": "Isolating test data from script code ensures that when data parameters change, only the external file needs updates. The core test scripts remain untouched, which lowers maintenance effort.",
+    "questionVariations": [
+      "In ISTQB terminology, what design strategy best ensures that automated test scripts remain usable when data structures (like product catalogs) change?"
+    ]
   },
   {
     "id": "ch6_q59",
@@ -893,7 +1049,11 @@ export const chapter6Questions = [
       "It guarantees that all requirements are completely free of logical contradictions"
     ],
     "correct": 1,
-    "explanation": "Configuration management ensures that test code, test data files, and infrastructure scripts are version-controlled alongside the application source files they validate."
+    "explanation": "Configuration management ensures that test code, test data files, and infrastructure scripts are version-controlled alongside the application source files they validate.",
+    "questionVariations": [
+      "Which option is a primary benefit of using a configuration management system alongside test tools?",
+      "From the choices below, which is a primary benefit of using a configuration management system alongside test tools?"
+    ]
   },
   {
     "id": "ch6_q60",
@@ -908,7 +1068,10 @@ export const chapter6Questions = [
       "Continuous integration runners block scripts that fail more than three times sequentially"
     ],
     "correct": 0,
-    "explanation": "This demonstrates the Pesticide Paradox in automation: automated scripts only check the specific steps and assertions they are programmed to verify. They do not explore new paths on their own, meaning manual exploratory testing is still essential to discover new types of bugs."
+    "explanation": "This demonstrates the Pesticide Paradox in automation: automated scripts only check the specific steps and assertions they are programmed to verify. They do not explore new paths on their own, meaning manual exploratory testing is still essential to discover new types of bugs.",
+    "questionVariations": [
+      "In ISTQB terms, why can an automated test suite fail to find new types of defects over an extended period?"
+    ]
   },
   {
     "id": "chapter6_lo_611",
@@ -925,7 +1088,11 @@ export const chapter6Questions = [
       "By eliminating the need for test planning"
     ],
     "correct": 0,
-    "explanation": "Test tools support testing by automating repetitive work, managing artifacts like test cases and defects, and making some activities (like large-scale regression) practical at all."
+    "explanation": "Test tools support testing by automating repetitive work, managing artifacts like test cases and defects, and making some activities (like large-scale regression) practical at all.",
+    "questionVariations": [
+      "Which option best describes how test tools support testing?",
+      "From the options below, which best describes how test tools support testing?"
+    ]
   },
   {
     "id": "chapter6_lo_621",
@@ -942,6 +1109,390 @@ export const chapter6Questions = [
       "Automation reduces manual effort for repetitive checks"
     ],
     "correct": 0,
-    "explanation": "A well-known risk of automation is a false sense of security — passing automated tests can mask the fact that they aren't actually covering the risks that matter."
+    "explanation": "A well-known risk of automation is a false sense of security — passing automated tests can mask the fact that they aren't actually covering the risks that matter.",
+    "questionVariations": [
+      "Which option is a genuine risk of test automation, not a benefit?",
+      "From the choices below, which is a genuine risk of test automation, not a benefit?"
+    ]
+  },
+  {
+    "id": "chapter6_v2_1",
+    "chapter": "chapter6",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What is a common risk when introducing a test automation tool into an immature test process?",
+    "options": [
+      "Automating a poorly-defined process amplifies its existing problems",
+      "The tool will fix the process automatically",
+      "Automation always reduces total effort immediately",
+      "Tool cost is the only consideration"
+    ],
+    "correct": 0,
+    "explanation": "Automation scales whatever process exists — including its flaws — so process clarity should generally precede tooling.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a common risk when introducing a test automation tool into an immature test process?"
+    ]
+  },
+  {
+    "id": "chapter6_v2_2",
+    "chapter": "chapter6",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "Which tool category directly supports traceability between requirements, tests and defects?",
+    "options": [
+      "Test management tools",
+      "Performance testing tools",
+      "Static analysis tools",
+      "Compilers"
+    ],
+    "correct": 0,
+    "explanation": "Test management tools maintain the links between requirements, test cases, executions and resulting defects.",
+    "questionVariations": [
+      "Of the options listed, which tool category directly supports traceability between requirements, tests and defects?"
+    ]
+  },
+  {
+    "id": "chapter6_v2_3",
+    "chapter": "chapter6",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "What is a realistic expectation for the return on investment of test automation?",
+    "options": [
+      "Benefits typically accrue over time after an initial investment in setup and maintenance",
+      "Benefits are immediate with no upfront cost",
+      "There is never any return",
+      "Return depends only on tool licence price"
+    ],
+    "correct": 0,
+    "explanation": "Automation involves real upfront and ongoing maintenance cost; returns accumulate through repeated execution over time.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a realistic expectation for the return on investment of test automation?"
+    ]
+  },
+  {
+    "id": "chapter6_v2_4",
+    "chapter": "chapter6",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Why can automated tests give a false sense of security?",
+    "options": [
+      "They only verify what they were written to check, which may not match actual risk",
+      "They always produce incorrect results",
+      "They cannot be executed repeatedly",
+      "They are slower than manual testing"
+    ],
+    "correct": 0,
+    "explanation": "A green suite only confirms the programmed assertions passed — it says nothing about risks the suite never examines.",
+    "questionVariations": [
+      "In ISTQB terms, why can automated tests give a false sense of security?"
+    ]
+  },
+  {
+    "id": "chapter6_v2_5",
+    "chapter": "chapter6",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "Which tool would a team use to measure how much of the code their tests exercised?",
+    "options": [
+      "A coverage tool",
+      "A defect management tool",
+      "A test data generator",
+      "A version control system"
+    ],
+    "correct": 0,
+    "explanation": "Coverage tools instrument execution to report which statements, branches or paths the tests actually reached.",
+    "questionVariations": [
+      "Of the options listed, which tool would a team use to measure how much of the code their tests exercised?"
+    ]
+  },
+  {
+    "id": "chapter6_v2_6",
+    "chapter": "chapter6",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "What is a key consideration when selecting a test tool for an organization?",
+    "options": [
+      "Fit with existing processes, skills and technology, not just feature lists",
+      "Only the number of features advertised",
+      "Only the vendor's marketing materials",
+      "Only the tool's colour scheme"
+    ],
+    "correct": 0,
+    "explanation": "Tool success depends heavily on organizational fit — process, existing skills and technology stack — rather than raw feature count.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a key consideration when selecting a test tool for an organization?"
+    ]
+  },
+  {
+    "id": "chapter6_v2_7",
+    "chapter": "chapter6",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Why is test automation maintenance effort often underestimated?",
+    "options": [
+      "Automated tests must be updated whenever the application they exercise changes",
+      "Automated tests never require changes",
+      "Maintenance is performed automatically by the tool",
+      "Applications never change"
+    ],
+    "correct": 0,
+    "explanation": "Every application change can invalidate existing scripts, making ongoing maintenance a significant and persistent cost.",
+    "questionVariations": [
+      "In ISTQB terms, why is test automation maintenance effort often underestimated?"
+    ]
+  },
+  {
+    "id": "chapter6_v2_8",
+    "chapter": "chapter6",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "Which testing activity is generally LEAST suitable for full automation?",
+    "options": [
+      "Exploratory investigation of a newly-designed user interface",
+      "Repeated regression checks of stable functionality",
+      "Load generation for performance testing",
+      "Static rule checking of source code"
+    ],
+    "correct": 0,
+    "explanation": "Exploratory work depends on human judgment, curiosity and adaptation — qualities automation cannot supply.",
+    "questionVariations": [
+      "Of the options listed, which testing activity is generally LEAST suitable for full automation?"
+    ]
+  },
+  {
+    "id": "chapter6_v3_1",
+    "chapter": "chapter6",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What is the most important prerequisite before automating a manual test?",
+    "options": [
+      "The manual test is stable, well-understood and worth repeating",
+      "The test has never been executed",
+      "The test is expected to change frequently",
+      "The test is run only once"
+    ],
+    "correct": 0,
+    "explanation": "Automation pays off on stable, repeatedly-executed tests; volatile or one-off tests rarely justify the cost.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the most important prerequisite before automating a manual test?"
+    ]
+  },
+  {
+    "id": "chapter6_v3_2",
+    "chapter": "chapter6",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "Which tool supports the test process by analysing code without executing it?",
+    "options": [
+      "A static analysis tool",
+      "A load generation tool",
+      "A test execution tool",
+      "A defect tracker"
+    ],
+    "correct": 0,
+    "explanation": "Static analysis inspects source structure and rules without running the program.",
+    "questionVariations": [
+      "Of the options listed, which tool supports the test process by analysing code without executing it?"
+    ]
+  },
+  {
+    "id": "chapter6_v3_3",
+    "chapter": "chapter6",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "What is a realistic benefit of a test management tool in a large project?",
+    "options": [
+      "Centralized traceability and reporting across many test cases and defects",
+      "Automatic generation of correct test cases",
+      "Elimination of the need for testers",
+      "Guaranteed defect-free releases"
+    ],
+    "correct": 0,
+    "explanation": "Test management tools excel at organizing, linking and reporting across large volumes of testing artifacts.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a realistic benefit of a test management tool in a large project?"
+    ]
+  },
+  {
+    "id": "chapter6_v3_4",
+    "chapter": "chapter6",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Why might an organization pilot a test tool before full rollout?",
+    "options": [
+      "To validate fit with real processes and reveal issues at limited cost",
+      "Piloting is a regulatory requirement",
+      "To avoid paying any licence fees",
+      "Pilots guarantee successful adoption"
+    ],
+    "correct": 0,
+    "explanation": "A pilot surfaces practical integration and adoption problems while the investment is still small and reversible.",
+    "questionVariations": [
+      "In ISTQB terms, why might an organization pilot a test tool before full rollout?"
+    ]
+  },
+  {
+    "id": "chapter6_v3_5",
+    "chapter": "chapter6",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "What risk does poorly-maintained test automation pose to a team?",
+    "options": [
+      "Failing tests get ignored, so genuine regressions go unnoticed",
+      "Tests execute more quickly",
+      "Coverage automatically increases",
+      "Manual testing becomes impossible"
+    ],
+    "correct": 0,
+    "explanation": "Chronically failing or flaky suites train teams to ignore results, defeating the purpose of automation entirely.",
+    "questionVariations": [
+      "In ISTQB terminology, what risk does poorly-maintained test automation pose to a team?"
+    ]
+  },
+  {
+    "id": "chapter6_v3_6",
+    "chapter": "chapter6",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "Which consideration is most relevant when automating tests for a frequently-changing UI?",
+    "options": [
+      "Maintenance cost may outweigh the benefit at that level of the test pyramid",
+      "UI tests never need maintenance",
+      "UI automation is always the best investment",
+      "Lower-level tests should be avoided"
+    ],
+    "correct": 0,
+    "explanation": "Volatile UIs make high-level automation expensive to maintain, favouring coverage at more stable lower levels.",
+    "questionVariations": [
+      "Of the options listed, which consideration is most relevant when automating tests for a frequently-changing UI?"
+    ]
+  },
+  {
+    "id": "chapter6_v4_1",
+    "chapter": "chapter6",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Which factor most strongly influences whether automating a given test is worthwhile?",
+    "options": [
+      "How often the test will be repeated over its useful lifetime",
+      "The tester's personal preference",
+      "The length of the test's name",
+      "The colour of the tool's interface"
+    ],
+    "correct": 0,
+    "explanation": "Automation cost is amortized across repeated executions, so repetition frequency is the dominant factor.",
+    "questionVariations": [
+      "Of the options listed, which factor most strongly influences whether automating a given test is worthwhile?"
+    ]
+  },
+  {
+    "id": "chapter6_v4_2",
+    "chapter": "chapter6",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "What is a data-driven approach in test automation?",
+    "options": [
+      "Separating test logic from test data so one script covers many input combinations",
+      "Writing a separate script for every input value",
+      "Avoiding the use of any test data",
+      "Running tests only against production data"
+    ],
+    "correct": 0,
+    "explanation": "Data-driven design lets a single script exercise many combinations by externalizing the data.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a data-driven approach in test automation?"
+    ]
+  },
+  {
+    "id": "chapter6_v4_3",
+    "chapter": "chapter6",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "Why is it important that automated tests be independent of one another?",
+    "options": [
+      "A failure in one test should not cascade and invalidate unrelated results",
+      "Independence makes tests slower",
+      "Dependent tests are always preferable",
+      "Independence is only relevant to manual tests"
+    ],
+    "correct": 0,
+    "explanation": "Interdependent tests produce misleading cascades, making genuine failures hard to identify.",
+    "questionVariations": [
+      "In ISTQB terms, why is it important that automated tests be independent of one another?"
+    ]
+  },
+  {
+    "id": "chapter6_v4_4",
+    "chapter": "chapter6",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What is a common reason automation initiatives fail to deliver expected value?",
+    "options": [
+      "Maintenance cost was underestimated relative to the benefit gained",
+      "Tools are always defective",
+      "Automation can never provide value",
+      "Manual testing is always cheaper"
+    ],
+    "correct": 0,
+    "explanation": "Underestimated maintenance is among the most common causes of automation efforts failing to pay off.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a common reason automation initiatives fail to deliver expected value?"
+    ]
+  },
+  {
+    "id": "chapter6_v4_5",
+    "chapter": "chapter6",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "Which tool type directly supports generating realistic volumes of concurrent activity?",
+    "options": [
+      "Performance and load testing tools",
+      "Static analysis tools",
+      "Defect management tools",
+      "Version control systems"
+    ],
+    "correct": 0,
+    "explanation": "Load tools simulate concurrent users and transaction volume to evaluate behaviour under stress.",
+    "questionVariations": [
+      "Of the options listed, which tool type directly supports generating realistic volumes of concurrent activity?"
+    ]
+  },
+  {
+    "id": "chapter6_v4_6",
+    "chapter": "chapter6",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "What should guide the decision of which test level to automate most heavily?",
+    "options": [
+      "Cost, stability and speed of feedback at each level, generally favouring lower levels",
+      "Always automating the UI level most heavily",
+      "Automating only acceptance tests",
+      "Level choice is arbitrary"
+    ],
+    "correct": 0,
+    "explanation": "Lower levels are typically cheaper, faster and more stable, which is why the pyramid weights them heavily.",
+    "questionVariations": [
+      "In ISTQB terminology, what should guide the decision of which test level to automate most heavily?"
+    ]
   }
 ];

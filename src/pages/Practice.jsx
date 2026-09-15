@@ -127,7 +127,7 @@ export default function Practice() {
               <Badge color="green">Available</Badge>
             </div>
             <p className="text-inkSoft text-sm mb-3">{exam.description}</p>
-            <div className="text-sm font-extrabold text-brand-600">Start practicing →</div>
+            <div className="text-sm font-extrabold text-accentText">Start practicing →</div>
           </button>
         ))}
       </div>

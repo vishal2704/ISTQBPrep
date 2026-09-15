@@ -26,7 +26,7 @@ export default function BlogPost() {
 
   return (
     <PageShell homePath="/foundation">
-      <Link to="/blog" className="text-sm font-bold text-brand-600 hover:underline mb-4 inline-block">
+      <Link to="/blog" className="text-sm font-bold text-accentText hover:underline mb-4 inline-block">
         ← Back to Blog
       </Link>
 

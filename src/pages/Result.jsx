@@ -194,7 +194,7 @@ function ResultBreakdown({ result, onBack, isFresh = false }) {
     <>
       <div className="flex items-center justify-between mb-4">
         {onBack ? (
-          <button onClick={onBack} className="text-sm font-bold text-brand-600 hover:underline">
+          <button onClick={onBack} className="text-sm font-bold text-accentText hover:underline">
             ← Back to all attempts
           </button>
         ) : (
@@ -335,7 +335,7 @@ export default function Result() {
                   >
                     <span
                       className={`w-10 h-10 shrink-0 rounded-xl grid place-items-center text-sm font-extrabold ${
-                        r.score >= 70 ? "bg-feather/15 text-featherDark" : "bg-brand-500/15 text-brand-600"
+                        r.score >= 70 ? "bg-feather/15 text-featherDark" : "bg-brand-500/15 text-accentText"
                       }`}
                     >
                       {r.score}%
@@ -365,6 +365,9 @@ export default function Result() {
               >
                 🗑️ Clear History
               </button>
+              <p className="text-inkSoft text-xs mt-1.5">
+                Only clears your attempt history. Your badges, best score, and average stay put.
+              </p>
             </div>
           )}
         </>

@@ -1,6 +1,5 @@
-// Question bank — chapter4
-// 131 questions (LO-tagged expansion — see
-// src/data/loReference.js for the official ISTQB v4.0.1 Learning Objectives)
+// Question bank — foundation/chapter4
+// 151 questions
 export const chapter4Questions = [
   {
     "id": "ch4_q1",
@@ -16,7 +15,10 @@ export const chapter4Questions = [
       "Identify performance bottlenecks"
     ],
     "correct": 1,
-    "explanation": "Equivalence Partitioning divides inputs into groups expected to behave similarly."
+    "explanation": "Equivalence Partitioning divides inputs into groups expected to behave similarly.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the primary goal of Equivalence Partitioning?"
+    ]
   },
   {
     "id": "ch4_q2",
@@ -32,7 +34,10 @@ export const chapter4Questions = [
       "A type of boundary value"
     ],
     "correct": 1,
-    "explanation": "Values within the same partition are expected to produce similar results."
+    "explanation": "Values within the same partition are expected to produce similar results.",
+    "questionVariations": [
+      "Of the options listed, which statement best describes an equivalence partition?"
+    ]
   },
   {
     "id": "ch4_q3",
@@ -64,7 +69,10 @@ export const chapter4Questions = [
       "Defects occur during integration"
     ],
     "correct": 0,
-    "explanation": "Many defects are found at the edges of input ranges."
+    "explanation": "Many defects are found at the edges of input ranges.",
+    "questionVariations": [
+      "In ISTQB terminology, what is Boundary Value Analysis based on?"
+    ]
   },
   {
     "id": "ch4_q5",
@@ -96,7 +104,10 @@ export const chapter4Questions = [
       "Error Guessing"
     ],
     "correct": 1,
-    "explanation": "Decision tables are ideal for business rules with multiple conditions."
+    "explanation": "Decision tables are ideal for business rules with multiple conditions.",
+    "questionVariations": [
+      "Of the options listed, which technique is most useful when combinations of conditions determine outcomes?"
+    ]
   },
   {
     "id": "ch4_q7",
@@ -128,7 +139,10 @@ export const chapter4Questions = [
       "Use Case Testing"
     ],
     "correct": 2,
-    "explanation": "State Transition Testing evaluates behavior based on state changes."
+    "explanation": "State Transition Testing evaluates behavior based on state changes.",
+    "questionVariations": [
+      "Of the options listed, which test technique focuses on system states and transitions?"
+    ]
   },
   {
     "id": "ch4_q9",
@@ -158,7 +172,10 @@ export const chapter4Questions = [
       "State Testing"
     ],
     "correct": 1,
-    "explanation": "Use Case Testing validates user workflows and interactions."
+    "explanation": "Use Case Testing validates user workflows and interactions.",
+    "questionVariations": [
+      "Of the options listed, which technique derives test cases from user interactions?"
+    ]
   },
   {
     "id": "ch4_q11",
@@ -173,7 +190,10 @@ export const chapter4Questions = [
       "Finds memory leaks"
     ],
     "correct": 1,
-    "explanation": "Use cases represent real user activities."
+    "explanation": "Use cases represent real user activities.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a major benefit of Use Case Testing?"
+    ]
   },
   {
     "id": "ch4_q12",
@@ -188,7 +208,10 @@ export const chapter4Questions = [
       "Error Guessing"
     ],
     "correct": 0,
-    "explanation": "Decision tables model combinations of business conditions."
+    "explanation": "Decision tables model combinations of business conditions.",
+    "questionVariations": [
+      "Of the options listed, which test technique is most suitable for validating discount rules?"
+    ]
   },
   {
     "id": "ch4_q13",
@@ -203,7 +226,10 @@ export const chapter4Questions = [
       "All possible values"
     ],
     "correct": 1,
-    "explanation": "Typically one representative value per partition is sufficient."
+    "explanation": "Typically one representative value per partition is sufficient.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the minimum number of test cases needed to cover one valid and one invalid partition?"
+    ]
   },
   {
     "id": "ch4_q14",
@@ -218,7 +244,10 @@ export const chapter4Questions = [
       "25"
     ],
     "correct": 2,
-    "explanation": "51 lies just outside the valid upper boundary."
+    "explanation": "51 lies just outside the valid upper boundary.",
+    "questionVariations": [
+      "Of the options listed, which value is an invalid boundary value for a range 10-50?"
+    ]
   },
   {
     "id": "ch4_q15",
@@ -248,7 +277,10 @@ export const chapter4Questions = [
       "Branch Coverage"
     ],
     "correct": 0,
-    "explanation": "Use Case Testing focuses on complete workflows."
+    "explanation": "Use Case Testing focuses on complete workflows.",
+    "questionVariations": [
+      "Of the options listed, which black-box technique is best for workflow validation?"
+    ]
   },
   {
     "id": "ch4_q17",
@@ -263,7 +295,10 @@ export const chapter4Questions = [
       "A system state"
     ],
     "correct": 1,
-    "explanation": "Each rule represents a unique business scenario."
+    "explanation": "Each rule represents a unique business scenario.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a decision rule in a decision table?"
+    ]
   },
   {
     "id": "ch4_q18",
@@ -278,7 +313,10 @@ export const chapter4Questions = [
       "Error Guessing"
     ],
     "correct": 0,
-    "explanation": "Decision tables often reveal missing or inconsistent rules."
+    "explanation": "Decision tables often reveal missing or inconsistent rules.",
+    "questionVariations": [
+      "Of the options listed, which technique can identify missing business rules?"
+    ]
   },
   {
     "id": "ch4_q19",
@@ -308,7 +346,10 @@ export const chapter4Questions = [
       "State Testing"
     ],
     "correct": 0,
-    "explanation": "Use cases describe interactions between users and the system."
+    "explanation": "Use cases describe interactions between users and the system.",
+    "questionVariations": [
+      "Of the options listed, which technique uses knowledge of user goals and system interactions?"
+    ]
   },
   {
     "id": "ch4_q21",
@@ -353,7 +394,10 @@ export const chapter4Questions = [
       "Error Guessing"
     ],
     "correct": 0,
-    "explanation": "Tax calculations often depend on combinations of conditions."
+    "explanation": "Tax calculations often depend on combinations of conditions.",
+    "questionVariations": [
+      "Of the options listed, which technique is best for validating tax calculation rules?"
+    ]
   },
   {
     "id": "ch4_q24",
@@ -368,7 +412,10 @@ export const chapter4Questions = [
       "A state transition"
     ],
     "correct": 1,
-    "explanation": "Valid partitions contain inputs expected to be processed successfully."
+    "explanation": "Valid partitions contain inputs expected to be processed successfully.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a valid partition?"
+    ]
   },
   {
     "id": "ch4_q25",
@@ -383,7 +430,10 @@ export const chapter4Questions = [
       "Checklist Testing"
     ],
     "correct": 0,
-    "explanation": "Membership changes often involve state transitions."
+    "explanation": "Membership changes often involve state transitions.",
+    "questionVariations": [
+      "Of the options listed, which technique is most effective for testing membership status changes?"
+    ]
   },
   {
     "id": "ch4_q26",
@@ -398,7 +448,10 @@ export const chapter4Questions = [
       "Review source code"
     ],
     "correct": 1,
-    "explanation": "Black-box testing focuses on external behavior."
+    "explanation": "Black-box testing focuses on external behavior.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the primary objective of black-box testing?"
+    ]
   },
   {
     "id": "ch4_q27",
@@ -413,7 +466,10 @@ export const chapter4Questions = [
       "Branch Coverage"
     ],
     "correct": 0,
-    "explanation": "Decision tables evaluate condition combinations systematically."
+    "explanation": "Decision tables evaluate condition combinations systematically.",
+    "questionVariations": [
+      "Of the options listed, which black-box technique uses condition combinations?"
+    ]
   },
   {
     "id": "ch4_q28",
@@ -428,7 +484,10 @@ export const chapter4Questions = [
       "Static Analysis"
     ],
     "correct": 0,
-    "explanation": "Checkout is a user workflow and suits use case testing."
+    "explanation": "Checkout is a user workflow and suits use case testing.",
+    "questionVariations": [
+      "Of the options listed, which technique would best test an online shopping checkout process?"
+    ]
   },
   {
     "id": "ch4_q29",
@@ -458,7 +517,10 @@ export const chapter4Questions = [
       "Equivalence Partitioning"
     ],
     "correct": 0,
-    "explanation": "State Transition Testing verifies valid and invalid transitions."
+    "explanation": "State Transition Testing verifies valid and invalid transitions.",
+    "questionVariations": [
+      "Of the options listed, which black-box technique is most likely to reveal missing transitions?"
+    ]
   },
   {
     "id": "ch4_q31",
@@ -473,7 +535,10 @@ export const chapter4Questions = [
       "Test usability"
     ],
     "correct": 1,
-    "explanation": "White-box testing uses knowledge of the internal implementation."
+    "explanation": "White-box testing uses knowledge of the internal implementation.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the primary objective of white-box testing?"
+    ]
   },
   {
     "id": "ch4_q32",
@@ -503,7 +568,10 @@ export const chapter4Questions = [
       "Neither"
     ],
     "correct": 1,
-    "explanation": "Branch coverage exercises decision outcomes and is generally stronger."
+    "explanation": "Branch coverage exercises decision outcomes and is generally stronger.",
+    "questionVariations": [
+      "Of the options listed, which coverage type is generally stronger?"
+    ]
   },
   {
     "id": "ch4_q34",
@@ -548,7 +616,10 @@ export const chapter4Questions = [
       "State Transition Testing"
     ],
     "correct": 2,
-    "explanation": "Error guessing depends on tester knowledge and experience."
+    "explanation": "Error guessing depends on tester knowledge and experience.",
+    "questionVariations": [
+      "Of the options listed, which technique relies heavily on tester experience?"
+    ]
   },
   {
     "id": "ch4_q37",
@@ -578,7 +649,10 @@ export const chapter4Questions = [
       "Reviewing source code"
     ],
     "correct": 0,
-    "explanation": "Experienced testers often anticipate common defect-prone areas."
+    "explanation": "Experienced testers often anticipate common defect-prone areas.",
+    "questionVariations": [
+      "Of the options listed, which is an example of Error Guessing?"
+    ]
   },
   {
     "id": "ch4_q39",
@@ -608,7 +682,10 @@ export const chapter4Questions = [
       "It replaces all scripted testing"
     ],
     "correct": 2,
-    "explanation": "Exploratory testing is structured and benefits from expertise."
+    "explanation": "Exploratory testing is structured and benefits from expertise.",
+    "questionVariations": [
+      "Of the options listed, which statement about exploratory testing is TRUE?"
+    ]
   },
   {
     "id": "ch4_q41",
@@ -653,7 +730,10 @@ export const chapter4Questions = [
       "Depends on defects"
     ],
     "correct": 2,
-    "explanation": "100% statement coverage means every statement was executed."
+    "explanation": "100% statement coverage means every statement was executed.",
+    "questionVariations": [
+      "Of the options listed, which coverage level executes all statements?"
+    ]
   },
   {
     "id": "ch4_q44",
@@ -683,7 +763,10 @@ export const chapter4Questions = [
       "A defect management method"
     ],
     "correct": 1,
-    "explanation": "BDD promotes collaboration through examples and shared understanding."
+    "explanation": "BDD promotes collaboration through examples and shared understanding.",
+    "questionVariations": [
+      "In ISTQB terminology, what is Behavior-Driven Development (BDD)?"
+    ]
   },
   {
     "id": "ch4_q46",
@@ -713,7 +796,10 @@ export const chapter4Questions = [
       "Defect"
     ],
     "correct": 2,
-    "explanation": "Given defines the starting state or context."
+    "explanation": "Given defines the starting state or context.",
+    "questionVariations": [
+      "In ISTQB terminology, what does 'Given' represent in a BDD scenario?"
+    ]
   },
   {
     "id": "ch4_q48",
@@ -728,7 +814,10 @@ export const chapter4Questions = [
       "Coverage"
     ],
     "correct": 0,
-    "explanation": "When describes the event or action."
+    "explanation": "When describes the event or action.",
+    "questionVariations": [
+      "In ISTQB terminology, what does 'When' represent in BDD?"
+    ]
   },
   {
     "id": "ch4_q49",
@@ -743,7 +832,10 @@ export const chapter4Questions = [
       "Review"
     ],
     "correct": 2,
-    "explanation": "Then specifies the expected result."
+    "explanation": "Then specifies the expected result.",
+    "questionVariations": [
+      "In ISTQB terminology, what does 'Then' represent?"
+    ]
   },
   {
     "id": "ch4_q50",
@@ -818,7 +910,10 @@ export const chapter4Questions = [
       "Static Analysis"
     ],
     "correct": 0,
-    "explanation": "Collaborative discussions identify misunderstandings before coding."
+    "explanation": "Collaborative discussions identify misunderstandings before coding.",
+    "questionVariations": [
+      "Of the options listed, which technique helps uncover misunderstandings early?"
+    ]
   },
   {
     "id": "ch4_q55",
@@ -833,7 +928,10 @@ export const chapter4Questions = [
       "Guarantees quality"
     ],
     "correct": 0,
-    "explanation": "BDD improves collaboration and shared understanding."
+    "explanation": "BDD improves collaboration and shared understanding.",
+    "questionVariations": [
+      "Of the options listed, which is an advantage of BDD?"
+    ]
   },
   {
     "id": "ch4_q56",
@@ -848,7 +946,10 @@ export const chapter4Questions = [
       "State Testing"
     ],
     "correct": 1,
-    "explanation": "Exploratory testing leverages tester creativity and experience."
+    "explanation": "Exploratory testing leverages tester creativity and experience.",
+    "questionVariations": [
+      "Of the options listed, which testing approach relies most on tester creativity?"
+    ]
   },
   {
     "id": "ch4_q57",
@@ -878,7 +979,10 @@ export const chapter4Questions = [
       "Branch Coverage"
     ],
     "correct": 0,
-    "explanation": "Exploratory testing is effective when documentation is incomplete."
+    "explanation": "Exploratory testing is effective when documentation is incomplete.",
+    "questionVariations": [
+      "Of the options listed, which technique is most useful when documentation is limited?"
+    ]
   },
   {
     "id": "ch4_q59",
@@ -893,7 +997,10 @@ export const chapter4Questions = [
       "Requirement Coverage"
     ],
     "correct": 1,
-    "explanation": "Branch coverage verifies all decision outcomes."
+    "explanation": "Branch coverage verifies all decision outcomes.",
+    "questionVariations": [
+      "Of the options listed, which coverage measure focuses on decision outcomes?"
+    ]
   },
   {
     "id": "ch4_q60",
@@ -908,7 +1015,10 @@ export const chapter4Questions = [
       "State Transition Testing"
     ],
     "correct": 1,
-    "explanation": "Error guessing relies heavily on tester expertise and intuition."
+    "explanation": "Error guessing relies heavily on tester expertise and intuition.",
+    "questionVariations": [
+      "Of the options listed, which ISTQB technique combines tester knowledge, intuition and previous experience?"
+    ]
   },
   {
     "id": "ch4_q61",
@@ -923,7 +1033,10 @@ export const chapter4Questions = [
       "State Transition Testing"
     ],
     "correct": 2,
-    "explanation": "Equivalence Partitioning divides inputs into representative groups."
+    "explanation": "Equivalence Partitioning divides inputs into representative groups.",
+    "questionVariations": [
+      "Of the options listed, which black-box technique divides data into groups expected to behave similarly?"
+    ]
   },
   {
     "id": "ch4_q62",
@@ -938,7 +1051,10 @@ export const chapter4Questions = [
       "Use Case Testing"
     ],
     "correct": 0,
-    "explanation": "Password length limits are ideal for boundary testing."
+    "explanation": "Password length limits are ideal for boundary testing.",
+    "questionVariations": [
+      "Of the options listed, which technique is most useful for testing password length requirements?"
+    ]
   },
   {
     "id": "ch4_q63",
@@ -968,7 +1084,10 @@ export const chapter4Questions = [
       "All requirements covered"
     ],
     "correct": 1,
-    "explanation": "Every branch outcome must be exercised."
+    "explanation": "Every branch outcome must be exercised.",
+    "questionVariations": [
+      "In ISTQB terminology, what does 100% branch coverage require?"
+    ]
   },
   {
     "id": "ch4_q65",
@@ -983,7 +1102,10 @@ export const chapter4Questions = [
       "State Transition Testing"
     ],
     "correct": 2,
-    "explanation": "Error guessing relies on tester knowledge and intuition."
+    "explanation": "Error guessing relies on tester knowledge and intuition.",
+    "questionVariations": [
+      "Of the options listed, which technique is most dependent on tester experience?"
+    ]
   },
   {
     "id": "ch4_q66",
@@ -998,7 +1120,10 @@ export const chapter4Questions = [
       "Exploratory Testing"
     ],
     "correct": 1,
-    "explanation": "Decision tables expose gaps in business logic."
+    "explanation": "Decision tables expose gaps in business logic.",
+    "questionVariations": [
+      "Of the options listed, which technique helps identify missing business rules?"
+    ]
   },
   {
     "id": "ch4_q67",
@@ -1013,7 +1138,11 @@ export const chapter4Questions = [
       "Perform reviews"
     ],
     "correct": 1,
-    "explanation": "ATDD defines acceptance tests before implementation."
+    "explanation": "ATDD defines acceptance tests before implementation.",
+    "questionVariations": [
+      "What is the primary aim of ATDD?",
+      "What is ATDD mainly intended to achieve?"
+    ]
   },
   {
     "id": "ch4_q68",
@@ -1028,7 +1157,10 @@ export const chapter4Questions = [
       "And"
     ],
     "correct": 1,
-    "explanation": "'When' describes the action or event."
+    "explanation": "'When' describes the action or event.",
+    "questionVariations": [
+      "Of the options listed, which BDD keyword describes the action performed?"
+    ]
   },
   {
     "id": "ch4_q69",
@@ -1043,7 +1175,10 @@ export const chapter4Questions = [
       "Error Guessing"
     ],
     "correct": 0,
-    "explanation": "Use cases represent end-to-end user activities."
+    "explanation": "Use cases represent end-to-end user activities.",
+    "questionVariations": [
+      "Of the options listed, which technique validates complete user workflows?"
+    ]
   },
   {
     "id": "ch4_q70",
@@ -1058,7 +1193,10 @@ export const chapter4Questions = [
       "Defect Coverage"
     ],
     "correct": 2,
-    "explanation": "Branch coverage verifies all decision outcomes."
+    "explanation": "Branch coverage verifies all decision outcomes.",
+    "questionVariations": [
+      "Of the options listed, which coverage metric is stronger than statement coverage?"
+    ]
   },
   {
     "id": "ch4_q71",
@@ -1088,7 +1226,11 @@ export const chapter4Questions = [
       "Branch testing"
     ],
     "correct": 2,
-    "explanation": "Decision table testing is a specification-based (black-box) technique, whereas the others are structure-based (white-box) techniques."
+    "explanation": "Decision table testing is a specification-based (black-box) technique, whereas the others are structure-based (white-box) techniques.",
+    "questionVariations": [
+      "Which option is a black-box test technique?",
+      "From the choices below, which is a black-box test technique?"
+    ]
   },
   {
     "id": "ch4_q73",
@@ -1103,7 +1245,10 @@ export const chapter4Questions = [
       "State Transition Testing"
     ],
     "correct": 2,
-    "explanation": "Decision tables are designed to map out outcomes based on varied combinations of multiple conditions or inputs."
+    "explanation": "Decision tables are designed to map out outcomes based on varied combinations of multiple conditions or inputs.",
+    "questionVariations": [
+      "Of the options listed, which test technique is most effective for system behavior governed by combinations of complex business rules?"
+    ]
   },
   {
     "id": "ch4_q74",
@@ -1118,7 +1263,10 @@ export const chapter4Questions = [
       "Error Guessing"
     ],
     "correct": 1,
-    "explanation": "State transition testing evaluates how software transitions through different states based on events or stimuli."
+    "explanation": "State transition testing evaluates how software transitions through different states based on events or stimuli.",
+    "questionVariations": [
+      "Of the options listed, which test technique maps valid and invalid sequence of events or statuses over time?"
+    ]
   },
   {
     "id": "ch4_q75",
@@ -1133,7 +1281,10 @@ export const chapter4Questions = [
       "State Transition Testing"
     ],
     "correct": 1,
-    "explanation": "Use case testing maps out actors, workflows, and scenarios to design end-to-end user tests."
+    "explanation": "Use case testing maps out actors, workflows, and scenarios to design end-to-end user tests.",
+    "questionVariations": [
+      "Of the options listed, which black-box technique evaluates software behavior from the perspective of user interactions and transactional workflows?"
+    ]
   },
   {
     "id": "ch4_q76",
@@ -1148,7 +1299,10 @@ export const chapter4Questions = [
       "Path Testing"
     ],
     "correct": 0,
-    "explanation": "Statement testing calculates coverage based on executed executable statements over total statements."
+    "explanation": "Statement testing calculates coverage based on executed executable statements over total statements.",
+    "questionVariations": [
+      "Of the options listed, which white-box technique measures the percentage of individual executable lines of code that have been run?"
+    ]
   },
   {
     "id": "ch4_q77",
@@ -1178,7 +1332,11 @@ export const chapter4Questions = [
       "Decision coverage is easier to achieve than Statement coverage."
     ],
     "correct": 1,
-    "explanation": "Achieving 100% decision coverage implies that every branch outcome has been taken, which naturally guarantees that every executable statement within those paths has been run."
+    "explanation": "Achieving 100% decision coverage implies that every branch outcome has been taken, which naturally guarantees that every executable statement within those paths has been run.",
+    "questionVariations": [
+      "Which option statements about the relationship between Statement and Decision coverage is TRUE?",
+      "From the options below, which statements about the relationship between Statement and Decision coverage is TRUE?"
+    ]
   },
   {
     "id": "ch4_q79",
@@ -1193,7 +1351,10 @@ export const chapter4Questions = [
       "Specification-based testing"
     ],
     "correct": 2,
-    "explanation": "Experience-based testing relies heavily on human experience, intuition, and historical failure data."
+    "explanation": "Experience-based testing relies heavily on human experience, intuition, and historical failure data.",
+    "questionVariations": [
+      "In ISTQB terminology, what type of testing technique relies purely on a tester's knowledge, past experience, and intuition about where defects are likely to hide?"
+    ]
   },
   {
     "id": "ch4_q80",
@@ -1208,7 +1369,10 @@ export const chapter4Questions = [
       "Decision Table Testing"
     ],
     "correct": 1,
-    "explanation": "Error guessing involves compiling or anticipating a list of common errors, mistakes, or failures to construct targeted test cases."
+    "explanation": "Error guessing involves compiling or anticipating a list of common errors, mistakes, or failures to construct targeted test cases.",
+    "questionVariations": [
+      "Of the options listed, which experience-based testing technique involves a tester systematically listing potential failures, defects, or errors and designing tests specifically to target them?"
+    ]
   },
   {
     "id": "ch4_q81",
@@ -1223,7 +1387,10 @@ export const chapter4Questions = [
       "It avoids finding defects in favor of auditing documentation."
     ],
     "correct": 0,
-    "explanation": "Exploratory testing combines learning, test design, execution, and documentation as concurrent activities during a testing session."
+    "explanation": "Exploratory testing combines learning, test design, execution, and documentation as concurrent activities during a testing session.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a defining characteristic of Exploratory Testing?"
+    ]
   },
   {
     "id": "ch4_q82",
@@ -1253,7 +1420,11 @@ export const chapter4Questions = [
       "It guarantees uniform testing results across different testers."
     ],
     "correct": 1,
-    "explanation": "Experience-based testing leverages intuition and can reveal unique scenarios or edge cases that specification-based or structure-based strategies overlook."
+    "explanation": "Experience-based testing leverages intuition and can reveal unique scenarios or edge cases that specification-based or structure-based strategies overlook.",
+    "questionVariations": [
+      "Which option is considered a primary advantage of experience-based testing?",
+      "From the choices below, which is considered a primary advantage of experience-based testing?"
+    ]
   },
   {
     "id": "chapter4_lo_411",
@@ -1270,7 +1441,10 @@ export const chapter4Questions = [
       "Static technique"
     ],
     "correct": 0,
-    "explanation": "Black-box techniques are based on an analysis of the specification, not the internal code; white-box techniques use the internal structure instead."
+    "explanation": "Black-box techniques are based on an analysis of the specification, not the internal code; white-box techniques use the internal structure instead.",
+    "questionVariations": [
+      "Of the options listed, which category of test technique derives test cases purely from the system's specification, without knowledge of the internal code structure?"
+    ]
   },
   {
     "id": "chapter4_lo_421",
@@ -1359,7 +1533,10 @@ export const chapter4Questions = [
       "The percentage of decision outcomes exercised"
     ],
     "correct": 0,
-    "explanation": "Statement coverage is a white-box metric measuring how many executable statements in the code were run by the test suite."
+    "explanation": "Statement coverage is a white-box metric measuring how many executable statements in the code were run by the test suite.",
+    "questionVariations": [
+      "In ISTQB terminology, what does statement coverage measure?"
+    ]
   },
   {
     "id": "chapter4_lo_432",
@@ -1376,7 +1553,10 @@ export const chapter4Questions = [
       "Only statements, never decisions"
     ],
     "correct": 0,
-    "explanation": "Branch testing targets every decision outcome — both the True and False paths of each branch — which is a stronger criterion than plain statement coverage."
+    "explanation": "Branch testing targets every decision outcome — both the True and False paths of each branch — which is a stronger criterion than plain statement coverage.",
+    "questionVariations": [
+      "In ISTQB terminology, what does branch testing aim to exercise?"
+    ]
   },
   {
     "id": "chapter4_lo_433",
@@ -1393,7 +1573,10 @@ export const chapter4Questions = [
       "They can only be applied at the acceptance test level"
     ],
     "correct": 0,
-    "explanation": "Because white-box techniques examine the code's internal structure directly, they can expose dead code and untested paths that black-box testing alone would never reveal."
+    "explanation": "Because white-box techniques examine the code's internal structure directly, they can expose dead code and untested paths that black-box testing alone would never reveal.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a key value of white-box testing techniques?"
+    ]
   },
   {
     "id": "chapter4_lo_441",
@@ -1427,7 +1610,10 @@ export const chapter4Questions = [
       "Statement testing"
     ],
     "correct": 0,
-    "explanation": "Exploratory testing combines learning about the system, designing tests, and executing them all at once, guided by what the tester discovers as they go."
+    "explanation": "Exploratory testing combines learning about the system, designing tests, and executing them all at once, guided by what the tester discovers as they go.",
+    "questionVariations": [
+      "Of the options listed, which technique involves simultaneous learning, test design, and test execution, typically without predefined test cases?"
+    ]
   },
   {
     "id": "chapter4_lo_443",
@@ -1461,7 +1647,11 @@ export const chapter4Questions = [
       "Test that password reset works correctly"
     ],
     "correct": 0,
-    "explanation": "The standard user story format is 'As a [role], I want [feature], so that [benefit]' — written collaboratively by the team, not as a formal system requirement."
+    "explanation": "The standard user story format is 'As a [role], I want [feature], so that [benefit]' — written collaboratively by the team, not as a formal system requirement.",
+    "questionVariations": [
+      "Which option best follows the standard user story format?",
+      "From the options below, which best follows the standard user story format?"
+    ]
   },
   {
     "id": "chapter4_lo_452",
@@ -1478,7 +1668,11 @@ export const chapter4Questions = [
       "Database schema definitions only"
     ],
     "correct": 0,
-    "explanation": "Given/When/Then is a widely used scenario-oriented format for expressing acceptance criteria clearly and testably."
+    "explanation": "Given/When/Then is a widely used scenario-oriented format for expressing acceptance criteria clearly and testably.",
+    "questionVariations": [
+      "Which option is a common format for writing acceptance criteria?",
+      "From the choices below, which is a common format for writing acceptance criteria?"
+    ]
   },
   {
     "id": "chapter4_lo_453",
@@ -1739,7 +1933,11 @@ export const chapter4Questions = [
       "It guarantees 100% defect detection"
     ],
     "correct": 0,
-    "explanation": "Error guessing is informal by design — it leans on the tester's experience and pattern recognition rather than a formal, systematic technique."
+    "explanation": "Error guessing is informal by design — it leans on the tester's experience and pattern recognition rather than a formal, systematic technique.",
+    "questionVariations": [
+      "Which option is a hallmark of error guessing as a technique?",
+      "From the choices below, which is a hallmark of error guessing as a technique?"
+    ]
   },
   {
     "id": "ch4_ex14",
@@ -1756,7 +1954,10 @@ export const chapter4Questions = [
       "It is only valid for performance testing"
     ],
     "correct": 0,
-    "explanation": "Exploratory testing's defining trait is that learning, designing, and executing tests all happen together in real time, rather than in separate, sequential phases."
+    "explanation": "Exploratory testing's defining trait is that learning, designing, and executing tests all happen together in real time, rather than in separate, sequential phases.",
+    "questionVariations": [
+      "Of the options listed, which statement about exploratory testing is correct?"
+    ]
   },
   {
     "id": "ch4_ex15",
@@ -1790,7 +1991,10 @@ export const chapter4Questions = [
       "Because collaboration replaces the need for any conversation about the feature"
     ],
     "correct": 0,
-    "explanation": "Collaborative authorship surfaces misunderstandings early and ensures business intent, technical feasibility, and testability are all considered together."
+    "explanation": "Collaborative authorship surfaces misunderstandings early and ensures business intent, technical feasibility, and testability are all considered together.",
+    "questionVariations": [
+      "In ISTQB terms, why are user stories typically written collaboratively, involving both business and technical people?"
+    ]
   },
   {
     "id": "ch4_ex17",
@@ -1885,7 +2089,10 @@ export const chapter4Questions = [
       "Because middle values are never valid"
     ],
     "correct": 0,
-    "explanation": "Boundary conditions are a common source of real defects (e.g. using > instead of >=), which is exactly why BVA focuses testing effort there."
+    "explanation": "Boundary conditions are a common source of real defects (e.g. using > instead of >=), which is exactly why BVA focuses testing effort there.",
+    "questionVariations": [
+      "In ISTQB terms, why does Boundary Value Analysis specifically target the edges of a partition, rather than the middle?"
+    ]
   },
   {
     "id": "ch4_ex22",
@@ -1920,7 +2127,10 @@ export const chapter4Questions = [
       "Testing that the system never changes state"
     ],
     "correct": 0,
-    "explanation": "0-switch coverage means every individual (single) transition is exercised at least once. 1-switch coverage goes further, testing sequences of two consecutive transitions."
+    "explanation": "0-switch coverage means every individual (single) transition is exercised at least once. 1-switch coverage goes further, testing sequences of two consecutive transitions.",
+    "questionVariations": [
+      "In ISTQB terminology, what does \"0-switch coverage\" mean in state transition testing?"
+    ]
   },
   {
     "id": "ch4_ex23b",
@@ -1954,7 +2164,10 @@ export const chapter4Questions = [
       "They are exactly equivalent in every case"
     ],
     "correct": 0,
-    "explanation": "Every statement lies on some branch, so covering all branches covers all statements — but covering all statements can miss branches (e.g. an untested ELSE with no unique statements)."
+    "explanation": "Every statement lies on some branch, so covering all branches covers all statements — but covering all statements can miss branches (e.g. an untested ELSE with no unique statements).",
+    "questionVariations": [
+      "In ISTQB terms, why is branch coverage generally considered a stronger coverage criterion than statement coverage?"
+    ]
   },
   {
     "id": "ch4_ex25",
@@ -1971,7 +2184,10 @@ export const chapter4Questions = [
       "Combining them is required by law"
     ],
     "correct": 0,
-    "explanation": "Black-box techniques validate behavior against requirements; white-box techniques expose structural issues invisible from the outside. Together they cover more ground than either alone."
+    "explanation": "Black-box techniques validate behavior against requirements; white-box techniques expose structural issues invisible from the outside. Together they cover more ground than either alone.",
+    "questionVariations": [
+      "In ISTQB terms, why do teams often combine white-box and black-box techniques rather than relying on just one?"
+    ]
   },
   {
     "id": "ch4_ex26",
@@ -1988,7 +2204,10 @@ export const chapter4Questions = [
       "The color scheme of the UI"
     ],
     "correct": 0,
-    "explanation": "Experienced testers often specifically probe boundaries, empty/null inputs, and unusual data — areas that history shows are prone to defects."
+    "explanation": "Experienced testers often specifically probe boundaries, empty/null inputs, and unusual data — areas that history shows are prone to defects.",
+    "questionVariations": [
+      "Of the options listed, which of these areas is a classic target for error guessing, based on common defect patterns?"
+    ]
   },
   {
     "id": "ch4_ex27",
@@ -2005,7 +2224,10 @@ export const chapter4Questions = [
       "A fully scripted list of test steps"
     ],
     "correct": 0,
-    "explanation": "A charter gives exploratory testing structure — a goal and time-box — without constraining the tester to a fully scripted path."
+    "explanation": "A charter gives exploratory testing structure — a goal and time-box — without constraining the tester to a fully scripted path.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a \"test charter\" commonly used for in exploratory testing?"
+    ]
   },
   {
     "id": "ch4_ex28",
@@ -2022,7 +2244,10 @@ export const chapter4Questions = [
       "It requires full source code access"
     ],
     "correct": 0,
-    "explanation": "Because checklist items are high-level, different testers may interpret and execute them differently — trading some repeatability for speed and flexibility."
+    "explanation": "Because checklist items are high-level, different testers may interpret and execute them differently — trading some repeatability for speed and flexibility.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a potential limitation of checklist-based testing?"
+    ]
   },
   {
     "id": "ch4_ex29",
@@ -2124,5 +2349,361 @@ export const chapter4Questions = [
       1
     ],
     "explanation": "Error guessing and exploratory testing both rely primarily on tester experience and intuition. Decision tables and BVA are systematic black-box techniques."
+  },
+  {
+    "id": "chapter4_v2_1",
+    "chapter": "chapter4",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "When applying equivalence partitioning to a field accepting values 100-999, which value represents the invalid-high partition?",
+    "options": [
+      "1500",
+      "500",
+      "100",
+      "999"
+    ],
+    "correct": 0,
+    "explanation": "Values above 999 fall in the invalid-high partition; 500 is valid, while 100 and 999 are the valid boundaries."
+  },
+  {
+    "id": "chapter4_v2_2",
+    "chapter": "chapter4",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "For a field valid from 10 to 20 inclusive, which pair represents the boundaries themselves?",
+    "options": [
+      "10 and 20",
+      "9 and 21",
+      "11 and 19",
+      "0 and 30"
+    ],
+    "correct": 0,
+    "explanation": "The boundaries are the edge values of the valid partition — 10 and 20 — while 9 and 21 sit just outside."
+  },
+  {
+    "id": "chapter4_v2_3",
+    "chapter": "chapter4",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "In a decision table, what does a 'don't care' entry signify for a condition?",
+    "options": [
+      "The rule's outcome is the same regardless of that condition's value",
+      "The condition was forgotten",
+      "The condition is always false",
+      "The table is invalid"
+    ],
+    "correct": 0,
+    "explanation": "'Don't care' marks conditions that do not influence the outcome for that rule, enabling rules to be collapsed."
+  },
+  {
+    "id": "chapter4_v2_4",
+    "chapter": "chapter4",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What does 1-switch coverage require in state transition testing that 0-switch does not?",
+    "options": [
+      "Every sequence of two consecutive transitions is exercised",
+      "Only each individual transition is exercised",
+      "Only the initial state is tested",
+      "No transitions need testing"
+    ],
+    "correct": 0,
+    "explanation": "0-switch covers single transitions; 1-switch extends this to every pair of consecutive transitions.",
+    "questionVariations": [
+      "In ISTQB terminology, what does 1-switch coverage require in state transition testing that 0-switch does not?"
+    ]
+  },
+  {
+    "id": "chapter4_v2_5",
+    "chapter": "chapter4",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "Which technique is most appropriate for testing a system whose behavior depends on a combination of several business rules?",
+    "options": [
+      "Decision table testing",
+      "Boundary value analysis",
+      "State transition testing",
+      "Statement coverage"
+    ],
+    "correct": 0,
+    "explanation": "Decision tables systematically capture combinations of conditions and their resulting actions.",
+    "questionVariations": [
+      "Of the options listed, which technique is most appropriate for testing a system whose behavior depends on a combination of several business rules?"
+    ]
+  },
+  {
+    "id": "chapter4_v2_6",
+    "chapter": "chapter4",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "A module has an IF statement with a compound condition (A AND B). Achieving branch coverage requires what at minimum?",
+    "options": [
+      "Exercising both the true and false outcomes of the overall decision",
+      "Testing every possible combination of A and B",
+      "Executing the module once",
+      "Only testing when both A and B are true"
+    ],
+    "correct": 0,
+    "explanation": "Branch coverage requires each decision outcome to be taken; exercising every A/B combination is a stronger criterion."
+  },
+  {
+    "id": "chapter4_v2_7",
+    "chapter": "chapter4",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Why might a tester choose exploratory testing over fully scripted tests for a new, poorly-documented feature?",
+    "options": [
+      "It allows learning and test design to adapt as understanding of the feature grows",
+      "Scripted testing is forbidden for new features",
+      "It guarantees higher coverage",
+      "It requires no tester skill"
+    ],
+    "correct": 0,
+    "explanation": "With little documentation, exploratory testing lets the tester learn and adapt in real time rather than scripting from an unreliable basis.",
+    "questionVariations": [
+      "In ISTQB terms, why might a tester choose exploratory testing over fully scripted tests for a new, poorly-documented feature?"
+    ]
+  },
+  {
+    "id": "chapter4_v2_8",
+    "chapter": "chapter4",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "What is a key limitation of relying solely on error guessing?",
+    "options": [
+      "Coverage is unsystematic and heavily dependent on the individual tester's experience",
+      "It cannot find any real defects",
+      "It requires access to source code",
+      "It only works on automated tests"
+    ],
+    "correct": 0,
+    "explanation": "Error guessing is valuable but unsystematic — its effectiveness varies with the tester and it provides no coverage guarantee.",
+    "questionVariations": [
+      "In ISTQB terminology, what is a key limitation of relying solely on error guessing?"
+    ]
+  },
+  {
+    "id": "chapter4_v2_9",
+    "chapter": "chapter4",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "Which acceptance criteria format most directly supports deriving test cases?",
+    "options": [
+      "Given/When/Then scenarios describing concrete conditions and outcomes",
+      "A single sentence describing general intent",
+      "A list of technologies used",
+      "An estimate in story points"
+    ],
+    "correct": 0,
+    "explanation": "Given/When/Then maps almost directly onto preconditions, actions and expected results — the structure of a test case.",
+    "questionVariations": [
+      "Of the options listed, which acceptance criteria format most directly supports deriving test cases?"
+    ]
+  },
+  {
+    "id": "chapter4_v2_10",
+    "chapter": "chapter4",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "In ATDD, what is the primary benefit of writing acceptance tests collaboratively before development?",
+    "options": [
+      "It builds shared understanding and surfaces ambiguity before code is written",
+      "It reduces the number of developers needed",
+      "It eliminates the need for any other testing",
+      "It guarantees zero defects"
+    ],
+    "correct": 0,
+    "explanation": "The collaborative conversation itself is the main value — exposing differing assumptions before they become defective code."
+  },
+  {
+    "id": "chapter4_v2_11",
+    "chapter": "chapter4",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "What does statement coverage fail to guarantee that branch coverage addresses?",
+    "options": [
+      "That every decision outcome, including untaken branches, has been exercised",
+      "That every line of code was written",
+      "That the requirements are correct",
+      "That the software performs well"
+    ],
+    "correct": 0,
+    "explanation": "100% statement coverage can miss an ELSE path containing no unique statements; branch coverage requires both outcomes.",
+    "questionVariations": [
+      "In ISTQB terminology, what does statement coverage fail to guarantee that branch coverage addresses?"
+    ]
+  },
+  {
+    "id": "chapter4_v3_1",
+    "chapter": "chapter4",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "For an input accepting integers 1 to 100, how many valid equivalence partitions exist?",
+    "options": [
+      "One valid partition covering 1 through 100",
+      "Three valid partitions",
+      "One hundred valid partitions",
+      "No valid partitions"
+    ],
+    "correct": 0,
+    "explanation": "All values 1-100 are expected to be handled identically, forming a single valid partition."
+  },
+  {
+    "id": "chapter4_v3_2",
+    "chapter": "chapter4",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "Which coverage criterion is satisfied if every statement executes but one IF has never taken its false path?",
+    "options": [
+      "Statement coverage only, not branch coverage",
+      "Both statement and branch coverage",
+      "Branch coverage only",
+      "Neither criterion"
+    ],
+    "correct": 0,
+    "explanation": "Executing every statement satisfies statement coverage, but an untaken branch outcome means branch coverage is incomplete.",
+    "questionVariations": [
+      "Of the options listed, which coverage criterion is satisfied if every statement executes but one IF has never taken its false path?"
+    ]
+  },
+  {
+    "id": "chapter4_v3_3",
+    "chapter": "chapter4",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "When is state transition testing most clearly the appropriate technique?",
+    "options": [
+      "When system behaviour depends on its current mode and the sequence of prior events",
+      "When inputs are independent numeric ranges",
+      "When testing only static content",
+      "When no states exist"
+    ],
+    "correct": 0,
+    "explanation": "State transition testing suits systems whose valid responses depend on current state and event history."
+  },
+  {
+    "id": "chapter4_v3_4",
+    "chapter": "chapter4",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "In a decision table with three binary conditions, how many rules exist before any collapsing?",
+    "options": [
+      "Eight",
+      "Three",
+      "Six",
+      "Sixteen"
+    ],
+    "correct": 0,
+    "explanation": "Three binary conditions yield 2^3 = 8 distinct combinations."
+  },
+  {
+    "id": "chapter4_v3_5",
+    "chapter": "chapter4",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "What is the purpose of testing invalid transitions in state transition testing?",
+    "options": [
+      "To confirm the system correctly rejects or handles events that should not be possible",
+      "To increase the test case count",
+      "Invalid transitions should never be tested",
+      "To measure performance"
+    ],
+    "correct": 0,
+    "explanation": "Robustness requires confirming the system handles disallowed events gracefully rather than entering an undefined state.",
+    "questionVariations": [
+      "In ISTQB terminology, what is the purpose of testing invalid transitions in state transition testing?"
+    ]
+  },
+  {
+    "id": "chapter4_v3_6",
+    "chapter": "chapter4",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "Which is a limitation of checklist-based testing compared to a formal technique?",
+    "options": [
+      "Different testers may interpret and execute the same checklist item differently",
+      "It cannot find defects",
+      "It requires source code access",
+      "It is slower than all other techniques"
+    ],
+    "correct": 0,
+    "explanation": "Checklist items are high-level, trading repeatability for flexibility and speed.",
+    "questionVariations": [
+      "Of the options listed, which is a limitation of checklist-based testing compared to a formal technique?"
+    ]
+  },
+  {
+    "id": "chapter4_v3_7",
+    "chapter": "chapter4",
+    "program": "foundation",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Why is boundary value analysis often used together with equivalence partitioning?",
+    "options": [
+      "Partitioning identifies the ranges; BVA then targets the error-prone edges of those ranges",
+      "They are alternatives that must never be combined",
+      "BVA replaces partitioning entirely",
+      "Partitioning only applies to output values"
+    ],
+    "correct": 0,
+    "explanation": "The two techniques complement each other — partitions define the ranges whose boundaries BVA then probes.",
+    "questionVariations": [
+      "In ISTQB terms, why is boundary value analysis often used together with equivalence partitioning?"
+    ]
+  },
+  {
+    "id": "chapter4_v3_8",
+    "chapter": "chapter4",
+    "program": "foundation",
+    "difficulty": "medium",
+    "marks": 1,
+    "question": "What makes a user story 'testable' under the INVEST criteria?",
+    "options": [
+      "Clear acceptance criteria exist that allow an objective pass/fail judgment",
+      "It is written by a tester",
+      "It contains technical implementation detail",
+      "It is estimated in hours"
+    ],
+    "correct": 0,
+    "explanation": "Testability requires objectively verifiable acceptance criteria.",
+    "questionVariations": [
+      "In ISTQB terminology, what makes a user story 'testable' under the INVEST criteria?"
+    ]
+  },
+  {
+    "id": "chapter4_v3_9",
+    "chapter": "chapter4",
+    "program": "foundation",
+    "difficulty": "hard",
+    "marks": 1,
+    "question": "Which is the strongest structural coverage criterion among these?",
+    "options": [
+      "Branch coverage",
+      "Statement coverage",
+      "Executing the module once",
+      "Counting lines of code"
+    ],
+    "correct": 0,
+    "explanation": "Branch coverage subsumes statement coverage, making it the stronger of the criteria listed.",
+    "questionVariations": [
+      "Of the options listed, which is the strongest structural coverage criterion among these?"
+    ]
   }
 ];

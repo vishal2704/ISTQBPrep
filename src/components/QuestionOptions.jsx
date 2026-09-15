@@ -18,7 +18,7 @@ export function StandardOptions({ q, answer, onSelect, locked }) {
         if (locked) {
           if (revealCorrect) {
             stateClasses = "border-feather bg-feather/10";
-            letterClasses = "bg-feather text-white";
+            letterClasses = "bg-successSolid text-white";
             icon = "✓";
           } else if (isWrongSelection) {
             stateClasses = "border-cardinal bg-cardinal/10";
@@ -76,7 +76,7 @@ export function CombinationOptions({ q, answer, onToggle, onConfirm, locked }) {
         if (locked) {
           if (revealCorrect) {
             stateClasses = "border-feather bg-feather/10";
-            boxClasses = "bg-feather border-feather text-white";
+            boxClasses = "bg-successSolid border-successSolid text-white";
           } else if (isWrongSelection) {
             stateClasses = "border-cardinal bg-cardinal/10";
             boxClasses = "bg-cardinal border-cardinal text-white";
@@ -86,7 +86,7 @@ export function CombinationOptions({ q, answer, onToggle, onConfirm, locked }) {
           }
         } else if (isSelected) {
           stateClasses = "border-feather bg-feather/10";
-          boxClasses = "bg-feather border-feather text-white";
+          boxClasses = "bg-successSolid border-successSolid text-white";
         }
 
         return (
@@ -111,7 +111,7 @@ export function CombinationOptions({ q, answer, onToggle, onConfirm, locked }) {
         <button
           onClick={onConfirm}
           disabled={selected.length === 0}
-          className="btn-pop bg-feather text-white shadow-popSm px-6 py-3 rounded-2xl mt-2 disabled:opacity-40"
+          className="btn-pop bg-successSolid text-white shadow-popSm px-6 py-3 rounded-2xl mt-2 disabled:opacity-40"
         >
           ✅ Confirm Selection
         </button>
@@ -172,7 +172,7 @@ export function MatchingOptions({ q, answer, onChange, onConfirm, locked }) {
       {!locked && (
         <button
           onClick={onConfirm}
-          className="btn-pop bg-feather text-white shadow-popSm px-6 py-3 rounded-2xl mt-2"
+          className="btn-pop bg-successSolid text-white shadow-popSm px-6 py-3 rounded-2xl mt-2"
         >
           ✅ Confirm Matches
         </button>

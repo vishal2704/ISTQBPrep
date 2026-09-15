@@ -116,7 +116,7 @@ export default function Review() {
                     {bookmarked && <span className="text-sm">⭐</span>}
                   </div>
                 </div>
-                <span className="text-brand-600 font-bold text-xs shrink-0">Edit →</span>
+                <span className="text-accentText font-bold text-xs shrink-0">Edit →</span>
               </button>
             ))}
           </div>
