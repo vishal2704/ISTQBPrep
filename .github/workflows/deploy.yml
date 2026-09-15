@@ -34,6 +34,22 @@ jobs:
 
       - name: Build
         run: npm run build
+      
+      - name: Verify production build
+        run: |
+          echo "===== DIST CONTENTS ====="
+          find dist -maxdepth 2 -type f | sort
+
+          echo "===== DIST INDEX.HTML ====="
+          cat dist/index.html
+
+          echo "===== CHECK SOURCE SCRIPT ====="
+          if grep -q '/src/main.jsx' dist/index.html; then
+            echo "ERROR: Production build still contains /src/main.jsx"
+            exit 1
+          fi
+
+          echo "SUCCESS: Vite production build looks correct"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
