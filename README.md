@@ -106,6 +106,21 @@ already work the same way inside the native app.
 Versions below describe this practice portal, not any ISTQB syllabus version.
 (The Foundation content targets the official **CTFL v4.0.1** syllabus.)
 
+### v1.10.0 — GitHub Pages deployment & tablet-layout audit
+- **GitHub Pages support**: `vite.config.js` sets `base: '/ISTQBPrep/'`, `BrowserRouter`
+  uses `basename="/ISTQBPrep"`, and the service worker registers from the correct
+  subpath. `public/manifest.json`'s `start_url`, `scope` and icon paths updated to
+  match — this file is copied verbatim by Vite (not auto-rewritten like `index.html`),
+  so it needed manual fixing. Verified via actual `dist/` build output, not assumption.
+- **Tablet layout audit**: the Header's full nav row and both dashboards' 3-column
+  sidebar layout activated at `md:` (768px) — comfortable on desktop, but genuinely
+  cramped on real tablets (iPad portrait is exactly 768px). Moved these to `lg:`
+  (1024px) so tablets get a clean, spacious single-column stack / hamburger menu,
+  reserving the tighter layout for true desktop widths. Same fix applied to
+  `ExamPreview.jsx`, which had the identical pattern.
+- Swept the codebase for hardcoded fixed pixel widths and literal `<table>` elements
+  that could resist reflowing — found none needing changes.
+
 ### v1.9.0 — Question variations applied
 - Applied the `questionVariations` model across the bank: **570 of 804 questions
   (71%) now carry 2-3 alternate wordings**, giving **1,461 distinct question

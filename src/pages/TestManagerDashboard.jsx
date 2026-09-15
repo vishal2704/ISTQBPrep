@@ -96,8 +96,8 @@ export default function TestManagerDashboard() {
 
       <BadgesSummaryCard />
 
-      <div className="grid md:grid-cols-3 gap-6 mt-6">
-        <div className="md:col-span-2 grid sm:grid-cols-2 gap-4">
+      <div className="grid lg:grid-cols-3 gap-6 mt-6">
+        <div className="lg:col-span-2 grid sm:grid-cols-2 gap-4">
           {CHAPTERS.map((c) => (
             <ChapterCard
               key={c.id}

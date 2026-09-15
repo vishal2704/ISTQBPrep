@@ -48,7 +48,7 @@ export default function Header({ forceDark = false, homePath = "/foundation" }) 
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-1">
+        <nav className="hidden lg:flex items-center gap-1">
           {NAV_LINKS.map((l) => {
             const active = location.pathname === l.to;
             return (
@@ -84,7 +84,7 @@ export default function Header({ forceDark = false, homePath = "/foundation" }) 
           {user ? (
             <button
               onClick={() => navigate(homePath)}
-              className={`hidden sm:flex items-center gap-2 pl-1.5 pr-3.5 py-1.5 rounded-full border font-bold text-sm ${
+              className={`hidden lg:flex items-center gap-2 pl-1.5 pr-3.5 py-1.5 rounded-full border font-bold text-sm ${
                 isDarkLook ? "border-white/15 text-white bg-white/5" : "border-border text-ink bg-surfaceAlt"
               }`}
             >
@@ -96,7 +96,7 @@ export default function Header({ forceDark = false, homePath = "/foundation" }) 
           ) : (
             <Link
               to="/login"
-              className="hidden sm:inline-flex items-center px-4 py-2 rounded-full font-extrabold text-sm text-white bg-brand-gradient shadow-glowSm hover:brightness-110 transition-all"
+              className="hidden lg:inline-flex items-center px-4 py-2 rounded-full font-extrabold text-sm text-white bg-brand-gradient shadow-glowSm hover:brightness-110 transition-all"
             >
               Sign In
             </Link>
@@ -104,7 +104,7 @@ export default function Header({ forceDark = false, homePath = "/foundation" }) 
 
           <button
             onClick={() => setMenuOpen((o) => !o)}
-            className={`md:hidden w-10 h-10 rounded-full grid place-items-center ${
+            className={`lg:hidden w-10 h-10 rounded-full grid place-items-center ${
               isDarkLook ? "bg-white/10 text-white" : "bg-black/5 text-ink"
             }`}
             aria-label="Toggle menu"
@@ -115,7 +115,7 @@ export default function Header({ forceDark = false, homePath = "/foundation" }) 
       </div>
 
       {menuOpen && (
-        <div className={`md:hidden border-t px-4 py-3 flex flex-col gap-1 ${wrapClass}`}>
+        <div className={`lg:hidden border-t px-4 py-3 flex flex-col gap-1 ${wrapClass}`}>
           {NAV_LINKS.map((l) => (
             <Link
               key={l.to}

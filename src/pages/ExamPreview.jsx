@@ -50,8 +50,8 @@ export default function ExamPreview() {
         </div>
       </Card>
 
-      <div className="grid md:grid-cols-3 gap-6">
-        <Card className="md:col-span-2 shadow-elevated">
+      <div className="grid lg:grid-cols-3 gap-6">
+        <Card className="lg:col-span-2 shadow-elevated">
           <h2 className="font-heading font-extrabold text-lg mb-1">📚 What this exam will cover</h2>
           <p className="text-inkSoft text-xs mb-4">
             A directional preview of the syllabus areas — practice questions for this

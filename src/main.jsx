@@ -13,7 +13,7 @@ createRoot(document.getElementById("root")).render(
       <AuthProvider>
         <ExamProvider>
           <BrowserRouter basename="/ISTQBPrep">
-              <App />
+            <App />
           </BrowserRouter>
         </ExamProvider>
       </AuthProvider>
