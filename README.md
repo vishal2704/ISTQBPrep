@@ -106,6 +106,41 @@ already work the same way inside the native app.
 Versions below describe this practice portal, not any ISTQB syllabus version.
 (The Foundation content targets the official **CTFL v4.0.1** syllabus.)
 
+### v1.11.0 — Practice question UX polish
+Practice mode was starting to feel like a timed-exam simulator rather than a
+learning tool. Targeted fixes, reusing existing components/tokens throughout:
+- Progress text clarified: "1 / 143" → "Question 1 of 143" (both the segmented
+  and plain-bar progress views).
+- Answer-option buttons ~25% shorter (padding/letter-circle reduced) while
+  staying a comfortable ~48px touch target.
+- Bookmark toggle moved from the page-level header down onto the question
+  card itself, next to its chapter/difficulty/type badges — literally "the
+  question header" rather than the page header. Also bookmarkable via a new
+  `B` keyboard shortcut.
+- Metadata badges reformatted: "Chapter 1 · Fundamentals of Testing" and
+  properly-capitalized difficulty ("Easy"/"Medium"/"Hard"). Extended
+  `loReference.js`'s chapter-label map to cover Test Manager chapters too
+  (previously only Foundation was mapped, so TM questions fell back to
+  showing raw ids like "tm3").
+- "Show Hint" restyled from a filled, attention-grabbing pill to a subtle
+  text link — a secondary action, not competing with answering.
+- Question navigator is now compact by default (a one-line summary: answered
+  count + bookmark count + expand toggle) rather than always showing the
+  full grid. Expanding still paginates cleanly for 100+ questions, and
+  bookmarked questions now show a small star badge.
+- "Next" button becomes the visually primary action once you've answered (or
+  in timed mode, or on the last question) — before that, in practice mode,
+  it stays a calmer outline style, nudging toward "answer first."
+- Bottom Back/Next bar is now a persistent (`fixed`, not `sticky`) bottom
+  action bar on mobile, with a spacer so it never covers the navigator/hints
+  beneath it. Desktop layout is unaffected (reverts to normal in-flow
+  buttons at the `sm:` breakpoint).
+- No changes to Timed Exam behavior — practice mode already correctly
+  revealed answers/explanations immediately while timed mode withheld them
+  until completion; verified this was untouched by the changes above.
+- No new neon colors, gradients or glows introduced; reused the existing
+  `primary`/`outline` button variants and translucent badge tokens throughout.
+
 ### v1.10.0 — GitHub Pages deployment & tablet-layout audit
 - **GitHub Pages support**: `vite.config.js` sets `base: '/ISTQBPrep/'`, `BrowserRouter`
   uses `basename="/ISTQBPrep"`, and the service worker registers from the correct

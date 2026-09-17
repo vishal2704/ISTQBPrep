@@ -20,7 +20,7 @@ export default function SegmentedProgress({ questions, answers, currentIndex, ti
           />
         </div>
         <span className="text-xs font-extrabold text-inkSoft shrink-0">
-          {currentIndex + 1} / {total}
+          Question {currentIndex + 1} of {total}
         </span>
       </div>
     );
@@ -59,7 +59,7 @@ export default function SegmentedProgress({ questions, answers, currentIndex, ti
         })}
       </div>
       <span className="text-xs font-extrabold text-inkSoft shrink-0">
-        {currentIndex + 1} / {total}
+        Question {currentIndex + 1} of {total}
       </span>
     </div>
   );

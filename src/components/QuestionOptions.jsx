@@ -37,12 +37,12 @@ export function StandardOptions({ q, answer, onSelect, locked }) {
             key={i}
             disabled={locked}
             onClick={() => onSelect(i)}
-            className={`w-full flex items-center gap-4 p-4 rounded-2xl border-2 text-left font-semibold transition-all ${stateClasses} ${
+            className={`w-full flex items-center gap-3 py-2.5 px-4 rounded-2xl border-2 text-left font-semibold transition-all ${stateClasses} ${
               locked ? "cursor-not-allowed" : ""
             }`}
           >
             <span
-              className={`w-8 h-8 shrink-0 rounded-full grid place-items-center font-extrabold text-sm ${letterClasses}`}
+              className={`w-7 h-7 shrink-0 rounded-full grid place-items-center font-extrabold text-sm ${letterClasses}`}
             >
               {icon || LETTERS[i]}
             </span>
@@ -94,12 +94,12 @@ export function CombinationOptions({ q, answer, onToggle, onConfirm, locked }) {
             key={i}
             disabled={locked}
             onClick={() => onToggle(i)}
-            className={`w-full flex items-center gap-4 p-4 rounded-2xl border-2 text-left font-semibold transition-all ${stateClasses} ${
+            className={`w-full flex items-center gap-3 py-2.5 px-4 rounded-2xl border-2 text-left font-semibold transition-all ${stateClasses} ${
               locked ? "cursor-not-allowed" : ""
             }`}
           >
             <span
-              className={`w-7 h-7 shrink-0 rounded-lg grid place-items-center font-extrabold text-sm border-2 ${boxClasses}`}
+              className={`w-6 h-6 shrink-0 rounded-lg grid place-items-center font-extrabold text-sm border-2 ${boxClasses}`}
             >
               {icon}
             </span>

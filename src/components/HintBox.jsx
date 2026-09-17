@@ -12,9 +12,9 @@ export default function HintBox({ q }) {
       {!open ? (
         <button
           onClick={() => setOpen(true)}
-          className="inline-flex items-center gap-1.5 text-xs font-extrabold text-beeDark bg-bee/15 hover:bg-bee/25 px-3 py-1.5 rounded-full transition-colors"
+          className="inline-flex items-center gap-1 text-xs font-bold text-inkSoft hover:text-beeDark transition-colors"
         >
-          💡 Show Hint
+          💡 Show hint
         </button>
       ) : (
         <div className="rounded-2xl border-2 border-bee/40 bg-bee/10 p-3.5 flex items-start gap-2.5 animate-fadeUp">

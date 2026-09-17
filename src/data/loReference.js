@@ -95,6 +95,12 @@ const CHAPTER_LABELS = {
   chapter4: "Test Analysis and Design",
   chapter5: "Managing the Test Activities",
   chapter6: "Test Tools",
+  tm1: "Test Manager Fundamentals",
+  tm2: "Test Management Documentation",
+  tm3: "Planning, Monitoring & Control",
+  tm4: "Risk Management",
+  tm5: "Defect Management",
+  tm6: "Improving the Test Process",
 };
 
 // Returns what to show as "which concept does this question cover" —
@@ -120,4 +126,12 @@ export function getConceptInfo(q) {
     objective: null,
     chapterLabel: CHAPTER_LABELS[q?.chapter] || q?.chapter,
   };
+}
+
+// "Chapter 1 · Fundamentals of Testing" style label for the question header.
+export function getChapterHeaderLabel(chapter) {
+  const num = chapter?.match(/\d+/)?.[0] || "";
+  const title = CHAPTER_LABELS[chapter] || chapter || "";
+  const prefix = chapter?.startsWith("tm") ? "TM Chapter" : "Chapter";
+  return num ? `${prefix} ${num} · ${title}` : title;
 }
