@@ -106,6 +106,31 @@ already work the same way inside the native app.
 Versions below describe this practice portal, not any ISTQB syllabus version.
 (The Foundation content targets the official **CTFL v4.0.1** syllabus.)
 
+### v1.12.0 — Result page redesign & breadcrumb navigation
+- **Practice Result page rebuilt**: score summary is now the clear primary
+  focus (ring + Correct/Incorrect/Unanswered/Time/Total in one card), a slim
+  exam-details strip (no extra card), and three tabs — Performance (chapter
+  and difficulty breakdown, correct/incorrect/unanswered distribution bar),
+  Question Review (existing filter-and-expand pattern, now with an
+  Unanswered filter added), and Key Takeaways (plain-language, data-driven
+  insights — weakest chapter, pacing signal from unanswered count, etc).
+  Next Steps offers Retry Incorrect, Practice Weak Chapter, Practice Again,
+  Start Timed Exam and Return to Dashboard, each only shown when it's
+  actually applicable (e.g. "Practice Weak Chapter" only appears for
+  multi-chapter mock exams). All existing result calculations, storage and
+  routing were reused as-is — no changes to `ExamContext.finishExam()`.
+  Reference screenshots used a left-sidebar layout our app doesn't have;
+  adopted the page's information architecture, not its chrome, keeping our
+  existing top-header design language.
+- **Breadcrumb navigation** added below the header's branding/nav row on
+  every page except Landing. Derived from a single shared route-pattern
+  config (`Breadcrumbs.jsx`) rather than hardcoded per page — dynamic
+  segments (chapter, blog slug, preview exam id) resolve to real labels via
+  existing data lookups, and the in-progress exam/timed state is read live
+  from `ExamContext` for the Exam/Review/Result pages. Previous crumbs are
+  clickable links; the current page is bold and non-clickable. Horizontally
+  scrollable with per-crumb truncation on narrow screens — never overflows.
+
 ### v1.11.0 — Practice question UX polish
 Practice mode was starting to feel like a timed-exam simulator rather than a
 learning tool. Targeted fixes, reusing existing components/tokens throughout:

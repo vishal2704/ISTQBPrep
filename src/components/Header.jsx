@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { useTheme } from "../context/ThemeContext";
+import Breadcrumbs from "./Breadcrumbs";
 
 const STATIC_NAV_LINKS = [
   { to: "/practice", label: "Practice" },
@@ -113,6 +114,8 @@ export default function Header({ forceDark = false, homePath = "/foundation" }) 
           </button>
         </div>
       </div>
+
+      <Breadcrumbs forceDark={forceDark} />
 
       {menuOpen && (
         <div className={`lg:hidden border-t px-4 py-3 flex flex-col gap-1 ${wrapClass}`}>
